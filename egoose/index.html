@@ -70,7 +70,10 @@
 				<p>Execute the following command from your project folder, where your <code>package.json</code> file is stored:</p>
 				<pre><code class="lang-bash">npm install --save @egodigital/egoose
 </code></pre>
+				<h2 id="documentation">Documentation</h2>
+				<p>API documentation can be found <a href="https://egodigital.github.io/egoose/">here</a>.</p>
 				<h2 id="build">Build</h2>
+				<h3 id="module">Module</h3>
 				<p>First install all required <code>node_modules</code> by executing</p>
 				<pre><code class="lang-bash">npm install
 </code></pre>
@@ -80,6 +83,11 @@
 tsc &amp;&amp; tsc -d
 </code></pre>
 				<p>from same folder.</p>
+				<h3 id="documentation">Documentation</h3>
+				<p>Execute</p>
+				<pre><code class="lang-bash">./node_modules/.bin/typedoc --out ./doc ./src/**
+</code></pre>
+				<p>from module&#39;s root.</p>
 				<h2 id="tests">Tests</h2>
 				<p>Run the following command</p>
 				<pre><code class="lang-bash">npm <span class="hljs-built_in">test</span>
