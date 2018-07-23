@@ -66,6 +66,29 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>This file is part of the @egodigital/egoose distribution.
+						Copyright (c) e.GO Digital GmbH, Aachen, Germany (<a href="http://www.e-go-digital.com/">http://www.e-go-digital.com/</a>)</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>egodigital/egoose</dt>
+						<dd><p>is free software: you can redistribute it and/or modify
+								it under the terms of the GNU Lesser General Public License as
+							published by the Free Software Foundation, version 3.</p>
+						</dd>
+						<dt>egodigital/egoose</dt>
+						<dd><p>is distributed in the hope that it will be useful, but
+								WITHOUT ANY WARRANTY; without even the implied warranty of
+								MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+							Lesser General Public License for more details.</p>
+							<p>You should have received a copy of the GNU Lesser General Public License
+							along with this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -85,10 +108,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="is_dev" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> IS_<wbr>DEV</h3>
-					<div class="tsd-signature tsd-kind-icon">IS_<wbr>DEV<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;&#x27;dev&#x27; &#x3D;&#x3D;&#x3D; normalizeString(process.env.APP_ENV)</span></div>
+					<div class="tsd-signature tsd-kind-icon">IS_<wbr>DEV<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;&#x27;dev&#x27; &#x3D;&#x3D;&#x3D; (&#x27;&#x27; + process.env.APP_ENV).toLowerCase().trim()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/fe2bdf2/src/dev.ts#L23">dev.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/103da80/src/dev.ts#L21">dev.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -100,10 +123,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="is_local_dev" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> IS_<wbr>LOCAL_<wbr>DEV</h3>
-					<div class="tsd-signature tsd-kind-icon">IS_<wbr>LOCAL_<wbr>DEV<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;&#x27;true&#x27; &#x3D;&#x3D;&#x3D; normalizeString(process.env.LOCAL_DEVELOPMENT)</span></div>
+					<div class="tsd-signature tsd-kind-icon">IS_<wbr>LOCAL_<wbr>DEV<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;&#x27;true&#x27; &#x3D;&#x3D;&#x3D; (&#x27;&#x27; + process.env.LOCAL_DEVELOPMENT).toLowerCase().trim()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/fe2bdf2/src/dev.ts#L27">dev.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/103da80/src/dev.ts#L25">dev.ts:25</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -140,6 +163,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_index_.html">"index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_mongo_index_.html">"mongo/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_streams_index_.html">"streams/index"</a>
