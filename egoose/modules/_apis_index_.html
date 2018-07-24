@@ -74,8 +74,15 @@
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_apis_index_.apierror.html" class="tsd-kind-icon">Api<wbr>Error</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_apis_index_.apierrorwithkey.html" class="tsd-kind-icon">Api<wbr>Error<wbr>With<wbr>Key</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_apis_index_.apiresponse.html" class="tsd-kind-icon">Api<wbr>Response</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_apis_index_.apiresult.html" class="tsd-kind-icon">Api<wbr>Result</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_apis_index_.html#importapierrorsargument" class="tsd-kind-icon">Import<wbr>Api<wbr>Errors<wbr>Argument</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -87,9 +94,33 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_apis_index_.html#applyapierrors" class="tsd-kind-icon">apply<wbr>Api<wbr>Errors</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_apis_index_.html#importapierrors" class="tsd-kind-icon">import<wbr>Api<wbr>Errors</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_apis_index_.html#importapierrorssync" class="tsd-kind-icon">import<wbr>Api<wbr>Errors<wbr>Sync</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_apis_index_.html#sendresponse" class="tsd-kind-icon">send<wbr>Response</a></li>
 							</ul>
 						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="importapierrorsargument" class="tsd-anchor"></a>
+					<h3>Import<wbr>Api<wbr>Errors<wbr>Argument</h3>
+					<div class="tsd-signature tsd-kind-icon">Import<wbr>Api<wbr>Errors<wbr>Argument<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_apis_index_.apierrorwithkey.html" class="tsd-signature-type">ApiErrorWithKey</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_apis_index_.apierrorwithkey.html" class="tsd-signature-type">ApiErrorWithKey</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b9b6280/src/apis/index.ts#L45">apis/index.ts:45</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A possible value for &#39;importApiErrors()&#39; and &#39;importApiErrorsSync()&#39; functions.</p>
+						</div>
+						<p>If STRING: The path to the JSON file to import.
+							If BUFFER: The binary content as UTF-8 JSON data.
+						If OBJECT or ARRAY: One or more items to import.</p>
 					</div>
 				</section>
 			</section>
@@ -101,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">API_<wbr>ERRORS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/103da80/src/apis/index.ts#L62">apis/index.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b9b6280/src/apis/index.ts#L81">apis/index.ts:81</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -121,6 +152,91 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="applyapierrors" class="tsd-anchor"></a>
+					<h3>apply<wbr>Api<wbr>Errors</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Api<wbr>Errors<span class="tsd-signature-symbol">(</span>errors<span class="tsd-signature-symbol">: </span><a href="../interfaces/_apis_index_.apierrorwithkey.html" class="tsd-signature-type">ApiErrorWithKey</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b9b6280/src/apis/index.ts#L83">apis/index.ts:83</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>errors: <a href="../interfaces/_apis_index_.apierrorwithkey.html" class="tsd-signature-type">ApiErrorWithKey</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="importapierrors" class="tsd-anchor"></a>
+					<h3>import<wbr>Api<wbr>Errors</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">import<wbr>Api<wbr>Errors<span class="tsd-signature-symbol">(</span>errors<span class="tsd-signature-symbol">: </span><a href="_apis_index_.html#importapierrorsargument" class="tsd-signature-type">ImportApiErrorsArgument</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b9b6280/src/apis/index.ts#L101">apis/index.ts:101</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Imports the data for &#39;API_ERRORS&#39; constant.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>errors: <a href="_apis_index_.html#importapierrorsargument" class="tsd-signature-type">ImportApiErrorsArgument</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The items to import.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="importapierrorssync" class="tsd-anchor"></a>
+					<h3>import<wbr>Api<wbr>Errors<wbr>Sync</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">import<wbr>Api<wbr>Errors<wbr>Sync<span class="tsd-signature-symbol">(</span>errors<span class="tsd-signature-symbol">: </span><a href="_apis_index_.html#importapierrorsargument" class="tsd-signature-type">ImportApiErrorsArgument</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b9b6280/src/apis/index.ts#L129">apis/index.ts:129</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Imports the data for &#39;API_ERRORS&#39; constant (sync).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>errors: <a href="_apis_index_.html#importapierrorsargument" class="tsd-signature-type">ImportApiErrorsArgument</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The items to import.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="sendresponse" class="tsd-anchor"></a>
 					<h3>send<wbr>Response</h3>
@@ -131,7 +247,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/103da80/src/apis/index.ts#L72">apis/index.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b9b6280/src/apis/index.ts#L160">apis/index.ts:160</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -198,6 +314,9 @@
 						<a href="_test_asarray_.html">"test/as<wbr>Array"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_test_cloneobj_.html">"test/clone<wbr>Obj"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_test_comparevalues_.html">"test/compare<wbr>Values"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -222,14 +341,29 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_apis_index_.apierror.html" class="tsd-kind-icon">Api<wbr>Error</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_apis_index_.apierrorwithkey.html" class="tsd-kind-icon">Api<wbr>Error<wbr>With<wbr>Key</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_apis_index_.apiresponse.html" class="tsd-kind-icon">Api<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_apis_index_.apiresult.html" class="tsd-kind-icon">Api<wbr>Result</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_apis_index_.html#importapierrorsargument" class="tsd-kind-icon">Import<wbr>Api<wbr>Errors<wbr>Argument</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_apis_index_.html#api_errors" class="tsd-kind-icon">API_<wbr>ERRORS</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_apis_index_.html#applyapierrors" class="tsd-kind-icon">apply<wbr>Api<wbr>Errors</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_apis_index_.html#importapierrors" class="tsd-kind-icon">import<wbr>Api<wbr>Errors</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_apis_index_.html#importapierrorssync" class="tsd-kind-icon">import<wbr>Api<wbr>Errors<wbr>Sync</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_apis_index_.html#sendresponse" class="tsd-kind-icon">send<wbr>Response</a>
