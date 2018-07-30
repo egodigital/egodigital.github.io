@@ -62,7 +62,7 @@
 					<a href="_apis_host_.mongoapihost.html">MongoApiHost</a>
 				</li>
 			</ul>
-			<h1>Class MongoApiHost</h1>
+			<h1>Class MongoApiHost&lt;TDatabase, TOptions&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -75,6 +75,17 @@
 						<p>An API with MongoDB helper methods.</p>
 					</div>
 				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>TDatabase<span class="tsd-signature-symbol">: </span><a href="_mongo_index_.mongodatabase.html" class="tsd-signature-type">MongoDatabase</a></h4>
+					</li>
+					<li>
+						<h4>TOptions<span class="tsd-signature-symbol">: </span><a href="../interfaces/_mongo_index_.mongodatabaseoptions.html" class="tsd-signature-type">MongoDatabaseOptions</a></h4>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
@@ -106,6 +117,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_apis_host_.mongoapihost.html#authorizer" class="tsd-kind-icon">authorizer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_apis_host_.mongoapihost.html#getdatabaseclass" class="tsd-kind-icon">get<wbr>Database<wbr>Class</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_apis_host_.mongoapihost.html#initialize" class="tsd-kind-icon">initialize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_apis_host_.mongoapihost.html#opendatabase" class="tsd-kind-icon">open<wbr>Database</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_apis_host_.mongoapihost.html#poweredby" class="tsd-kind-icon">powered<wbr>By</a></li>
@@ -135,7 +147,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#app">app</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L94">apis/host.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L94">apis/host.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -158,7 +170,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#isrunning">isRunning</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L224">apis/host.ts:224</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L224">apis/host.ts:224</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -181,7 +193,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#logger">logger</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L231">apis/host.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L231">apis/host.ts:231</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -204,7 +216,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#root">root</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L256">apis/host.ts:256</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L256">apis/host.ts:256</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -231,7 +243,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#authorizer">authorizer</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L105">apis/host.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L105">apis/host.ts:105</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -246,7 +258,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#authorizer">authorizer</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L106">apis/host.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L106">apis/host.ts:106</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -256,6 +268,29 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="getdatabaseclass" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Database<wbr>Class</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Database<wbr>Class<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_mongo_index_.mongodatabase.html" class="tsd-signature-type">MongoDatabase</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L448">apis/host.ts:448</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the database class.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_mongo_index_.mongodatabase.html" class="tsd-signature-type">MongoDatabase</a></h4>
+							<p>The class.</p>
 						</li>
 					</ul>
 				</section>
@@ -270,7 +305,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#initialize">initialize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L122">apis/host.ts:122</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L122">apis/host.ts:122</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -292,13 +327,13 @@
 					<a name="opendatabase" class="tsd-anchor"></a>
 					<h3>open<wbr>Database</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">open<wbr>Database<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_mongo_index_.mongodatabaseoptions.html" class="tsd-signature-type">MongoDatabaseOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_mongo_index_.mongodatabase.html" class="tsd-signature-type">MongoDatabase</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">open<wbr>Database<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TDatabase</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L447">apis/host.ts:447</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L459">apis/host.ts:459</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -309,10 +344,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/_mongo_index_.mongodatabaseoptions.html" class="tsd-signature-type">MongoDatabaseOptions</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">TOptions</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_mongo_index_.mongodatabase.html" class="tsd-signature-type">MongoDatabase</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TDatabase</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>The new, opened, database.</p>
 						</li>
 					</ul>
@@ -329,7 +364,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#poweredby">poweredBy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L242">apis/host.ts:242</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L242">apis/host.ts:242</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -344,7 +379,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#poweredby">poweredBy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L243">apis/host.ts:243</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L243">apis/host.ts:243</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -368,7 +403,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#setbasicauth">setBasicAuth</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L267">apis/host.ts:267</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L267">apis/host.ts:267</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -401,7 +436,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#setprefixedauthorizer">setPrefixedAuthorizer</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L310">apis/host.ts:310</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L310">apis/host.ts:310</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -437,7 +472,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#setupapi">setupApi</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L333">apis/host.ts:333</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L333">apis/host.ts:333</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -475,7 +510,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#setuplogger">setupLogger</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L341">apis/host.ts:341</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L341">apis/host.ts:341</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -507,7 +542,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#start">start</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L351">apis/host.ts:351</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L351">apis/host.ts:351</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -537,7 +572,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#stop">stop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L395">apis/host.ts:395</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L395">apis/host.ts:395</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -562,7 +597,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#usebodyparser">useBodyParser</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L423">apis/host.ts:423</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L423">apis/host.ts:423</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -577,7 +612,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apis_host_.apihost.html">ApiHost</a>.<a href="_apis_host_.apihost.html#usebodyparser">useBodyParser</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L424">apis/host.ts:424</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L424">apis/host.ts:424</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -594,13 +629,13 @@
 					<a name="withdatabase" class="tsd-anchor"></a>
 					<h3>with<wbr>Database</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">with<wbr>Database&lt;TResult&gt;<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_mongo_index_.mongodatabaseoptions.html" class="tsd-signature-type">MongoDatabaseOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Database&lt;TResult&gt;<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/75fa32e/src/apis/host.ts#L469">apis/host.ts:469</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b612326/src/apis/host.ts#L492">apis/host.ts:492</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -625,14 +660,14 @@
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>db<span class="tsd-signature-symbol">: </span><a href="_mongo_index_.mongodatabase.html" class="tsd-signature-type">MongoDatabase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>db<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TDatabase</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>db: <a href="_mongo_index_.mongodatabase.html" class="tsd-signature-type">MongoDatabase</a></h5>
+															<h5>db: <span class="tsd-signature-type">TDatabase</span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TResult</span>
@@ -645,7 +680,7 @@
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/_mongo_index_.mongodatabaseoptions.html" class="tsd-signature-type">MongoDatabaseOptions</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">TOptions</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -721,7 +756,7 @@
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_apis_host_.mongoapihost.html" class="tsd-kind-icon">Mongo<wbr>Api<wbr>Host</a>
 						<ul>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
@@ -738,6 +773,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_apis_host_.mongoapihost.html#authorizer" class="tsd-kind-icon">authorizer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_apis_host_.mongoapihost.html#getdatabaseclass" class="tsd-kind-icon">get<wbr>Database<wbr>Class</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_apis_host_.mongoapihost.html#initialize" class="tsd-kind-icon">initialize</a>
