@@ -74,6 +74,7 @@
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_index_.html#completedaction" class="tsd-kind-icon">Completed<wbr>Action</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_index_.html#foreachasyncaction" class="tsd-kind-icon">For<wbr>Each<wbr>Async<wbr>Action</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -85,6 +86,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_index_.html#comparevalues" class="tsd-kind-icon">compare<wbr>Values</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_index_.html#comparevaluesby" class="tsd-kind-icon">compare<wbr>Values<wbr>By</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_index_.html#createcompletedaction" class="tsd-kind-icon">create<wbr>Completed<wbr>Action</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_index_.html#foreachasync" class="tsd-kind-icon">for<wbr>Each<wbr>Async</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#guid" class="tsd-kind-icon">guid</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#isemptystring" class="tsd-kind-icon">is<wbr>Empty<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#normalizestring" class="tsd-kind-icon">normalize<wbr>String</a></li>
@@ -106,7 +108,7 @@
 					<div class="tsd-signature tsd-kind-icon">Completed<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b44c42f/src/index.ts#L30">index.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L31">index.ts:31</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -147,6 +149,56 @@
 						</ul>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="foreachasyncaction" class="tsd-anchor"></a>
+					<h3>For<wbr>Each<wbr>Async<wbr>Action</h3>
+					<div class="tsd-signature tsd-kind-icon">For<wbr>Each<wbr>Async<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L39">index.ts:39</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An action for an async &#39;forEach&#39;.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The current item.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The zero-based index.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>item: <span class="tsd-signature-type">T</span></h5>
+											</li>
+											<li>
+												<h5>index: <span class="tsd-signature-type">number</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span>
+										</h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
@@ -160,7 +212,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b44c42f/src/index.ts#L40">index.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L49">index.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -204,7 +256,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b44c42f/src/index.ts#L56">index.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L65">index.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -245,7 +297,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b44c42f/src/index.ts#L77">index.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L86">index.ts:86</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -283,7 +335,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b44c42f/src/index.ts#L95">index.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L104">index.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -327,7 +379,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b44c42f/src/index.ts#L109">index.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L118">index.ts:118</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -398,7 +450,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b44c42f/src/index.ts#L134">index.ts:134</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L143">index.ts:143</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -468,6 +520,49 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="foreachasync" class="tsd-anchor"></a>
+					<h3>for<wbr>Each<wbr>Async</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">for<wbr>Each<wbr>Async&lt;T&gt;<span class="tsd-signature-symbol">(</span>seq<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Enumerable.Sequence</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, action<span class="tsd-signature-symbol">: </span><a href="_index_.html#foreachasyncaction" class="tsd-signature-type">ForEachAsyncAction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L171">index.ts:171</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>An async &#39;forEach&#39;.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>seq: <span class="tsd-signature-type">Enumerable.Sequence</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The sequence or array to iterate.</p>
+									</div>
+								</li>
+								<li>
+									<h5>action: <a href="_index_.html#foreachasyncaction" class="tsd-signature-type">ForEachAsyncAction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The action to invoke.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="guid" class="tsd-anchor"></a>
 					<h3>guid</h3>
@@ -478,7 +573,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b44c42f/src/index.ts#L159">index.ts:159</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L188">index.ts:188</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -506,7 +601,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b44c42f/src/index.ts#L170">index.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L199">index.ts:199</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -538,7 +633,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b44c42f/src/index.ts#L182">index.ts:182</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L211">index.ts:211</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -570,7 +665,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b44c42f/src/index.ts#L194">index.ts:194</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L223">index.ts:223</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -599,7 +694,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b44c42f/src/index.ts#L210">index.ts:210</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L239">index.ts:239</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -634,7 +729,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b44c42f/src/index.ts#L230">index.ts:230</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L259">index.ts:259</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -669,7 +764,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b44c42f/src/index.ts#L259">index.ts:259</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L288">index.ts:288</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -692,7 +787,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/b44c42f/src/index.ts#L271">index.ts:271</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/210ec5f/src/index.ts#L300">index.ts:300</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -768,6 +863,9 @@
 						<a href="_test_comparevaluesby_.html">"test/compare<wbr>Values<wbr>By"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_test_foreachasync_.html">"test/for<wbr>Each<wbr>Async"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_test_isemptystring_.html">"test/is<wbr>Empty<wbr>String"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -789,6 +887,9 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_index_.html#completedaction" class="tsd-kind-icon">Completed<wbr>Action</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_index_.html#foreachasyncaction" class="tsd-kind-icon">For<wbr>Each<wbr>Async<wbr>Action</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_index_.html#applyfuncfor" class="tsd-kind-icon">apply<wbr>Func<wbr>For</a>
 					</li>
@@ -806,6 +907,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_index_.html#createcompletedaction" class="tsd-kind-icon">create<wbr>Completed<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_index_.html#foreachasync" class="tsd-kind-icon">for<wbr>Each<wbr>Async</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_index_.html#guid" class="tsd-kind-icon">guid</a>
