@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ApiError | @egodigital/egoose</title>
+	<title>&quot;azure/storage&quot; | @egodigital/egoose</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,84 +56,98 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_apis_index_.html">&quot;apis/index&quot;</a>
-				</li>
-				<li>
-					<a href="_apis_index_.apierror.html">ApiError</a>
+					<a href="_azure_storage_.html">&quot;azure/storage&quot;</a>
 				</li>
 			</ul>
-			<h1>Interface ApiError</h1>
+			<h1>External module &quot;azure/storage&quot;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>An entry for an API error.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">ApiError</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="_apis_index_.apierrorwithkey.html" class="tsd-signature-type">ApiErrorWithKey</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Classes</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_index_.apierror.html#de" class="tsd-kind-icon">de</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_index_.apierror.html#en" class="tsd-kind-icon">en</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_azure_storage_.azurestorageclient.html" class="tsd-kind-icon">Azure<wbr>Storage<wbr>Client</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_azure_storage_.azurestorageclientoptions.html" class="tsd-kind-icon">Azure<wbr>Storage<wbr>Client<wbr>Options</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_azure_storage_.html#normalizeazureblobpath" class="tsd-kind-icon">normalize<wbr>Azure<wbr>Blob<wbr>Path</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_azure_storage_.html#tofullblobpath" class="tsd-kind-icon">to<wbr>Full<wbr>Blob<wbr>Path</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="de" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> de</h3>
-					<div class="tsd-signature tsd-kind-icon">de<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/f976d7f/src/apis/index.ts#L31">apis/index.ts:31</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>German (de)</p>
-						</div>
-					</div>
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="normalizeazureblobpath" class="tsd-anchor"></a>
+					<h3>normalize<wbr>Azure<wbr>Blob<wbr>Path</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">normalize<wbr>Azure<wbr>Blob<wbr>Path<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/f976d7f/src/azure/storage.ts#L371">azure/storage.ts:371</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Normalizes an Azure blob path.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The input path.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The normalized path.</p>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="en" class="tsd-anchor"></a>
-					<h3>en</h3>
-					<div class="tsd-signature tsd-kind-icon">en<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/f976d7f/src/apis/index.ts#L35">apis/index.ts:35</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>English (en)</p>
-						</div>
-					</div>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="tofullblobpath" class="tsd-anchor"></a>
+					<h3>to<wbr>Full<wbr>Blob<wbr>Path</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Full<wbr>Blob<wbr>Path<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/f976d7f/src/azure/storage.ts#L375">azure/storage.ts:375</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -144,122 +158,89 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_apis_host_.html">"apis/host"</a>
+						<a href="_apis_host_.html">"apis/host"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_apis_index_.html">"apis/index"</a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_apis_index_.html">"apis/index"</a>
+						<a href="_azure_storage_.html">"azure/storage"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_azure_storage_.html">"azure/storage"</a>
+						<a href="_dev_.html">"dev"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_dev_.html">"dev"</a>
+						<a href="_diagnostics_logger_.html">"diagnostics/logger"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_diagnostics_logger_.html">"diagnostics/logger"</a>
+						<a href="_events_index_.html">"events/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_events_index_.html">"events/index"</a>
+						<a href="_fs_index_.html">"fs/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_fs_index_.html">"fs/index"</a>
+						<a href="_geo_index_.html">"geo/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_geo_index_.html">"geo/index"</a>
+						<a href="_http_index_.html">"http/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_http_index_.html">"http/index"</a>
+						<a href="_index_.html">"index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_index_.html">"index"</a>
+						<a href="_mongo_index_.html">"mongo/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_mongo_index_.html">"mongo/index"</a>
+						<a href="_streams_index_.html">"streams/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_streams_index_.html">"streams/index"</a>
+						<a href="_test_applyfuncfor_.html">"test/apply<wbr>Func<wbr>For"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_test_applyfuncfor_.html">"test/apply<wbr>Func<wbr>For"</a>
+						<a href="_test_asarray_.html">"test/as<wbr>Array"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_test_asarray_.html">"test/as<wbr>Array"</a>
+						<a href="_test_cloneobj_.html">"test/clone<wbr>Obj"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_test_cloneobj_.html">"test/clone<wbr>Obj"</a>
+						<a href="_test_comparevalues_.html">"test/compare<wbr>Values"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_test_comparevalues_.html">"test/compare<wbr>Values"</a>
+						<a href="_test_comparevaluesby_.html">"test/compare<wbr>Values<wbr>By"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_test_comparevaluesby_.html">"test/compare<wbr>Values<wbr>By"</a>
+						<a href="_test_foreachasync_.html">"test/for<wbr>Each<wbr>Async"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_test_foreachasync_.html">"test/for<wbr>Each<wbr>Async"</a>
+						<a href="_test_isemptystring_.html">"test/is<wbr>Empty<wbr>String"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_test_isemptystring_.html">"test/is<wbr>Empty<wbr>String"</a>
+						<a href="_test_normalizestring_.html">"test/normalize<wbr>String"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_test_normalizestring_.html">"test/normalize<wbr>String"</a>
+						<a href="_test_readall_.html">"test/read<wbr>All"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_test_readall_.html">"test/read<wbr>All"</a>
+						<a href="_test_tobooleansafe_.html">"test/to<wbr>Boolean<wbr>Safe"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_test_tobooleansafe_.html">"test/to<wbr>Boolean<wbr>Safe"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_test_tostringsafe_.html">"test/to<wbr>String<wbr>Safe"</a>
+						<a href="_test_tostringsafe_.html">"test/to<wbr>String<wbr>Safe"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_apis_index_.apierror.html" class="tsd-kind-icon">Api<wbr>Error</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_apis_index_.apierror.html#de" class="tsd-kind-icon">de</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_apis_index_.apierror.html#en" class="tsd-kind-icon">en</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_apis_index_.apierrorwithkey.html" class="tsd-kind-icon">Api<wbr>Error<wbr>With<wbr>Key</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_apis_index_.apiresponse.html" class="tsd-kind-icon">Api<wbr>Response</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_azure_storage_.azurestorageclient.html" class="tsd-kind-icon">Azure<wbr>Storage<wbr>Client</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_apis_index_.apiresult.html" class="tsd-kind-icon">Api<wbr>Result</a>
+						<a href="../interfaces/_azure_storage_.azurestorageclientoptions.html" class="tsd-kind-icon">Azure<wbr>Storage<wbr>Client<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_apis_index_.sendresponseoptions.html" class="tsd-kind-icon">Send<wbr>Response<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_apis_index_.html#importapierrorsargument" class="tsd-kind-icon">Import<wbr>Api<wbr>Errors<wbr>Argument</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_apis_index_.html#api_errors" class="tsd-kind-icon">API_<wbr>ERRORS</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_azure_storage_.html#normalizeazureblobpath" class="tsd-kind-icon">normalize<wbr>Azure<wbr>Blob<wbr>Path</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_apis_index_.html#applyapierrors" class="tsd-kind-icon">apply<wbr>Api<wbr>Errors</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_apis_index_.html#importapierrors" class="tsd-kind-icon">import<wbr>Api<wbr>Errors</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_apis_index_.html#importapierrorssync" class="tsd-kind-icon">import<wbr>Api<wbr>Errors<wbr>Sync</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_apis_index_.html#sendresponse" class="tsd-kind-icon">send<wbr>Response</a>
+						<a href="_azure_storage_.html#tofullblobpath" class="tsd-kind-icon">to<wbr>Full<wbr>Blob<wbr>Path</a>
 					</li>
 				</ul>
 			</nav>
