@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;azure/storage&quot; | @egodigital/egoose</title>
+	<title>&quot;system/index&quot; | @egodigital/egoose</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_azure_storage_.html">&quot;azure/storage&quot;</a>
+					<a href="_system_index_.html">&quot;system/index&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;azure/storage&quot;</h1>
+			<h1>External module &quot;system/index&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -71,81 +71,123 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Classes</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_azure_storage_.azurestorageclient.html" class="tsd-kind-icon">Azure<wbr>Storage<wbr>Client</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_azure_storage_.azurestorageclientoptions.html" class="tsd-kind-icon">Azure<wbr>Storage<wbr>Client<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_system_index_.diskspaceresult.html" class="tsd-kind-icon">Disk<wbr>Space<wbr>Result</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_system_index_.html#diskspace" class="tsd-kind-icon">diskspace</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_system_index_.html#os" class="tsd-kind-icon">os</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_azure_storage_.html#normalizeazureblobpath" class="tsd-kind-icon">normalize<wbr>Azure<wbr>Blob<wbr>Path</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_azure_storage_.html#tofullblobpath" class="tsd-kind-icon">to<wbr>Full<wbr>Blob<wbr>Path</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_system_index_.html#getcpuusage" class="tsd-kind-icon">get<wbr>Cpu<wbr>Usage</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_system_index_.html#getdiskspace" class="tsd-kind-icon">get<wbr>Disk<wbr>Space</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="diskspace" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> diskspace</h3>
+					<div class="tsd-signature tsd-kind-icon">diskspace<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;diskspace&#x27;)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/67e0af7/src/system/index.ts#L18">system/index.ts:18</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>This file is part of the @egodigital/egoose distribution.
+							Copyright (c) e.GO Digital GmbH, Aachen, Germany (<a href="http://www.e-go-digital.com/">http://www.e-go-digital.com/</a>)</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>egodigital/egoose</dt>
+							<dd><p>is free software: you can redistribute it and/or modify
+									it under the terms of the GNU Lesser General Public License as
+								published by the Free Software Foundation, version 3.</p>
+							</dd>
+							<dt>egodigital/egoose</dt>
+							<dd><p>is distributed in the hope that it will be useful, but
+									WITHOUT ANY WARRANTY; without even the implied warranty of
+									MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+								Lesser General Public License for more details.</p>
+								<p>You should have received a copy of the GNU Lesser General Public License
+								along with this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="os" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> os</h3>
+					<div class="tsd-signature tsd-kind-icon">os<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;os-utils&#x27;)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/67e0af7/src/system/index.ts#L19">system/index.ts:19</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="normalizeazureblobpath" class="tsd-anchor"></a>
-					<h3>normalize<wbr>Azure<wbr>Blob<wbr>Path</h3>
+					<a name="getcpuusage" class="tsd-anchor"></a>
+					<h3>get<wbr>Cpu<wbr>Usage</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">normalize<wbr>Azure<wbr>Blob<wbr>Path<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Cpu<wbr>Usage<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/67e0af7/src/azure/storage.ts#L371">azure/storage.ts:371</a></li>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/67e0af7/src/system/index.ts#L45">system/index.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Normalizes an Azure blob path.</p>
+									<p>Returns the CPU usage in percentage.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise with the CPU usage.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getdiskspace" class="tsd-anchor"></a>
+					<h3>get<wbr>Disk<wbr>Space</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Disk<wbr>Space<span class="tsd-signature-symbol">(</span>mountPoint<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_system_index_.diskspaceresult.html" class="tsd-signature-type">DiskSpaceResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/67e0af7/src/system/index.ts#L64">system/index.ts:64</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the diskspace of a mount point.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>p: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The input path.</p>
-									</div>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> mountPoint: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>The normalized path.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="tofullblobpath" class="tsd-anchor"></a>
-					<h3>to<wbr>Full<wbr>Blob<wbr>Path</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Full<wbr>Blob<wbr>Path<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/67e0af7/src/azure/storage.ts#L375">azure/storage.ts:375</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>p: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_system_index_.diskspaceresult.html" class="tsd-signature-type">DiskSpaceResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise with the result.</p>
 						</li>
 					</ul>
 				</section>
@@ -158,23 +200,26 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_azure_storage_.html">"azure/storage"</a>
+						<a href="_system_index_.html">"system/index"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_azure_storage_.azurestorageclient.html" class="tsd-kind-icon">Azure<wbr>Storage<wbr>Client</a>
-					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_azure_storage_.azurestorageclientoptions.html" class="tsd-kind-icon">Azure<wbr>Storage<wbr>Client<wbr>Options</a>
+						<a href="../interfaces/_system_index_.diskspaceresult.html" class="tsd-kind-icon">Disk<wbr>Space<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_system_index_.html#diskspace" class="tsd-kind-icon">diskspace</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_system_index_.html#os" class="tsd-kind-icon">os</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_azure_storage_.html#normalizeazureblobpath" class="tsd-kind-icon">normalize<wbr>Azure<wbr>Blob<wbr>Path</a>
+						<a href="_system_index_.html#getcpuusage" class="tsd-kind-icon">get<wbr>Cpu<wbr>Usage</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_azure_storage_.html#tofullblobpath" class="tsd-kind-icon">to<wbr>Full<wbr>Blob<wbr>Path</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_system_index_.html#getdiskspace" class="tsd-kind-icon">get<wbr>Disk<wbr>Space</a>
 					</li>
 				</ul>
 			</nav>
