@@ -153,7 +153,9 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_settings_global_.globalsettingswebview.html#ondispose" class="tsd-kind-icon">on<wbr>Dispose</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_settings_global_.globalsettingswebview.html#onloaded" class="tsd-kind-icon">on<wbr>Loaded</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_settings_global_.globalsettingswebview.html#onlog" class="tsd-kind-icon">on<wbr>Log</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_settings_global_.globalsettingswebview.html#onwebviewdisposed" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Disposed</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="_settings_global_.globalsettingswebview.html#onwebviewmessage" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_settings_global_.globalsettingswebview.html#onwebviewvisibilitychanged" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Visibility<wbr>Changed</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_settings_global_.globalsettingswebview.html#once" class="tsd-kind-icon">once</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_settings_global_.globalsettingswebview.html#open" class="tsd-kind-icon">open</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_settings_global_.globalsettingswebview.html#postmessage" class="tsd-kind-icon">post<wbr>Message</a></li>
@@ -181,7 +183,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_webview_.webviewwithcontextbase.html">WebViewWithContextBase</a>.<a href="_webview_.webviewwithcontextbase.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in webview.ts:491</li>
+									<li>Defined in webview.ts:520</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -278,7 +280,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_webview_.webviewwithcontextbase.html">WebViewWithContextBase</a>.<a href="_webview_.webviewwithcontextbase.html#extension">extension</a></p>
 						<ul>
-							<li>Defined in webview.ts:498</li>
+							<li>Defined in webview.ts:527</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -360,7 +362,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#panel">panel</a></p>
 								<ul>
-									<li>Defined in webview.ts:455</li>
+									<li>Defined in webview.ts:484</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -383,7 +385,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#view">view</a></p>
 								<ul>
-									<li>Defined in webview.ts:482</li>
+									<li>Defined in webview.ts:511</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -961,7 +963,7 @@
 								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#ondispose">onDispose</a></p>
 								<p>Overrides DisposableBase.onDispose</p>
 								<ul>
-									<li>Defined in webview.ts:414</li>
+									<li>Defined in webview.ts:429</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -985,7 +987,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#onloaded">onLoaded</a></p>
 								<ul>
-									<li>Defined in webview.ts:421</li>
+									<li>Defined in webview.ts:436</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1008,7 +1010,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#onlog">onLog</a></p>
 								<ul>
-									<li>Defined in webview.ts:429</li>
+									<li>Defined in webview.ts:444</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1025,6 +1027,29 @@
 									</div>
 								</li>
 							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onwebviewdisposed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Web<wbr>View<wbr>Disposed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Disposed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#onwebviewdisposed">onWebViewDisposed</a></p>
+								<ul>
+									<li>Defined in webview.ts:459</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Is invoked, after the web view (panel) has been disposed.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -1056,6 +1081,38 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onwebviewvisibilitychanged" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Web<wbr>View<wbr>Visibility<wbr>Changed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Visibility<wbr>Changed<span class="tsd-signature-symbol">(</span>isVisible<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#onwebviewvisibilitychanged">onWebViewVisibilityChanged</a></p>
+								<ul>
+									<li>Defined in webview.ts:478</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Is invoked after the visibility of the web view has been changed.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>isVisible: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Content is currently visible or not.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1140,7 +1197,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#postmessage">postMessage</a></p>
 								<ul>
-									<li>Defined in webview.ts:467</li>
+									<li>Defined in webview.ts:496</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1583,8 +1640,14 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_settings_global_.globalsettingswebview.html#onlog" class="tsd-kind-icon">on<wbr>Log</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_settings_global_.globalsettingswebview.html#onwebviewdisposed" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Disposed</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 								<a href="_settings_global_.globalsettingswebview.html#onwebviewmessage" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_settings_global_.globalsettingswebview.html#onwebviewvisibilitychanged" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Visibility<wbr>Changed</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_settings_global_.globalsettingswebview.html#once" class="tsd-kind-icon">once</a>
