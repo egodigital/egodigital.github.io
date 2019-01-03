@@ -84,6 +84,9 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_workspaces_jobs_.html#createnewcronjob" class="tsd-kind-icon">create<wbr>New<wbr>Cron<wbr>Job</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_workspaces_jobs_.html#disposejobs" class="tsd-kind-icon">dispose<wbr>Jobs</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_workspaces_jobs_.html#reloadjobs" class="tsd-kind-icon">reload<wbr>Jobs</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_workspaces_jobs_.html#restartalljobs" class="tsd-kind-icon">restart<wbr>All<wbr>Jobs</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_workspaces_jobs_.html#startalljobs" class="tsd-kind-icon">start<wbr>All<wbr>Jobs</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_workspaces_jobs_.html#stopalljobs" class="tsd-kind-icon">stop<wbr>All<wbr>Jobs</a></li>
 							</ul>
 						</section>
 					</div>
@@ -224,6 +227,72 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="restartalljobs" class="tsd-anchor"></a>
+					<h3>restart<wbr>All<wbr>Jobs</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">restart<wbr>All<wbr>Jobs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces/jobs.ts:384</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Restarts all running workspace jobs.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="startalljobs" class="tsd-anchor"></a>
+					<h3>start<wbr>All<wbr>Jobs</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">start<wbr>All<wbr>Jobs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces/jobs.ts:425</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Starts all non-running workspace jobs.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="stopalljobs" class="tsd-anchor"></a>
+					<h3>stop<wbr>All<wbr>Jobs</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">stop<wbr>All<wbr>Jobs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces/jobs.ts:462</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Stops all running workspace jobs.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -249,6 +318,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_extension_.html">"extension"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_help_.html">"help"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_helpers_.html">"helpers"</a>
@@ -322,6 +394,15 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_workspaces_jobs_.html#reloadjobs" class="tsd-kind-icon">reload<wbr>Jobs</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_workspaces_jobs_.html#restartalljobs" class="tsd-kind-icon">restart<wbr>All<wbr>Jobs</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_workspaces_jobs_.html#startalljobs" class="tsd-kind-icon">start<wbr>All<wbr>Jobs</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_workspaces_jobs_.html#stopalljobs" class="tsd-kind-icon">stop<wbr>All<wbr>Jobs</a>
 					</li>
 				</ul>
 			</nav>

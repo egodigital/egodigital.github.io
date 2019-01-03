@@ -137,7 +137,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_workspaces_apps_.workspaceappwebview.html#cleanupintervals" class="tsd-kind-icon">cleanup<wbr>Intervals</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_workspaces_apps_.workspaceappwebview.html#cleanuptimeouts" class="tsd-kind-icon">cleanup<wbr>Timeouts</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_workspaces_apps_.workspaceappwebview.html#cleartempdir" class="tsd-kind-icon">clear<wbr>Temp<wbr>Dir</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_workspaces_apps_.workspaceappwebview.html#close" class="tsd-kind-icon">close</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_workspaces_apps_.workspaceappwebview.html#close" class="tsd-kind-icon">close</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="_workspaces_apps_.workspaceappwebview.html#createscriptarguments" class="tsd-kind-icon">create<wbr>Script<wbr>Arguments</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_workspaces_apps_.workspaceappwebview.html#createtempfile" class="tsd-kind-icon">create<wbr>Temp<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_workspaces_apps_.workspaceappwebview.html#dispose" class="tsd-kind-icon">dispose</a></li>
@@ -602,27 +602,28 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="close" class="tsd-anchor"></a>
 					<h3>close</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">close<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#close">close</a></p>
+								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#close">close</a></p>
+								<p>Overrides <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#close">close</a></p>
 								<ul>
-									<li>Defined in webview.ts:45</li>
+									<li>Defined in apps.ts:84</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Closes the web view.</p>
-								</div>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A promise that indicates if operation was successful or not.</p>
 						</li>
 					</ul>
 				</section>
@@ -670,7 +671,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#createtempfile">createTempFile</a></p>
 								<ul>
-									<li>Defined in apps.ts:86</li>
+									<li>Defined in apps.ts:102</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -765,7 +766,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#filesystemitemexists">fileSystemItemExists</a></p>
 								<ul>
-									<li>Defined in apps.ts:109</li>
+									<li>Defined in apps.ts:125</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -798,7 +799,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#filesystemitemstat">fileSystemItemStat</a></p>
 								<ul>
-									<li>Defined in apps.ts:123</li>
+									<li>Defined in apps.ts:139</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -862,7 +863,7 @@
 								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#generatehtmlbody">generateHtmlBody</a></p>
 								<p>Overrides <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#generatehtmlbody">generateHtmlBody</a></p>
 								<ul>
-									<li>Defined in apps.ts:138</li>
+									<li>Defined in apps.ts:154</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -934,7 +935,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#getallworkspaces">getAllWorkspaces</a></p>
 								<ul>
-									<li>Defined in apps.ts:158</li>
+									<li>Defined in apps.ts:174</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -958,7 +959,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#geteventfunction">getEventFunction</a></p>
 								<ul>
-									<li>Defined in apps.ts:183</li>
+									<li>Defined in apps.ts:199</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1109,7 +1110,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#gettempdir">getTempDir</a></p>
 								<ul>
-									<li>Defined in apps.ts:221</li>
+									<li>Defined in apps.ts:237</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1134,7 +1135,7 @@
 								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#gettitle">getTitle</a></p>
 								<p>Overrides <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#gettitle">getTitle</a></p>
 								<ul>
-									<li>Defined in apps.ts:233</li>
+									<li>Defined in apps.ts:249</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1159,7 +1160,7 @@
 								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#gettype">getType</a></p>
 								<p>Overrides <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#gettype">getType</a></p>
 								<ul>
-									<li>Defined in apps.ts:251</li>
+									<li>Defined in apps.ts:267</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1301,10 +1302,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#ondispose">onDispose</a></p>
-								<p>Overrides DisposableBase.onDispose</p>
+								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#ondispose">onDispose</a></p>
+								<p>Overrides <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#ondispose">onDispose</a></p>
 								<ul>
-									<li>Defined in webview.ts:414</li>
+									<li>Defined in apps.ts:279</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1329,7 +1330,7 @@
 								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#onloaded">onLoaded</a></p>
 								<p>Overrides <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#onloaded">onLoaded</a></p>
 								<ul>
-									<li>Defined in apps.ts:263</li>
+									<li>Defined in apps.ts:293</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1386,7 +1387,7 @@
 								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#onwebviewmessage">onWebViewMessage</a></p>
 								<p>Overrides <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#onwebviewmessage">onWebViewMessage</a></p>
 								<ul>
-									<li>Defined in apps.ts:277</li>
+									<li>Defined in apps.ts:307</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1620,7 +1621,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#readfile">readFile</a></p>
 								<ul>
-									<li>Defined in apps.ts:304</li>
+									<li>Defined in apps.ts:334</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1678,7 +1679,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#removefileorfolder">removeFileOrFolder</a></p>
 								<ul>
-									<li>Defined in apps.ts:315</li>
+									<li>Defined in apps.ts:345</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1781,7 +1782,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#tofulldatapath">toFullDataPath</a></p>
 								<ul>
-									<li>Defined in apps.ts:337</li>
+									<li>Defined in apps.ts:367</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1814,7 +1815,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#writefile">writeFile</a></p>
 								<ul>
-									<li>Defined in apps.ts:359</li>
+									<li>Defined in apps.ts:389</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1893,6 +1894,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_extension_.html">"extension"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_help_.html">"help"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_helpers_.html">"helpers"</a>
@@ -2014,7 +2018,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_workspaces_apps_.workspaceappwebview.html#cleartempdir" class="tsd-kind-icon">clear<wbr>Temp<wbr>Dir</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_workspaces_apps_.workspaceappwebview.html#close" class="tsd-kind-icon">close</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">

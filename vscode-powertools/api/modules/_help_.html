@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;commands&quot; | vscode-powertools</title>
+	<title>&quot;help&quot; | vscode-powertools</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_commands_.html">&quot;commands&quot;</a>
+					<a href="_help_.html">&quot;help&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;commands&quot;</h1>
+			<h1>External module &quot;help&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -71,9 +71,21 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_help_.helpviewview.html" class="tsd-kind-icon">Help<wbr>View<wbr>View</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_help_.loadwikipagedata.html" class="tsd-kind-icon">Load<wbr>Wiki<wbr>Page<wbr>Data</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_commands_.html#registercommands" class="tsd-kind-icon">register<wbr>Commands</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_help_.html#openhelp" class="tsd-kind-icon">open<wbr>Help</a></li>
 							</ul>
 						</section>
 					</div>
@@ -82,39 +94,33 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="registercommands" class="tsd-anchor"></a>
-					<h3>register<wbr>Commands</h3>
+					<a name="openhelp" class="tsd-anchor"></a>
+					<h3>open<wbr>Help</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Commands<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span>, output<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.OutputChannel</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">open<wbr>Help<span class="tsd-signature-symbol">(</span>extension<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in commands.ts:38</li>
+									<li>Defined in help.ts:155</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Registers all commands.</p>
+									<p>Options the help.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>context: <span class="tsd-signature-type">vscode.ExtensionContext</span></h5>
+									<h5>extension: <span class="tsd-signature-type">vscode.ExtensionContext</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The underlying extension context.</p>
-									</div>
-								</li>
-								<li>
-									<h5>output: <span class="tsd-signature-type">vscode.OutputChannel</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The output channel.</p>
+										<p>The extension (context).</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -135,7 +141,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_code_.html">"code"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_commands_.html">"commands"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -144,7 +150,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_extension_.html">"extension"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="_help_.html">"help"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -202,8 +208,14 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_help_.helpviewview.html" class="tsd-kind-icon">Help<wbr>View<wbr>View</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_help_.loadwikipagedata.html" class="tsd-kind-icon">Load<wbr>Wiki<wbr>Page<wbr>Data</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_commands_.html#registercommands" class="tsd-kind-icon">register<wbr>Commands</a>
+						<a href="_help_.html#openhelp" class="tsd-kind-icon">open<wbr>Help</a>
 					</li>
 				</ul>
 			</nav>

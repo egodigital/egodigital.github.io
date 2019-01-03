@@ -62,7 +62,7 @@
 					<a href="_contracts_.actionquickpickitem.html">ActionQuickPickItem</a>
 				</li>
 			</ul>
-			<h1>Interface ActionQuickPickItem</h1>
+			<h1>Interface ActionQuickPickItem&lt;TTag&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -75,6 +75,14 @@
 						<p>A quick pick item with an action.</p>
 					</div>
 				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>TTag</h4>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
@@ -102,6 +110,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.actionquickpickitem.html#detail" class="tsd-kind-icon">detail</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.actionquickpickitem.html#label" class="tsd-kind-icon">label</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.actionquickpickitem.html#picked" class="tsd-kind-icon">picked</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.actionquickpickitem.html#tag" class="tsd-kind-icon">tag</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,7 +121,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="action" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> action</h3>
-					<div class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in contracts.ts:41</li>
@@ -122,21 +131,6 @@
 						<div class="lead">
 							<p>The (optional) action to invoke.</p>
 						</div>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -225,6 +219,21 @@
 						</dl>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="tag" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tag</h3>
+					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TTag</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:45</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Something that should be linked with that item.</p>
+						</div>
+					</div>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -250,6 +259,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_extension_.html">"extension"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_help_.html">"help"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_helpers_.html">"helpers"</a>
@@ -308,7 +320,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_contracts_.actionquickpickitem.html" class="tsd-kind-icon">Action<wbr>Quick<wbr>Pick<wbr>Item</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -328,6 +340,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_contracts_.actionquickpickitem.html#picked" class="tsd-kind-icon">picked</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.actionquickpickitem.html#tag" class="tsd-kind-icon">tag</a>
 							</li>
 						</ul>
 					</li>
