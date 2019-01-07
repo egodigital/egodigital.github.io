@@ -1,4 +1,10 @@
 {
     "name": "e.GO Digital App Store",
-    "apps": [ ]
+    "apps": [{
+        "name": "password-generator",
+        "displayName": "Password Generator",
+        "description": "Generates strong passwords.",
+        "source": "https://egodigital.github.io/vscode-powertools/apps/password-generator.ego-app",
+        "icon": "https://egodigital.github.io/vscode-powertools/apps/password-generator.png"
+    }]
 }
