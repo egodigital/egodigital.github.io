@@ -95,6 +95,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_apps_.html#installappfromfile" class="tsd-kind-icon">install<wbr>App<wbr>From<wbr>File</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_apps_.html#loadapps" class="tsd-kind-icon">load<wbr>Apps</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_apps_.html#openapp" class="tsd-kind-icon">open<wbr>App</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_apps_.html#openappbyname" class="tsd-kind-icon">open<wbr>App<wbr>ByName</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_apps_.html#raiseinstalledapplistupdated" class="tsd-kind-icon">raise<wbr>Installed<wbr>App<wbr>List<wbr>Updated</a></li>
 							</ul>
 						</section>
@@ -337,6 +338,50 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="openappbyname" class="tsd-anchor"></a>
+					<h3>open<wbr>App<wbr>ByName</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">open<wbr>App<wbr>ByName<span class="tsd-signature-symbol">(</span>extension<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span>, output<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.OutputChannel</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_apps_.appwebview.html" class="tsd-signature-type">AppWebView</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in apps.ts:1728</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Opens an app by its name.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>extension: <span class="tsd-signature-type">vscode.ExtensionContext</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The underlying extension context.</p>
+									</div>
+								</li>
+								<li>
+									<h5>output: <span class="tsd-signature-type">vscode.OutputChannel</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The output channel.</p>
+									</div>
+								</li>
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the app.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_apps_.appwebview.html" class="tsd-signature-type">AppWebView</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise with the web view or (false) if falied.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="raiseinstalledapplistupdated" class="tsd-anchor"></a>
 					<h3>raise<wbr>Installed<wbr>App<wbr>List<wbr>Updated</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -346,7 +391,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in apps.ts:1768</li>
+									<li>Defined in apps.ts:1818</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -477,6 +522,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_apps_.html#openapp" class="tsd-kind-icon">open<wbr>App</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_apps_.html#openappbyname" class="tsd-kind-icon">open<wbr>App<wbr>ByName</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_apps_.html#raiseinstalledapplistupdated" class="tsd-kind-icon">raise<wbr>Installed<wbr>App<wbr>List<wbr>Updated</a>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CommandItem | vscode-powertools</title>
+	<title>AppStoreAppSource | vscode-powertools</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.commanditem.html">CommandItem</a>
+					<a href="_contracts_.appstoreappsource.html">AppStoreAppSource</a>
 				</li>
 			</ul>
-			<h1>Interface CommandItem</h1>
+			<h1>Interface AppStoreAppSource</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A command item.</p>
+						<p>Source information of an app store app.</p>
 					</div>
 				</div>
 			</section>
@@ -80,18 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_contracts_.conditional.html" class="tsd-signature-type">Conditional</a>
-					</li>
-					<li>
-						<a href="_contracts_.forplatforms.html" class="tsd-signature-type">ForPlatforms</a>
-					</li>
-					<li>
-						<a href="_contracts_.withscript.html" class="tsd-signature-type">WithScript</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">CommandItem</span>
-							</li>
-						</ul>
+						<span class="target">AppStoreAppSource</span>
 					</li>
 				</ul>
 			</section>
@@ -102,13 +91,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.commanditem.html#button" class="tsd-kind-icon">button</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.commanditem.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.commanditem.html#if" class="tsd-kind-icon">if</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.commanditem.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.commanditem.html#options" class="tsd-kind-icon">options</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.commanditem.html#platforms" class="tsd-kind-icon">platforms</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.commanditem.html#script" class="tsd-kind-icon">script</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.appstoreappsource.html#app" class="tsd-kind-icon">app</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.appstoreappsource.html#store" class="tsd-kind-icon">store</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.appstoreappsource.html#url" class="tsd-kind-icon">url</a></li>
 							</ul>
 						</section>
 					</div>
@@ -117,111 +102,47 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="button" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> button</h3>
-					<div class="tsd-signature tsd-kind-icon">button<span class="tsd-signature-symbol">:</span> <a href="_contracts_.button.html" class="tsd-signature-type">Button</a></div>
+					<a name="app" class="tsd-anchor"></a>
+					<h3>app</h3>
+					<div class="tsd-signature tsd-kind-icon">app<span class="tsd-signature-symbol">:</span> <a href="_contracts_.appstoreapp.html" class="tsd-signature-type">AppStoreApp</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:481</li>
+							<li>Defined in contracts.ts:384</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Settings for an optional button.</p>
+							<p>The underlying app.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="description" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="store" class="tsd-anchor"></a>
+					<h3>store</h3>
+					<div class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">:</span> <a href="_contracts_.appstore.html" class="tsd-signature-type">AppStore</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:485</li>
+							<li>Defined in contracts.ts:388</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A description for the command.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="if" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> if</h3>
-					<div class="tsd-signature tsd-kind-icon">if<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.conditional.html">Conditional</a>.<a href="_contracts_.conditional.html#if">if</a></p>
-						<ul>
-							<li>Defined in contracts.ts:499</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The JavaScript code that checks the avaibility.</p>
+							<p>The underlying store.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="url" class="tsd-anchor"></a>
+					<h3>url</h3>
+					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:489</li>
+							<li>Defined in contracts.ts:392</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The name for display.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="options" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.withscript.html">WithScript</a>.<a href="_contracts_.withscript.html#options">options</a></p>
-						<ul>
-							<li>Defined in contracts.ts:1038</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Options for running the script.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="platforms" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> platforms</h3>
-					<div class="tsd-signature tsd-kind-icon">platforms<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.forplatforms.html">ForPlatforms</a>.<a href="_contracts_.forplatforms.html#platforms">platforms</a></p>
-						<ul>
-							<li>Defined in contracts.ts:661</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>One or more platform names, the object is for.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="script" class="tsd-anchor"></a>
-					<h3>script</h3>
-					<div class="tsd-signature tsd-kind-icon">script<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.withscript.html">WithScript</a>.<a href="_contracts_.withscript.html#script">script</a></p>
-						<ul>
-							<li>Defined in contracts.ts:1042</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The path to the script to invoke.</p>
+							<p>The URL to the store.</p>
 						</div>
 					</div>
 				</section>
@@ -312,28 +233,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.commanditem.html" class="tsd-kind-icon">Command<wbr>Item</a>
+						<a href="_contracts_.appstoreappsource.html" class="tsd-kind-icon">App<wbr>Store<wbr>App<wbr>Source</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.commanditem.html#button" class="tsd-kind-icon">button</a>
+								<a href="_contracts_.appstoreappsource.html#app" class="tsd-kind-icon">app</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.commanditem.html#description" class="tsd-kind-icon">description</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.commanditem.html#if" class="tsd-kind-icon">if</a>
+								<a href="_contracts_.appstoreappsource.html#store" class="tsd-kind-icon">store</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.commanditem.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.commanditem.html#options" class="tsd-kind-icon">options</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.commanditem.html#platforms" class="tsd-kind-icon">platforms</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.commanditem.html#script" class="tsd-kind-icon">script</a>
+								<a href="_contracts_.appstoreappsource.html#url" class="tsd-kind-icon">url</a>
 							</li>
 						</ul>
 					</li>
