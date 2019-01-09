@@ -112,6 +112,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_workspaces_apps_.workspaceappwebview.html#_intervals" class="tsd-kind-icon">_INTERVALS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_workspaces_apps_.workspaceappwebview.html#_queue" class="tsd-kind-icon">_QUEUE</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_workspaces_apps_.workspaceappwebview.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_workspaces_apps_.workspaceappwebview.html#button" class="tsd-kind-icon">button</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_workspaces_apps_.workspaceappwebview.html#extension" class="tsd-kind-icon">extension</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_workspaces_apps_.workspaceappwebview.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_workspaces_apps_.workspaceappwebview.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a></li>
@@ -192,14 +193,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Workspace<wbr>App<wbr>Web<wbr>View<span class="tsd-signature-symbol">(</span>workspace<span class="tsd-signature-symbol">: </span><a href="_workspace_.workspace.html" class="tsd-signature-type">Workspace</a>, item<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.appitem.html" class="tsd-signature-type">AppItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_workspaces_apps_.workspaceappwebview.html" class="tsd-signature-type">WorkspaceAppWebView</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Workspace<wbr>App<wbr>Web<wbr>View<span class="tsd-signature-symbol">(</span>workspace<span class="tsd-signature-symbol">: </span><a href="_workspace_.workspace.html" class="tsd-signature-type">Workspace</a>, item<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.appitem.html" class="tsd-signature-type">AppItem</a>, button<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">vscode.StatusBarItem</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_workspaces_apps_.workspaceappwebview.html" class="tsd-signature-type">WorkspaceAppWebView</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_webview_.webviewwithcontextbase.html">WebViewWithContextBase</a>.<a href="_webview_.webviewwithcontextbase.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in workspaces/apps.ts:38</li>
+									<li>Defined in workspaces/apps.ts:39</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -224,6 +225,9 @@
 											<p>The item from the settings.</p>
 										</div>
 									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> button: <span class="tsd-signature-type">vscode.StatusBarItem</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_workspaces_apps_.workspaceappwebview.html" class="tsd-signature-type">WorkspaceAppWebView</a></h4>
@@ -297,6 +301,16 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="button" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> button</h3>
+					<div class="tsd-signature tsd-kind-icon">button<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.StatusBarItem</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in workspaces/apps.ts:51</li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="extension" class="tsd-anchor"></a>
 					<h3>extension</h3>
@@ -367,7 +381,7 @@
 					<div class="tsd-signature tsd-kind-icon">item<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_contracts_.appitem.html" class="tsd-signature-type">AppItem</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces/apps.ts:48</li>
+							<li>Defined in workspaces/apps.ts:50</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -383,7 +397,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#module">module</a></p>
 						<ul>
-							<li>Defined in workspaces/apps.ts:195</li>
+							<li>Defined in workspaces/apps.ts:199</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -400,7 +414,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#scriptfile">scriptFile</a></p>
 						<ul>
-							<li>Defined in workspaces/apps.ts:200</li>
+							<li>Defined in workspaces/apps.ts:204</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -416,7 +430,7 @@
 					<div class="tsd-signature tsd-kind-icon">workspace<span class="tsd-signature-symbol">:</span> <a href="_workspace_.workspace.html" class="tsd-signature-type">Workspace</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces/apps.ts:47</li>
+							<li>Defined in workspaces/apps.ts:49</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -640,7 +654,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#createscriptarguments">createScriptArguments</a></p>
 								<ul>
-									<li>Defined in workspaces/apps.ts:73</li>
+									<li>Defined in workspaces/apps.ts:76</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1088,7 +1102,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_apps_.appwebviewbase.html">AppWebViewBase</a>.<a href="_apps_.appwebviewbase.html#getresourceuris">getResourceUris</a></p>
 								<ul>
-									<li>Defined in workspaces/apps.ts:178</li>
+									<li>Defined in workspaces/apps.ts:182</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2034,6 +2048,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_workspaces_apps_.workspaceappwebview.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_workspaces_apps_.workspaceappwebview.html#button" class="tsd-kind-icon">button</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_workspaces_apps_.workspaceappwebview.html#extension" class="tsd-kind-icon">extension</a>
 							</li>
@@ -2217,6 +2234,9 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="../modules/_workspaces_apps_.html#key_apps" class="tsd-kind-icon">KEY_<wbr>APPS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_apps_.html#nextappbuttoncommandid" class="tsd-kind-icon">next<wbr>App<wbr>Button<wbr>Command<wbr>Id</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_workspaces_apps_.html#disposeapps" class="tsd-kind-icon">dispose<wbr>Apps</a>
