@@ -1,6 +1,12 @@
 {
     "name": "e.GO Digital App Store",
     "apps": [{
+        "name": "data-url-converter",
+        "displayName": "Data URL Converter",
+        "description": "Converts from and to data URLs.",
+        "source": "https://egodigital.github.io/vscode-powertools/apps/data-url-converter.ego-app",
+        "icon": "https://egodigital.github.io/vscode-powertools/apps/data-url-converter.png"
+    }, {
         "name": "password-generator",
         "displayName": "Password Generator",
         "description": "Generates strong passwords.",
