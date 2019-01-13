@@ -112,6 +112,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.appeventscriptarguments.html#extension" class="tsd-kind-icon">extension</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.appeventscriptarguments.html#getallworkspaces" class="tsd-kind-icon">get<wbr>All<wbr>Workspaces</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.appeventscriptarguments.html#getfileresourceuri" class="tsd-kind-icon">get<wbr>File<wbr>Resource<wbr>Uri</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.appeventscriptarguments.html#globalstore" class="tsd-kind-icon">global<wbr>Store</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.appeventscriptarguments.html#logger" class="tsd-kind-icon">logger</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.appeventscriptarguments.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.appeventscriptarguments.html#output" class="tsd-kind-icon">output</a></li>
@@ -123,6 +124,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.appeventscriptarguments.html#replacevalues" class="tsd-kind-icon">replace<wbr>Values</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.appeventscriptarguments.html#require" class="tsd-kind-icon">require</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.appeventscriptarguments.html#stat" class="tsd-kind-icon">stat</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.appeventscriptarguments.html#store" class="tsd-kind-icon">store</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.appeventscriptarguments.html#tempfile" class="tsd-kind-icon">temp<wbr>File</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.appeventscriptarguments.html#todatapath" class="tsd-kind-icon">to<wbr>Data<wbr>Path</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.appeventscriptarguments.html#workspaces" class="tsd-kind-icon">workspaces</a></li>
@@ -362,13 +364,29 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="globalstore" class="tsd-anchor"></a>
+					<h3>global<wbr>Store</h3>
+					<div class="tsd-signature tsd-kind-icon">global<wbr>Store<span class="tsd-signature-symbol">:</span> <a href="_contracts_.store.html" class="tsd-signature-type">Store</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globalstore">globalStore</a></p>
+						<ul>
+							<li>Defined in contracts.ts:810</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The global store.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="logger" class="tsd-anchor"></a>
 					<h3>logger</h3>
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Logger</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#logger">logger</a></p>
 						<ul>
-							<li>Defined in contracts.ts:800</li>
+							<li>Defined in contracts.ts:814</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -384,7 +402,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#options">options</a></p>
 						<ul>
-							<li>Defined in contracts.ts:804</li>
+							<li>Defined in contracts.ts:818</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -400,7 +418,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#output">output</a></p>
 						<ul>
-							<li>Defined in contracts.ts:808</li>
+							<li>Defined in contracts.ts:822</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -651,7 +669,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#replacevalues">replaceValues</a></p>
 						<ul>
-							<li>Defined in contracts.ts:816</li>
+							<li>Defined in contracts.ts:830</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -696,7 +714,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#require">require</a></p>
 						<ul>
-							<li>Defined in contracts.ts:824</li>
+							<li>Defined in contracts.ts:838</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -785,6 +803,22 @@
 								</ul>
 							</li>
 						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="store" class="tsd-anchor"></a>
+					<h3>store</h3>
+					<div class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">:</span> <a href="_contracts_.store.html" class="tsd-signature-type">Store</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#store">store</a></p>
+						<ul>
+							<li>Defined in contracts.ts:842</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The user store for the underlying script.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -936,80 +970,8 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_apps_.html">"apps"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_apps_store_.html">"apps/store"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_code_.html">"code"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_commands_.html">"commands"</a>
-					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_contracts_.html">"contracts"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_extension_.html">"extension"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_help_.html">"help"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_helpers_.html">"helpers"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_log_.html">"log"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_markdown_.html">"markdown"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_resources_.html">"resources"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_scripts_.html">"scripts"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_settings_global_.html">"settings/global"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_test_extension_test_.html">"test/extension.test"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_test_index_.html">"test/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_values_.html">"values"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_versions_.html">"versions"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_webview_.html">"webview"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_workspace_.html">"workspace"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_workspaces_apps_.html">"workspaces/apps"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_workspaces_buttons_.html">"workspaces/buttons"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_workspaces_commands_.html">"workspaces/commands"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_workspaces_events_.html">"workspaces/events"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_workspaces_jobs_.html">"workspaces/jobs"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_workspaces_startup_.html">"workspaces/startup"</a>
 					</li>
 				</ul>
 			</nav>
@@ -1045,6 +1007,9 @@
 								<a href="_contracts_.appeventscriptarguments.html#getfileresourceuri" class="tsd-kind-icon">get<wbr>File<wbr>Resource<wbr>Uri</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.appeventscriptarguments.html#globalstore" class="tsd-kind-icon">global<wbr>Store</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_contracts_.appeventscriptarguments.html#logger" class="tsd-kind-icon">logger</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -1076,6 +1041,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.appeventscriptarguments.html#stat" class="tsd-kind-icon">stat</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.appeventscriptarguments.html#store" class="tsd-kind-icon">store</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.appeventscriptarguments.html#tempfile" class="tsd-kind-icon">temp<wbr>File</a>
