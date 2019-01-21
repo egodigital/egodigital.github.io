@@ -87,6 +87,9 @@
 					</li>
 					<li>
 						<a href="_contracts_.forplatforms.html" class="tsd-signature-type">ForPlatforms</a>
+					</li>
+					<li>
+						<a href="_contracts_.withcreationevents.html" class="tsd-signature-type">WithCreationEvents</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">EventItem</span>
@@ -110,6 +113,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.eventitem.html#action" class="tsd-kind-icon">action</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.eventitem.html#if" class="tsd-kind-icon">if</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.eventitem.html#importvalues" class="tsd-kind-icon">import<wbr>Values</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.eventitem.html#oncreated" class="tsd-kind-icon">on<wbr>Created</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.eventitem.html#ondestroyed" class="tsd-kind-icon">on<wbr>Destroyed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.eventitem.html#platforms" class="tsd-kind-icon">platforms</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.eventitem.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
@@ -175,13 +180,45 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="oncreated" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Created</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Created<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.withcreationevents.html">WithCreationEvents</a>.<a href="_contracts_.withcreationevents.html#oncreated">onCreated</a></p>
+						<ul>
+							<li>Defined in contracts.ts:1107</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The (JavaScript) code to executed after object has been created.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="ondestroyed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Destroyed</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Destroyed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.withcreationevents.html">WithCreationEvents</a>.<a href="_contracts_.withcreationevents.html#ondestroyed">onDestroyed</a></p>
+						<ul>
+							<li>Defined in contracts.ts:1111</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The (JavaScript) code to executed after object has been destroyed.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="platforms" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> platforms</h3>
 					<div class="tsd-signature tsd-kind-icon">platforms<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.forplatforms.html">ForPlatforms</a>.<a href="_contracts_.forplatforms.html#platforms">platforms</a></p>
 						<ul>
-							<li>Defined in contracts.ts:698</li>
+							<li>Defined in contracts.ts:702</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -233,6 +270,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_contracts_.eventitem.html#importvalues" class="tsd-kind-icon">import<wbr>Values</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.eventitem.html#oncreated" class="tsd-kind-icon">on<wbr>Created</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.eventitem.html#ondestroyed" class="tsd-kind-icon">on<wbr>Destroyed</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_contracts_.eventitem.html#platforms" class="tsd-kind-icon">platforms</a>

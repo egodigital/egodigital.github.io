@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FileValueItem | vscode-powertools</title>
+	<title>WithCreationEvents | vscode-powertools</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.filevalueitem.html">FileValueItem</a>
+					<a href="_contracts_.withcreationevents.html">WithCreationEvents</a>
 				</li>
 			</ul>
-			<h1>Interface FileValueItem</h1>
+			<h1>Interface WithCreationEvents</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A file value item.</p>
+						<p>An object, which can execute optional (JavaScript) code after it has been created and/ore destroyed.</p>
 					</div>
 				</div>
 			</section>
@@ -80,10 +80,22 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_contracts_.valueitem.html" class="tsd-signature-type">ValueItem</a>
+						<span class="target">WithCreationEvents</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">FileValueItem</span>
+								<a href="_contracts_.appitem.html" class="tsd-signature-type">AppItem</a>
+							</li>
+							<li>
+								<a href="_contracts_.buttonitem.html" class="tsd-signature-type">ButtonItem</a>
+							</li>
+							<li>
+								<a href="_contracts_.commanditem.html" class="tsd-signature-type">CommandItem</a>
+							</li>
+							<li>
+								<a href="_contracts_.eventitem.html" class="tsd-signature-type">EventItem</a>
+							</li>
+							<li>
+								<a href="_contracts_.jobitem.html" class="tsd-signature-type">JobItem</a>
 							</li>
 						</ul>
 					</li>
@@ -96,11 +108,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.filevalueitem.html#file" class="tsd-kind-icon">file</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.filevalueitem.html#format" class="tsd-kind-icon">format</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.filevalueitem.html#if" class="tsd-kind-icon">if</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.filevalueitem.html#platforms" class="tsd-kind-icon">platforms</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.filevalueitem.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.withcreationevents.html#oncreated" class="tsd-kind-icon">on<wbr>Created</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.withcreationevents.html#ondestroyed" class="tsd-kind-icon">on<wbr>Destroyed</a></li>
 							</ul>
 						</section>
 					</div>
@@ -109,80 +118,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="file" class="tsd-anchor"></a>
-					<h3>file</h3>
-					<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<a name="oncreated" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Created</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Created<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:688</li>
+							<li>Defined in contracts.ts:1107</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The path to the file that should be loaded.</p>
+							<p>The (JavaScript) code to executed after object has been created.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="format" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> format</h3>
-					<div class="tsd-signature tsd-kind-icon">format<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="ondestroyed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Destroyed</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Destroyed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:692</li>
+							<li>Defined in contracts.ts:1111</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The target (data) format to use.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="if" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> if</h3>
-					<div class="tsd-signature tsd-kind-icon">if<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.conditional.html">Conditional</a>.<a href="_contracts_.conditional.html#if">if</a></p>
-						<ul>
-							<li>Defined in contracts.ts:532</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The JavaScript code that checks the avaibility.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="platforms" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> platforms</h3>
-					<div class="tsd-signature tsd-kind-icon">platforms<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.forplatforms.html">ForPlatforms</a>.<a href="_contracts_.forplatforms.html#platforms">platforms</a></p>
-						<ul>
-							<li>Defined in contracts.ts:702</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>One or more platform names, the object is for.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="type" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.valueitem.html">ValueItem</a>.<a href="_contracts_.valueitem.html#type">type</a></p>
-						<ul>
-							<li>Defined in contracts.ts:1051</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The value type.</p>
+							<p>The (JavaScript) code to executed after object has been destroyed.</p>
 						</div>
 					</div>
 				</section>
@@ -204,22 +165,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.filevalueitem.html" class="tsd-kind-icon">File<wbr>Value<wbr>Item</a>
+						<a href="_contracts_.withcreationevents.html" class="tsd-kind-icon">With<wbr>Creation<wbr>Events</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.filevalueitem.html#file" class="tsd-kind-icon">file</a>
+								<a href="_contracts_.withcreationevents.html#oncreated" class="tsd-kind-icon">on<wbr>Created</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.filevalueitem.html#format" class="tsd-kind-icon">format</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.filevalueitem.html#if" class="tsd-kind-icon">if</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.filevalueitem.html#platforms" class="tsd-kind-icon">platforms</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.filevalueitem.html#type" class="tsd-kind-icon">type</a>
+								<a href="_contracts_.withcreationevents.html#ondestroyed" class="tsd-kind-icon">on<wbr>Destroyed</a>
 							</li>
 						</ul>
 					</li>
