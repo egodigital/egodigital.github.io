@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>JobItemScriptAction | vscode-powertools</title>
+	<title>GlobalExtensionSettings | vscode-powertools</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.jobitemscriptaction.html">JobItemScriptAction</a>
+					<a href="_contracts_.globalextensionsettings.html">GlobalExtensionSettings</a>
 				</li>
 			</ul>
-			<h1>Interface JobItemScriptAction</h1>
+			<h1>Interface GlobalExtensionSettings</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A job item action running a script.</p>
+						<p>Global extension settings.</p>
 					</div>
 				</div>
 			</section>
@@ -80,13 +80,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_contracts_.jobitemaction.html" class="tsd-signature-type">JobItemAction</a>
-					</li>
-					<li>
-						<a href="_contracts_.withscript.html" class="tsd-signature-type">WithScript</a>
+						<a href="_contracts_.withvalues.html" class="tsd-signature-type">WithValues</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">JobItemScriptAction</span>
+								<span class="target">GlobalExtensionSettings</span>
 							</li>
 						</ul>
 					</li>
@@ -96,65 +93,111 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.jobitemscriptaction.html#options" class="tsd-kind-icon">options</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.jobitemscriptaction.html#script" class="tsd-kind-icon">script</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.jobitemscriptaction.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.globalextensionsettings.html#buttons" class="tsd-kind-icon">buttons</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.globalextensionsettings.html#commands" class="tsd-kind-icon">commands</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.globalextensionsettings.html#globals" class="tsd-kind-icon">globals</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.globalextensionsettings.html#jobs" class="tsd-kind-icon">jobs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.globalextensionsettings.html#values" class="tsd-kind-icon">values</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="options" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="buttons" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> buttons</h3>
+					<div class="tsd-signature tsd-kind-icon">buttons<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#buttonentry" class="tsd-signature-type">ButtonEntry</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.withscript.html">WithScript</a>.<a href="_contracts_.withscript.html#options">options</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1241</li>
+							<li>Defined in contracts.ts:770</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Options for running the script.</p>
+							<p>One or more buttons to register.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="commands" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> commands</h3>
+					<div class="tsd-signature tsd-kind-icon">commands<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:774</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more commands to register.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>id: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="../modules/_contracts_.html#commandentry" class="tsd-signature-type">CommandEntry</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="globals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> globals</h3>
+					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:778</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Global data.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="jobs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> jobs</h3>
+					<div class="tsd-signature tsd-kind-icon">jobs<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#jobentry" class="tsd-signature-type">JobEntry</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:782</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more jobs to run.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="script" class="tsd-anchor"></a>
-					<h3>script</h3>
-					<div class="tsd-signature tsd-kind-icon">script<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="values" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> values</h3>
+					<div class="tsd-signature tsd-kind-icon">values<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.withscript.html">WithScript</a>.<a href="_contracts_.withscript.html#script">script</a></p>
+						<p>Inherited from <a href="_contracts_.withvalues.html">WithValues</a>.<a href="_contracts_.withvalues.html#values">values</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1245</li>
+							<li>Defined in contracts.ts:1277</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The path to the script to invoke.</p>
+							<p>One or more values.</p>
 						</div>
 					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="type" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.jobitemaction.html">JobItemAction</a>.<a href="_contracts_.jobitemaction.html#type">type</a></p>
-						<ul>
-							<li>Defined in contracts.ts:883</li>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>name: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="../modules/_contracts_.html#valueentry" class="tsd-signature-type">ValueEntry</a></h5>
+							</li>
 						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The type.</p>
-						</div>
 					</div>
 				</section>
 			</section>
@@ -175,16 +218,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.jobitemscriptaction.html" class="tsd-kind-icon">Job<wbr>Item<wbr>Script<wbr>Action</a>
+						<a href="_contracts_.globalextensionsettings.html" class="tsd-kind-icon">Global<wbr>Extension<wbr>Settings</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.jobitemscriptaction.html#options" class="tsd-kind-icon">options</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.globalextensionsettings.html#buttons" class="tsd-kind-icon">buttons</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.globalextensionsettings.html#commands" class="tsd-kind-icon">commands</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.globalextensionsettings.html#globals" class="tsd-kind-icon">globals</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.globalextensionsettings.html#jobs" class="tsd-kind-icon">jobs</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.jobitemscriptaction.html#script" class="tsd-kind-icon">script</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.jobitemscriptaction.html#type" class="tsd-kind-icon">type</a>
+								<a href="_contracts_.globalextensionsettings.html#values" class="tsd-kind-icon">values</a>
 							</li>
 						</ul>
 					</li>
