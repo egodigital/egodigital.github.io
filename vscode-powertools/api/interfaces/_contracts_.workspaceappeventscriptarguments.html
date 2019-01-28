@@ -115,6 +115,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.workspaceappeventscriptarguments.html#extension" class="tsd-kind-icon">extension</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.workspaceappeventscriptarguments.html#getallworkspaces" class="tsd-kind-icon">get<wbr>All<wbr>Workspaces</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.workspaceappeventscriptarguments.html#getfileresourceuri" class="tsd-kind-icon">get<wbr>File<wbr>Resource<wbr>Uri</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="_contracts_.workspaceappeventscriptarguments.html#globalstate" class="tsd-kind-icon">global<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="_contracts_.workspaceappeventscriptarguments.html#globalstore" class="tsd-kind-icon">global<wbr>Store</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="_contracts_.workspaceappeventscriptarguments.html#globals" class="tsd-kind-icon">globals</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="_contracts_.workspaceappeventscriptarguments.html#logger" class="tsd-kind-icon">logger</a></li>
@@ -128,6 +129,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="_contracts_.workspaceappeventscriptarguments.html#replacevalues" class="tsd-kind-icon">replace<wbr>Values</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="_contracts_.workspaceappeventscriptarguments.html#require" class="tsd-kind-icon">require</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.workspaceappeventscriptarguments.html#stat" class="tsd-kind-icon">stat</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="_contracts_.workspaceappeventscriptarguments.html#state" class="tsd-kind-icon">state</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="_contracts_.workspaceappeventscriptarguments.html#store" class="tsd-kind-icon">store</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.workspaceappeventscriptarguments.html#tempfile" class="tsd-kind-icon">temp<wbr>File</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.workspaceappeventscriptarguments.html#todatapath" class="tsd-kind-icon">to<wbr>Data<wbr>Path</a></li>
@@ -376,6 +378,23 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
+					<a name="globalstate" class="tsd-anchor"></a>
+					<h3>global<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">global<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#keyvaluepairs" class="tsd-signature-type">KeyValuePairs</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globalstate">globalState</a></p>
+						<p>Overrides <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globalstate">globalState</a></p>
+						<ul>
+							<li>Defined in contracts.ts:1001</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the global state object.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 					<a name="globalstore" class="tsd-anchor"></a>
 					<h3>global<wbr>Store</h3>
 					<div class="tsd-signature tsd-kind-icon">global<wbr>Store<span class="tsd-signature-symbol">:</span> <a href="_contracts_.store.html" class="tsd-signature-type">Store</a></div>
@@ -383,7 +402,7 @@
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globalstore">globalStore</a></p>
 						<p>Overrides <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globalstore">globalStore</a></p>
 						<ul>
-							<li>Defined in contracts.ts:957</li>
+							<li>Defined in contracts.ts:1005</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -399,7 +418,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globals">globals</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1319</li>
+							<li>Defined in contracts.ts:1383</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -417,7 +436,7 @@
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#logger">logger</a></p>
 						<p>Overrides <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#logger">logger</a></p>
 						<ul>
-							<li>Defined in contracts.ts:961</li>
+							<li>Defined in contracts.ts:1009</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -434,7 +453,7 @@
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#options">options</a></p>
 						<p>Overrides <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#options">options</a></p>
 						<ul>
-							<li>Defined in contracts.ts:965</li>
+							<li>Defined in contracts.ts:1013</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -451,7 +470,7 @@
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#output">output</a></p>
 						<p>Overrides <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#output">output</a></p>
 						<ul>
-							<li>Defined in contracts.ts:969</li>
+							<li>Defined in contracts.ts:1017</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -708,7 +727,7 @@
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#replacevalues">replaceValues</a></p>
 						<p>Overrides <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#replacevalues">replaceValues</a></p>
 						<ul>
-							<li>Defined in contracts.ts:977</li>
+							<li>Defined in contracts.ts:1025</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -754,7 +773,7 @@
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#require">require</a></p>
 						<p>Overrides <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#require">require</a></p>
 						<ul>
-							<li>Defined in contracts.ts:985</li>
+							<li>Defined in contracts.ts:1033</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -847,6 +866,23 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
+					<a name="state" class="tsd-anchor"></a>
+					<h3>state</h3>
+					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#state">state</a></p>
+						<p>Overrides <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#state">state</a></p>
+						<ul>
+							<li>Defined in contracts.ts:1037</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Provides a property to save data permanently while the current (extension) session.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 					<a name="store" class="tsd-anchor"></a>
 					<h3>store</h3>
 					<div class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">:</span> <a href="_contracts_.store.html" class="tsd-signature-type">Store</a></div>
@@ -854,7 +890,7 @@
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#store">store</a></p>
 						<p>Overrides <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#store">store</a></p>
 						<ul>
-							<li>Defined in contracts.ts:989</li>
+							<li>Defined in contracts.ts:1041</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1053,6 +1089,9 @@
 								<a href="_contracts_.workspaceappeventscriptarguments.html#getfileresourceuri" class="tsd-kind-icon">get<wbr>File<wbr>Resource<wbr>Uri</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
+								<a href="_contracts_.workspaceappeventscriptarguments.html#globalstate" class="tsd-kind-icon">global<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 								<a href="_contracts_.workspaceappeventscriptarguments.html#globalstore" class="tsd-kind-icon">global<wbr>Store</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
@@ -1090,6 +1129,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_contracts_.workspaceappeventscriptarguments.html#stat" class="tsd-kind-icon">stat</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
+								<a href="_contracts_.workspaceappeventscriptarguments.html#state" class="tsd-kind-icon">state</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 								<a href="_contracts_.workspaceappeventscriptarguments.html#store" class="tsd-kind-icon">store</a>
