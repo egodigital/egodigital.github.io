@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WebViewBase | vscode-powertools</title>
+	<title>CsvTableWebView | vscode-powertools</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_webview_.html">&quot;webview&quot;</a>
+					<a href="../modules/_data_.html">&quot;data&quot;</a>
 				</li>
 				<li>
-					<a href="_webview_.webviewbase.html">WebViewBase</a>
+					<a href="_data_.csvtablewebview.html">CsvTableWebView</a>
 				</li>
 			</ul>
-			<h1>Class WebViewBase</h1>
+			<h1>Class CsvTableWebView</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A basic web view.</p>
+						<p>A web view that displays CSV data.</p>
 					</div>
 				</div>
 			</section>
@@ -80,24 +80,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">DisposableBase</span>
+						<a href="_webview_.webviewbase.html" class="tsd-signature-type">WebViewBase</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">WebViewBase</span>
-								<ul class="tsd-hierarchy">
-									<li>
-										<a href="_webview_.webviewwithcontextbase.html" class="tsd-signature-type">WebViewWithContextBase</a>
-									</li>
-									<li>
-										<a href="_data_.csvtablewebview.html" class="tsd-signature-type">CsvTableWebView</a>
-									</li>
-									<li>
-										<a href="_markdown_.markdownwebview.html" class="tsd-signature-type">MarkdownWebView</a>
-									</li>
-									<li>
-										<a href="_http_.httpresponsewebview.html" class="tsd-signature-type">HttpResponseWebView</a>
-									</li>
-								</ul>
+								<span class="target">CsvTableWebView</span>
 							</li>
 						</ul>
 					</li>
@@ -114,68 +100,116 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_webview_.webviewbase.html#_disposables" class="tsd-kind-icon">_DISPOSABLES</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_webview_.webviewbase.html#_intervals" class="tsd-kind-icon">_INTERVALS</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#_queue" class="tsd-kind-icon">_QUEUE</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_webview_.webviewbase.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_webview_.webviewbase.html#_panel" class="tsd-kind-icon">_panel</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_webview_.webviewbase.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_webview_.webviewbase.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_webview_.webviewbase.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_webview_.webviewbase.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_data_.csvtablewebview.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#_disposables" class="tsd-kind-icon">_DISPOSABLES</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#_intervals" class="tsd-kind-icon">_INTERVALS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#_queue" class="tsd-kind-icon">_QUEUE</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_data_.csvtablewebview.html#csv" class="tsd-kind-icon">csv</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_data_.csvtablewebview.html#htmlcontent" class="tsd-kind-icon">html<wbr>Content</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_data_.csvtablewebview.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_data_.csvtablewebview.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_data_.csvtablewebview.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_data_.csvtablewebview.html#parseroptions" class="tsd-kind-icon">parser<wbr>Options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_data_.csvtablewebview.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_webview_.webviewbase.html#panel" class="tsd-kind-icon">panel</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_webview_.webviewbase.html#view" class="tsd-kind-icon">view</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_data_.csvtablewebview.html#panel" class="tsd-kind-icon">panel</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_data_.csvtablewebview.html#view" class="tsd-kind-icon">view</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_webview_.webviewbase.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_webview_.webviewbase.html#cleanupintervals" class="tsd-kind-icon">cleanup<wbr>Intervals</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_webview_.webviewbase.html#cleanuptimeouts" class="tsd-kind-icon">cleanup<wbr>Timeouts</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_webview_.webviewbase.html#close" class="tsd-kind-icon">close</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_webview_.webviewbase.html#dispose" class="tsd-kind-icon">dispose</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_webview_.webviewbase.html#emit" class="tsd-kind-icon">emit</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_webview_.webviewbase.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#generatehtml" class="tsd-kind-icon">generate<wbr>Html</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#generatehtmlbody" class="tsd-kind-icon">generate<wbr>Html<wbr>Body</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#generatehtmlfooter" class="tsd-kind-icon">generate<wbr>Html<wbr>Footer</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#generatehtmlheader" class="tsd-kind-icon">generate<wbr>Html<wbr>Header</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#getfileresourceuri" class="tsd-kind-icon">get<wbr>File<wbr>Resource<wbr>Uri</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_webview_.webviewbase.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#getoptions" class="tsd-kind-icon">get<wbr>Options</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#getresourceuris" class="tsd-kind-icon">get<wbr>Resource<wbr>Uris</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#gettitle" class="tsd-kind-icon">get<wbr>Title</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#gettype" class="tsd-kind-icon">get<wbr>Type</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#getviewcolumns" class="tsd-kind-icon">get<wbr>View<wbr>Columns</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_webview_.webviewbase.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_webview_.webviewbase.html#listeners" class="tsd-kind-icon">listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_webview_.webviewbase.html#on" class="tsd-kind-icon">on</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="_webview_.webviewbase.html#ondispose" class="tsd-kind-icon">on<wbr>Dispose</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#onloaded" class="tsd-kind-icon">on<wbr>Loaded</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#onlog" class="tsd-kind-icon">on<wbr>Log</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#onwebviewdisposed" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Disposed</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#onwebviewmessage" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Message</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_webview_.webviewbase.html#onwebviewvisibilitychanged" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Visibility<wbr>Changed</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_webview_.webviewbase.html#once" class="tsd-kind-icon">once</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_webview_.webviewbase.html#open" class="tsd-kind-icon">open</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="_webview_.webviewbase.html#postmessage" class="tsd-kind-icon">post<wbr>Message</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_webview_.webviewbase.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_webview_.webviewbase.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_webview_.webviewbase.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_webview_.webviewbase.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_webview_.webviewbase.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_webview_.webviewbase.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_data_.csvtablewebview.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#cleanupintervals" class="tsd-kind-icon">cleanup<wbr>Intervals</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#cleanuptimeouts" class="tsd-kind-icon">cleanup<wbr>Timeouts</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_data_.csvtablewebview.html#close" class="tsd-kind-icon">close</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_data_.csvtablewebview.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_data_.csvtablewebview.html#emit" class="tsd-kind-icon">emit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_data_.csvtablewebview.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#generatehtml" class="tsd-kind-icon">generate<wbr>Html</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="_data_.csvtablewebview.html#generatehtmlbody" class="tsd-kind-icon">generate<wbr>Html<wbr>Body</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#generatehtmlfooter" class="tsd-kind-icon">generate<wbr>Html<wbr>Footer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#generatehtmlheader" class="tsd-kind-icon">generate<wbr>Html<wbr>Header</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#getfileresourceuri" class="tsd-kind-icon">get<wbr>File<wbr>Resource<wbr>Uri</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_data_.csvtablewebview.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#getoptions" class="tsd-kind-icon">get<wbr>Options</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#getresourceuris" class="tsd-kind-icon">get<wbr>Resource<wbr>Uris</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="_data_.csvtablewebview.html#gettitle" class="tsd-kind-icon">get<wbr>Title</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="_data_.csvtablewebview.html#gettype" class="tsd-kind-icon">get<wbr>Type</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#getviewcolumns" class="tsd-kind-icon">get<wbr>View<wbr>Columns</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_data_.csvtablewebview.html#initialize" class="tsd-kind-icon">initialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_data_.csvtablewebview.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_data_.csvtablewebview.html#listeners" class="tsd-kind-icon">listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_data_.csvtablewebview.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#ondispose" class="tsd-kind-icon">on<wbr>Dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#onloaded" class="tsd-kind-icon">on<wbr>Loaded</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#onlog" class="tsd-kind-icon">on<wbr>Log</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#onwebviewdisposed" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Disposed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#onwebviewmessage" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_data_.csvtablewebview.html#onwebviewvisibilitychanged" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Visibility<wbr>Changed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_data_.csvtablewebview.html#once" class="tsd-kind-icon">once</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_data_.csvtablewebview.html#open" class="tsd-kind-icon">open</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_data_.csvtablewebview.html#postmessage" class="tsd-kind-icon">post<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_data_.csvtablewebview.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_data_.csvtablewebview.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_data_.csvtablewebview.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_data_.csvtablewebview.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_data_.csvtablewebview.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_data_.csvtablewebview.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a></li>
 							</ul>
 						</section>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Csv<wbr>Table<wbr>Web<wbr>View<span class="tsd-signature-symbol">(</span>csv<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, parserOptions<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">csvParse.Options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_data_.csvtablewebview.html" class="tsd-signature-type">CsvTableWebView</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in data.ts:28</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initializes a new instance of that class.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>csv: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The CSV data.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> parserOptions: <span class="tsd-signature-type">csvParse.Options</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_data_.csvtablewebview.html" class="tsd-signature-type">CsvTableWebView</a></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -212,11 +246,12 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="_queue" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _QUEUE</h3>
 					<div class="tsd-signature tsd-kind-icon">_QUEUE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PQueue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DefaultAddOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;ego_helpers.createQueue()</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#_queue">_QUEUE</a></p>
 						<ul>
 							<li>Defined in webview.ts:37</li>
 						</ul>
@@ -243,15 +278,35 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_panel" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _panel</h3>
-					<div class="tsd-signature tsd-kind-icon">_panel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.WebviewPanel</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="csv" class="tsd-anchor"></a>
+					<h3>csv</h3>
+					<div class="tsd-signature tsd-kind-icon">csv<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in webview.ts:33</li>
+							<li>Defined in data.ts:36</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The CSV data.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="htmlcontent" class="tsd-anchor"></a>
+					<h3>html<wbr>Content</h3>
+					<div class="tsd-signature tsd-kind-icon">html<wbr>Content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in data.ts:72</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The HTML code, that should be shown in the web view.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="isdisposed" class="tsd-anchor"></a>
@@ -301,6 +356,16 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="parseroptions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> parser<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">parser<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">csvParse.Options</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in data.ts:37</li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 					<a name="defaultmaxlisteners" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> default<wbr>Max<wbr>Listeners</h3>
@@ -313,17 +378,18 @@
 					</aside>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="panel" class="tsd-anchor"></a>
 					<h3>panel</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> panel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.WebviewPanel</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#panel">panel</a></p>
 								<ul>
 									<li>Defined in webview.ts:496</li>
 								</ul>
@@ -337,15 +403,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="view" class="tsd-anchor"></a>
 					<h3>view</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> view<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.Webview</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#view">view</a></p>
 								<ul>
 									<li>Defined in webview.ts:532</li>
 								</ul>
@@ -454,15 +521,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="close" class="tsd-anchor"></a>
 					<h3>close</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">close<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#close">close</a></p>
 								<ul>
 									<li>Defined in webview.ts:45</li>
 								</ul>
@@ -548,15 +616,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="generatehtml" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> generate<wbr>Html</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">generate<wbr>Html<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#generatehtml">generateHtml</a></p>
 								<ul>
 									<li>Defined in webview.ts:65</li>
 								</ul>
@@ -571,38 +640,40 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 					<a name="generatehtmlbody" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagAbstract">Abstract</span> generate<wbr>Html<wbr>Body</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> generate<wbr>Html<wbr>Body</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">generate<wbr>Html<wbr>Body<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#generatehtmlbody">generateHtmlBody</a></p>
 								<ul>
-									<li>Defined in webview.ts:78</li>
+									<li>Defined in data.ts:51</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Generate the HTML header for the view.</p>
-								</div>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>The HTML.</p>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="generatehtmlfooter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> generate<wbr>Html<wbr>Footer</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">generate<wbr>Html<wbr>Footer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#generatehtmlfooter">generateHtmlFooter</a></p>
 								<ul>
 									<li>Defined in webview.ts:85</li>
 								</ul>
@@ -617,15 +688,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="generatehtmlheader" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> generate<wbr>Html<wbr>Header</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">generate<wbr>Html<wbr>Header<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#generatehtmlheader">generateHtmlHeader</a></p>
 								<ul>
 									<li>Defined in webview.ts:115</li>
 								</ul>
@@ -640,15 +712,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="getfileresourceuri" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>File<wbr>Resource<wbr>Uri</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>File<wbr>Resource<wbr>Uri<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.Uri</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#getfileresourceuri">getFileResourceUri</a></p>
 								<ul>
 									<li>Defined in webview.ts:214</li>
 								</ul>
@@ -691,15 +764,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="getoptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Options</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Options<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ego_contracts.WebViewWithPanelOptions</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#getoptions">getOptions</a></p>
 								<ul>
 									<li>Defined in webview.ts:243</li>
 								</ul>
@@ -714,15 +788,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="getresourceuris" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Resource<wbr>Uris</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Resource<wbr>Uris<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.Uri</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#getresourceuris">getResourceUris</a></p>
 								<ul>
 									<li>Defined in webview.ts:258</li>
 								</ul>
@@ -737,61 +812,64 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 					<a name="gettitle" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagAbstract">Abstract</span> get<wbr>Title</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Title</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Title<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#gettitle">getTitle</a></p>
 								<ul>
-									<li>Defined in webview.ts:276</li>
+									<li>Defined in data.ts:58</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the title for the web view.</p>
-								</div>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>The title.</p>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 					<a name="gettype" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagAbstract">Abstract</span> get<wbr>Type</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Type</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#gettype">getType</a></p>
 								<ul>
-									<li>Defined in webview.ts:283</li>
+									<li>Defined in data.ts:65</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the type of the web view.</p>
-								</div>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>The type.</p>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="getviewcolumns" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>View<wbr>Columns</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>View<wbr>Columns<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ego_contracts.ViewColumnSettings</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#getviewcolumns">getViewColumns</a></p>
 								<ul>
 									<li>Defined in webview.ts:290</li>
 								</ul>
@@ -803,6 +881,28 @@
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ego_contracts.ViewColumnSettings</span></h4>
 							<p>The settings.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="initialize" class="tsd-anchor"></a>
+					<h3>initialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">initialize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in data.ts:77</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initializes the web view.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -902,15 +1002,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
 					<a name="ondispose" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Dispose</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>Dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#ondispose">onDispose</a></p>
 								<p>Overrides DisposableBase.onDispose</p>
 								<ul>
 									<li>Defined in webview.ts:441</li>
@@ -926,15 +1027,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="onloaded" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Loaded</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>Loaded<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#onloaded">onLoaded</a></p>
 								<ul>
 									<li>Defined in webview.ts:448</li>
 								</ul>
@@ -948,15 +1050,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="onlog" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Log</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>Log<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.webviewlogmessagedata.html" class="tsd-signature-type">WebViewLogMessageData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#onlog">onLog</a></p>
 								<ul>
 									<li>Defined in webview.ts:456</li>
 								</ul>
@@ -979,15 +1082,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="onwebviewdisposed" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Web<wbr>View<wbr>Disposed</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Disposed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#onwebviewdisposed">onWebViewDisposed</a></p>
 								<ul>
 									<li>Defined in webview.ts:471</li>
 								</ul>
@@ -1001,15 +1105,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="onwebviewmessage" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Web<wbr>View<wbr>Message</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Message<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.webviewmessage.html" class="tsd-signature-type">WebViewMessage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#onwebviewmessage">onWebViewMessage</a></p>
 								<ul>
 									<li>Defined in webview.ts:481</li>
 								</ul>
@@ -1033,15 +1138,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="onwebviewvisibilitychanged" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Web<wbr>View<wbr>Visibility<wbr>Changed</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Visibility<wbr>Changed<span class="tsd-signature-symbol">(</span>isVisible<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#onwebviewvisibilitychanged">onWebViewVisibilityChanged</a></p>
 								<ul>
 									<li>Defined in webview.ts:490</li>
 								</ul>
@@ -1110,15 +1216,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="open" class="tsd-anchor"></a>
 					<h3>open</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">open<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#open">open</a></p>
 								<ul>
 									<li>Defined in webview.ts:299</li>
 								</ul>
@@ -1133,15 +1240,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
 					<a name="postmessage" class="tsd-anchor"></a>
 					<h3>post<wbr>Message</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">post<wbr>Message&lt;TData&gt;<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_webview_.webviewbase.html">WebViewBase</a>.<a href="_webview_.webviewbase.html#postmessage">postMessage</a></p>
 								<ul>
 									<li>Defined in webview.ts:508</li>
 								</ul>
@@ -1398,7 +1506,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_webview_.html">"webview"</a>
+						<a href="../modules/_data_.html">"data"</a>
 					</li>
 				</ul>
 			</nav>
@@ -1407,159 +1515,165 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_webview_.webviewbase.html" class="tsd-kind-icon">Web<wbr>View<wbr>Base</a>
+						<a href="_data_.csvtablewebview.html" class="tsd-kind-icon">Csv<wbr>Table<wbr>Web<wbr>View</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_webview_.webviewbase.html#_disposables" class="tsd-kind-icon">_DISPOSABLES</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_data_.csvtablewebview.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_webview_.webviewbase.html#_intervals" class="tsd-kind-icon">_INTERVALS</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#_queue" class="tsd-kind-icon">_QUEUE</a>
+								<a href="_data_.csvtablewebview.html#_disposables" class="tsd-kind-icon">_DISPOSABLES</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_webview_.webviewbase.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a>
+								<a href="_data_.csvtablewebview.html#_intervals" class="tsd-kind-icon">_INTERVALS</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_webview_.webviewbase.html#_panel" class="tsd-kind-icon">_panel</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#_queue" class="tsd-kind-icon">_QUEUE</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_data_.csvtablewebview.html#csv" class="tsd-kind-icon">csv</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_data_.csvtablewebview.html#htmlcontent" class="tsd-kind-icon">html<wbr>Content</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+								<a href="_data_.csvtablewebview.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a>
+								<a href="_data_.csvtablewebview.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a>
+								<a href="_data_.csvtablewebview.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_data_.csvtablewebview.html#parseroptions" class="tsd-kind-icon">parser<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="_webview_.webviewbase.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
+								<a href="_data_.csvtablewebview.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="_webview_.webviewbase.html#panel" class="tsd-kind-icon">panel</a>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="_data_.csvtablewebview.html#panel" class="tsd-kind-icon">panel</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="_webview_.webviewbase.html#view" class="tsd-kind-icon">view</a>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="_data_.csvtablewebview.html#view" class="tsd-kind-icon">view</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+								<a href="_data_.csvtablewebview.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_webview_.webviewbase.html#cleanupintervals" class="tsd-kind-icon">cleanup<wbr>Intervals</a>
+								<a href="_data_.csvtablewebview.html#cleanupintervals" class="tsd-kind-icon">cleanup<wbr>Intervals</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_webview_.webviewbase.html#cleanuptimeouts" class="tsd-kind-icon">cleanup<wbr>Timeouts</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_webview_.webviewbase.html#close" class="tsd-kind-icon">close</a>
+								<a href="_data_.csvtablewebview.html#cleanuptimeouts" class="tsd-kind-icon">cleanup<wbr>Timeouts</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#dispose" class="tsd-kind-icon">dispose</a>
+								<a href="_data_.csvtablewebview.html#close" class="tsd-kind-icon">close</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_data_.csvtablewebview.html#dispose" class="tsd-kind-icon">dispose</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#emit" class="tsd-kind-icon">emit</a>
+								<a href="_data_.csvtablewebview.html#emit" class="tsd-kind-icon">emit</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
+								<a href="_data_.csvtablewebview.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#generatehtml" class="tsd-kind-icon">generate<wbr>Html</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#generatehtmlbody" class="tsd-kind-icon">generate<wbr>Html<wbr>Body</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#generatehtmlfooter" class="tsd-kind-icon">generate<wbr>Html<wbr>Footer</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#generatehtmlheader" class="tsd-kind-icon">generate<wbr>Html<wbr>Header</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#getfileresourceuri" class="tsd-kind-icon">get<wbr>File<wbr>Resource<wbr>Uri</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#getoptions" class="tsd-kind-icon">get<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#getresourceuris" class="tsd-kind-icon">get<wbr>Resource<wbr>Uris</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#gettitle" class="tsd-kind-icon">get<wbr>Title</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#gettype" class="tsd-kind-icon">get<wbr>Type</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#getviewcolumns" class="tsd-kind-icon">get<wbr>View<wbr>Columns</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#listeners" class="tsd-kind-icon">listeners</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#on" class="tsd-kind-icon">on</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#generatehtml" class="tsd-kind-icon">generate<wbr>Html</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
-								<a href="_webview_.webviewbase.html#ondispose" class="tsd-kind-icon">on<wbr>Dispose</a>
+								<a href="_data_.csvtablewebview.html#generatehtmlbody" class="tsd-kind-icon">generate<wbr>Html<wbr>Body</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#onloaded" class="tsd-kind-icon">on<wbr>Loaded</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#generatehtmlfooter" class="tsd-kind-icon">generate<wbr>Html<wbr>Footer</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#onlog" class="tsd-kind-icon">on<wbr>Log</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#generatehtmlheader" class="tsd-kind-icon">generate<wbr>Html<wbr>Header</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#onwebviewdisposed" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Disposed</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#onwebviewmessage" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Message</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_webview_.webviewbase.html#onwebviewvisibilitychanged" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Visibility<wbr>Changed</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#getfileresourceuri" class="tsd-kind-icon">get<wbr>File<wbr>Resource<wbr>Uri</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#once" class="tsd-kind-icon">once</a>
+								<a href="_data_.csvtablewebview.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#getoptions" class="tsd-kind-icon">get<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#getresourceuris" class="tsd-kind-icon">get<wbr>Resource<wbr>Uris</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#gettitle" class="tsd-kind-icon">get<wbr>Title</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#gettype" class="tsd-kind-icon">get<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#getviewcolumns" class="tsd-kind-icon">get<wbr>View<wbr>Columns</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_webview_.webviewbase.html#open" class="tsd-kind-icon">open</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-								<a href="_webview_.webviewbase.html#postmessage" class="tsd-kind-icon">post<wbr>Message</a>
+								<a href="_data_.csvtablewebview.html#initialize" class="tsd-kind-icon">initialize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
+								<a href="_data_.csvtablewebview.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
+								<a href="_data_.csvtablewebview.html#listeners" class="tsd-kind-icon">listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+								<a href="_data_.csvtablewebview.html#on" class="tsd-kind-icon">on</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#ondispose" class="tsd-kind-icon">on<wbr>Dispose</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#onloaded" class="tsd-kind-icon">on<wbr>Loaded</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#onlog" class="tsd-kind-icon">on<wbr>Log</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#onwebviewdisposed" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#onwebviewmessage" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_data_.csvtablewebview.html#onwebviewvisibilitychanged" class="tsd-kind-icon">on<wbr>Web<wbr>View<wbr>Visibility<wbr>Changed</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
+								<a href="_data_.csvtablewebview.html#once" class="tsd-kind-icon">once</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_data_.csvtablewebview.html#open" class="tsd-kind-icon">open</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+								<a href="_data_.csvtablewebview.html#postmessage" class="tsd-kind-icon">post<wbr>Message</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_webview_.webviewbase.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
+								<a href="_data_.csvtablewebview.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_data_.csvtablewebview.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_data_.csvtablewebview.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_data_.csvtablewebview.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_data_.csvtablewebview.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="_webview_.webviewbase.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a>
+								<a href="_data_.csvtablewebview.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_webview_.webviewwithcontextbase.html" class="tsd-kind-icon">Web<wbr>View<wbr>With<wbr>Context<wbr>Base</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_webview_.html#opn" class="tsd-kind-icon">opn</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
