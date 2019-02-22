@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ExecResult | @egodigital/egoose</title>
+	<title>SendMailOptions | @egodigital/egoose</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_index_.html">&quot;index&quot;</a>
+					<a href="../modules/_mail_index_.html">&quot;mail/index&quot;</a>
 				</li>
 				<li>
-					<a href="_index_.execresult.html">ExecResult</a>
+					<a href="_mail_index_.sendmailoptions.html">SendMailOptions</a>
 				</li>
 			</ul>
-			<h1>Interface ExecResult</h1>
+			<h1>Interface SendMailOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Result of &#39;exec()&#39; function.</p>
+						<p>Options for &#39;sendMail()&#39; function.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ExecResult</span>
+						<span class="target">SendMailOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -91,8 +91,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.execresult.html#stderr" class="tsd-kind-icon">stderr</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.execresult.html#stdout" class="tsd-kind-icon">stdout</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_mail_index_.sendmailoptions.html#body" class="tsd-kind-icon">body</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_mail_index_.sendmailoptions.html#format" class="tsd-kind-icon">format</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_mail_index_.sendmailoptions.html#subject" class="tsd-kind-icon">subject</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_mail_index_.sendmailoptions.html#to" class="tsd-kind-icon">to</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,32 +103,62 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="stderr" class="tsd-anchor"></a>
-					<h3>stderr</h3>
-					<div class="tsd-signature tsd-kind-icon">stderr<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="body" class="tsd-anchor"></a>
+					<h3>body</h3>
+					<div class="tsd-signature tsd-kind-icon">body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:57</li>
+							<li>Defined in mail/index.ts:43</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The error stream.</p>
+							<p>The body.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="stdout" class="tsd-anchor"></a>
-					<h3>stdout</h3>
-					<div class="tsd-signature tsd-kind-icon">stdout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="format" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> format</h3>
+					<div class="tsd-signature tsd-kind-icon">format<span class="tsd-signature-symbol">:</span> <a href="../enums/_mail_index_.mailformat.html" class="tsd-signature-type">MailFormat</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:61</li>
+							<li>Defined in mail/index.ts:47</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The standard stream.</p>
+							<p>The format.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="subject" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> subject</h3>
+					<div class="tsd-signature tsd-kind-icon">subject<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in mail/index.ts:51</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The subject.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="to" class="tsd-anchor"></a>
+					<h3>to</h3>
+					<div class="tsd-signature tsd-kind-icon">to<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in mail/index.ts:55</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The address, where to send the mail to.</p>
 						</div>
 					</div>
 				</section>
@@ -139,107 +171,41 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_index_.html">"index"</a>
+						<a href="../modules/_mail_index_.html">"mail/index"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_index_.appversion.html" class="tsd-kind-icon">App<wbr>Version</a>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_mail_index_.mailformat.html" class="tsd-kind-icon">Mail<wbr>Format</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_index_.execresult.html" class="tsd-kind-icon">Exec<wbr>Result</a>
+						<a href="_mail_index_.sendmailoptions.html" class="tsd-kind-icon">Send<wbr>Mail<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_index_.execresult.html#stderr" class="tsd-kind-icon">stderr</a>
+								<a href="_mail_index_.sendmailoptions.html#body" class="tsd-kind-icon">body</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_index_.execresult.html#stdout" class="tsd-kind-icon">stdout</a>
+								<a href="_mail_index_.sendmailoptions.html#format" class="tsd-kind-icon">format</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_mail_index_.sendmailoptions.html#subject" class="tsd-kind-icon">subject</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_mail_index_.sendmailoptions.html#to" class="tsd-kind-icon">to</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_index_.getappversionoptions.html" class="tsd-kind-icon">Get<wbr>App<wbr>Version<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_index_.html#completedaction" class="tsd-kind-icon">Completed<wbr>Action</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_index_.html#foreachasyncaction" class="tsd-kind-icon">For<wbr>Each<wbr>Async<wbr>Action</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_index_.html#applyfuncfor" class="tsd-kind-icon">apply<wbr>Func<wbr>For</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_index_.html#asarray" class="tsd-kind-icon">as<wbr>Array</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_mail_index_.html#ews" class="tsd-kind-icon">ews</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_index_.html#aslocal" class="tsd-kind-icon">as<wbr>Local</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_index_.html#asmoment" class="tsd-kind-icon">as<wbr>Moment</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_index_.html#asutc" class="tsd-kind-icon">asUTC</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_index_.html#cloneobj" class="tsd-kind-icon">clone<wbr>Obj</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_index_.html#comparevalues" class="tsd-kind-icon">compare<wbr>Values</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_index_.html#comparevaluesby" class="tsd-kind-icon">compare<wbr>Values<wbr>By</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_index_.html#createcompletedaction" class="tsd-kind-icon">create<wbr>Completed<wbr>Action</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_index_.html#exec" class="tsd-kind-icon">exec</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_index_.html#foreachasync" class="tsd-kind-icon">for<wbr>Each<wbr>Async</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_index_.html#getappversionsync" class="tsd-kind-icon">get<wbr>App<wbr>Version<wbr>Sync</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_index_.html#guid" class="tsd-kind-icon">guid</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_index_.html#isemptystring" class="tsd-kind-icon">is<wbr>Empty<wbr>String</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_index_.html#normalizestring" class="tsd-kind-icon">normalize<wbr>String</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_index_.html#now" class="tsd-kind-icon">now</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_index_.html#randchars" class="tsd-kind-icon">rand<wbr>Chars</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_index_.html#randcharsinner" class="tsd-kind-icon">rand<wbr>Chars<wbr>Inner</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_index_.html#randcharssync" class="tsd-kind-icon">rand<wbr>Chars<wbr>Sync</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_index_.html#tobooleansafe" class="tsd-kind-icon">to<wbr>Boolean<wbr>Safe</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_index_.html#tostringsafe" class="tsd-kind-icon">to<wbr>String<wbr>Safe</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_index_.html#utc" class="tsd-kind-icon">utc</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_index_.html#uuid" class="tsd-kind-icon">uuid</a>
+						<a href="../modules/_mail_index_.html#sendmail" class="tsd-kind-icon">send<wbr>Mail</a>
 					</li>
 				</ul>
 			</nav>
