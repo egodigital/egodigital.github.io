@@ -74,6 +74,7 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#buildbuttonsync" class="tsd-kind-icon">build<wbr>Button<wbr>Sync</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#calcbearing" class="tsd-kind-icon">calc<wbr>Bearing</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#createextensiondirectoryifneeded" class="tsd-kind-icon">create<wbr>Extension<wbr>Directory<wbr>IfNeeded</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#createextensiondirectoryifneededsync" class="tsd-kind-icon">create<wbr>Extension<wbr>Directory<wbr>IfNeeded<wbr>Sync</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#doesmatchfiltercondition" class="tsd-kind-icon">does<wbr>Match<wbr>Filter<wbr>Condition</a></li>
@@ -88,6 +89,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#loadscriptmodule" class="tsd-kind-icon">load<wbr>Script<wbr>Module</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#requiremodule" class="tsd-kind-icon">require<wbr>Module</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#showerrormessage" class="tsd-kind-icon">show<wbr>Error<wbr>Message</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#todegree" class="tsd-kind-icon">to<wbr>Degree</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#updatecommandscriptargumentsbyexecutioncontext" class="tsd-kind-icon">update<wbr>Command<wbr>Script<wbr>Arguments<wbr>ByExecution<wbr>Context</a></li>
 							</ul>
 						</section>
@@ -159,6 +161,56 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="calcbearing" class="tsd-anchor"></a>
+					<h3>calc<wbr>Bearing</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">calc<wbr>Bearing<span class="tsd-signature-symbol">(</span>lat1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, lng1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, lat2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, lng2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in helpers.ts:120</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calculates the bearing between two locations.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lat1: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The latitude of the 1st location.</p>
+									</div>
+								</li>
+								<li>
+									<h5>lng1: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The longitude of the 1st location.</p>
+									</div>
+								</li>
+								<li>
+									<h5>lat2: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The latitude of the 2nd location.</p>
+									</div>
+								</li>
+								<li>
+									<h5>lng2: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The longitude of the 2nd location.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The bearing, in degree.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="createextensiondirectoryifneeded" class="tsd-anchor"></a>
 					<h3>create<wbr>Extension<wbr>Directory<wbr>IfNeeded</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -168,7 +220,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:115</li>
+									<li>Defined in helpers.ts:138</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -191,7 +243,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:131</li>
+									<li>Defined in helpers.ts:154</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -214,7 +266,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:149</li>
+									<li>Defined in helpers.ts:172</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -246,7 +298,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:162</li>
+									<li>Defined in helpers.ts:185</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -278,7 +330,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:175</li>
+									<li>Defined in helpers.ts:198</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -310,7 +362,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:194</li>
+									<li>Defined in helpers.ts:217</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -348,7 +400,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:226</li>
+									<li>Defined in helpers.ts:249</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -386,7 +438,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:244</li>
+									<li>Defined in helpers.ts:267</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -409,7 +461,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:256</li>
+									<li>Defined in helpers.ts:279</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -432,7 +484,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:271</li>
+									<li>Defined in helpers.ts:294</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -467,7 +519,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:292</li>
+									<li>Defined in helpers.ts:315</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -514,7 +566,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:341</li>
+									<li>Defined in helpers.ts:364</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -555,7 +607,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:367</li>
+									<li>Defined in helpers.ts:390</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -593,7 +645,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:380</li>
+									<li>Defined in helpers.ts:403</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -616,6 +668,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="todegree" class="tsd-anchor"></a>
+					<h3>to<wbr>Degree</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Degree<span class="tsd-signature-symbol">(</span>rad<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in helpers.ts:418</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts radian to degree.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rad: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value, in radian.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The value, in degree.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="updatecommandscriptargumentsbyexecutioncontext" class="tsd-anchor"></a>
 					<h3>update<wbr>Command<wbr>Script<wbr>Arguments<wbr>ByExecution<wbr>Context</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -625,7 +709,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:394</li>
+									<li>Defined in helpers.ts:432</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -671,6 +755,9 @@
 						<a href="_helpers_.html#buildbuttonsync" class="tsd-kind-icon">build<wbr>Button<wbr>Sync</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_helpers_.html#calcbearing" class="tsd-kind-icon">calc<wbr>Bearing</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_helpers_.html#createextensiondirectoryifneeded" class="tsd-kind-icon">create<wbr>Extension<wbr>Directory<wbr>IfNeeded</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
@@ -711,6 +798,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_helpers_.html#showerrormessage" class="tsd-kind-icon">show<wbr>Error<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_helpers_.html#todegree" class="tsd-kind-icon">to<wbr>Degree</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_helpers_.html#updatecommandscriptargumentsbyexecutioncontext" class="tsd-kind-icon">update<wbr>Command<wbr>Script<wbr>Arguments<wbr>ByExecution<wbr>Context</a>
