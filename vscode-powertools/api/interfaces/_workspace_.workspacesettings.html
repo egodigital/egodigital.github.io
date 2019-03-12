@@ -103,6 +103,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspace_.workspacesettings.html#globals" class="tsd-kind-icon">globals</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspace_.workspacesettings.html#imports" class="tsd-kind-icon">imports</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspace_.workspacesettings.html#jobs" class="tsd-kind-icon">jobs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspace_.workspacesettings.html#runnpminstall" class="tsd-kind-icon">runNPMInstall</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspace_.workspacesettings.html#startup" class="tsd-kind-icon">startup</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspace_.workspacesettings.html#values" class="tsd-kind-icon">values</a></li>
 							</ul>
@@ -233,13 +234,29 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="runnpminstall" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> runNPMInstall</h3>
+					<div class="tsd-signature tsd-kind-icon">runNPMInstall<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.extensionconfiguration.html">ExtensionConfiguration</a>.<a href="_contracts_.extensionconfiguration.html#runnpminstall">runNPMInstall</a></p>
+						<ul>
+							<li>Defined in contracts.ts:694</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Runs &#39;npm install&#39; if a &#39;package.json&#39; file exists, but no &#39;node_modules&#39; has been found.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="startup" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> startup</h3>
 					<div class="tsd-signature tsd-kind-icon">startup<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#startupentry" class="tsd-signature-type">StartupEntry</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.extensionconfiguration.html">ExtensionConfiguration</a>.<a href="_contracts_.extensionconfiguration.html#startup">startup</a></p>
 						<ul>
-							<li>Defined in contracts.ts:694</li>
+							<li>Defined in contracts.ts:698</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -255,7 +272,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.withvalues.html">WithValues</a>.<a href="_contracts_.withvalues.html#values">values</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1471</li>
+							<li>Defined in contracts.ts:1475</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -318,6 +335,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_workspace_.workspacesettings.html#jobs" class="tsd-kind-icon">jobs</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_workspace_.workspacesettings.html#runnpminstall" class="tsd-kind-icon">runNPMInstall</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_workspace_.workspacesettings.html#startup" class="tsd-kind-icon">startup</a>
