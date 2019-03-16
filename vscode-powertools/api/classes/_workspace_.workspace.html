@@ -151,6 +151,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_workspace_.workspace.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_workspace_.workspace.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspace_.workspace.html#executecode" class="tsd-kind-icon">execute<wbr>Code</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="_workspace_.workspace.html#executeoneditorchangedevents" class="tsd-kind-icon">execute<wbr>OnEditor<wbr>Changed<wbr>Events</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="_workspace_.workspace.html#executescript" class="tsd-kind-icon">execute<wbr>Script</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="_workspace_.workspace.html#filterconditionals" class="tsd-kind-icon">filter<wbr>Conditionals</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="_workspace_.workspace.html#filterforplatform" class="tsd-kind-icon">filter<wbr>For<wbr>Platform</a></li>
@@ -400,7 +401,7 @@
 					<div class="tsd-signature tsd-kind-icon">instance<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspace.ts:582</li>
+							<li>Defined in workspace.ts:610</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -530,7 +531,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:587</li>
+									<li>Defined in workspace.ts:615</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -552,7 +553,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:657</li>
+									<li>Defined in workspace.ts:685</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -574,7 +575,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:833</li>
+									<li>Defined in workspace.ts:861</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -596,7 +597,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:1054</li>
+									<li>Defined in workspace.ts:1082</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -618,7 +619,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:1061</li>
+									<li>Defined in workspace.ts:1089</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -864,13 +865,13 @@
 					<a name="executecode" class="tsd-anchor"></a>
 					<h3>execute<wbr>Code</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">execute<wbr>Code<span class="tsd-signature-symbol">(</span>code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">execute<wbr>Code<span class="tsd-signature-symbol">(</span>code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, values<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.value.html" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.value.html" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:148</li>
+									<li>Defined in workspace.ts:149</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -886,9 +887,76 @@
 										<p>The code to execute.</p>
 									</div>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> values: <a href="../interfaces/_contracts_.value.html" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.value.html" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 							<p>The result of the execution.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="executeoneditorchangedevents" class="tsd-anchor"></a>
+					<h3>execute<wbr>OnEditor<wbr>Changed<wbr>Events</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">execute<wbr>OnEditor<wbr>Changed<wbr>Events&lt;TObj&gt;<span class="tsd-signature-symbol">(</span>objs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TObj</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TObj</span><span class="tsd-signature-symbol">[]</span>, codeExecutor<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspace.ts:173</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Executes the code in &#39;onEditorChanged&#39; of an object for that workspace.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>TObj<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.witheditorchangedevents.html" class="tsd-signature-type">WithEditorChangedEvents</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>objs: <span class="tsd-signature-type">TObj</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TObj</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>One or more objects.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> codeExecutor: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A custom code executor.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TObj</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>code: <span class="tsd-signature-type">string</span></h5>
+														</li>
+														<li>
+															<h5>obj: <span class="tsd-signature-type">TObj</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -902,7 +970,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:170</li>
+									<li>Defined in workspace.ts:198</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -973,7 +1041,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:243</li>
+									<li>Defined in workspace.ts:271</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1011,7 +1079,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:288</li>
+									<li>Defined in workspace.ts:316</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1049,7 +1117,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:301</li>
+									<li>Defined in workspace.ts:329</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1072,7 +1140,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:314</li>
+									<li>Defined in workspace.ts:342</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1095,7 +1163,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:327</li>
+									<li>Defined in workspace.ts:355</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1118,7 +1186,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:340</li>
+									<li>Defined in workspace.ts:368</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1141,7 +1209,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:355</li>
+									<li>Defined in workspace.ts:383</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1173,7 +1241,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:374</li>
+									<li>Defined in workspace.ts:402</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1208,7 +1276,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:402</li>
+									<li>Defined in workspace.ts:430</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1231,7 +1299,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:423</li>
+									<li>Defined in workspace.ts:451</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1254,7 +1322,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:436</li>
+									<li>Defined in workspace.ts:464</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1296,7 +1364,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:451</li>
+									<li>Defined in workspace.ts:479</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1325,7 +1393,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:501</li>
+									<li>Defined in workspace.ts:529</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1366,7 +1434,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:515</li>
+									<li>Defined in workspace.ts:543</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1388,7 +1456,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:598</li>
+									<li>Defined in workspace.ts:626</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1420,7 +1488,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:624</li>
+									<li>Defined in workspace.ts:652</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1452,7 +1520,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:650</li>
+									<li>Defined in workspace.ts:678</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1627,7 +1695,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides WorkspaceBase.onDidChangeConfiguration</p>
 								<ul>
-									<li>Defined in workspace.ts:664</li>
+									<li>Defined in workspace.ts:692</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1656,7 +1724,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:675</li>
+									<li>Defined in workspace.ts:703</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1687,7 +1755,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:688</li>
+									<li>Defined in workspace.ts:716</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1719,7 +1787,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides DisposableBase.onDispose</p>
 								<ul>
-									<li>Defined in workspace.ts:700</li>
+									<li>Defined in workspace.ts:728</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1742,7 +1810,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:733</li>
+									<li>Defined in workspace.ts:761</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1765,7 +1833,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:763</li>
+									<li>Defined in workspace.ts:791</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1932,7 +2000,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:840</li>
+									<li>Defined in workspace.ts:868</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1979,7 +2047,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:846</li>
+									<li>Defined in workspace.ts:874</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2067,7 +2135,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:898</li>
+									<li>Defined in workspace.ts:926</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2099,7 +2167,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:915</li>
+									<li>Defined in workspace.ts:943</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2125,7 +2193,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:945</li>
+									<li>Defined in workspace.ts:973</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2184,7 +2252,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:1072</li>
+									<li>Defined in workspace.ts:1100</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2219,7 +2287,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:1093</li>
+									<li>Defined in workspace.ts:1121</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2396,6 +2464,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_workspace_.workspace.html#executecode" class="tsd-kind-icon">execute<wbr>Code</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+								<a href="_workspace_.workspace.html#executeoneditorchangedevents" class="tsd-kind-icon">execute<wbr>OnEditor<wbr>Changed<wbr>Events</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="_workspace_.workspace.html#executescript" class="tsd-kind-icon">execute<wbr>Script</a>
