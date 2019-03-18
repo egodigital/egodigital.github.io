@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ApiError | @egodigital/egoose</title>
+	<title>StatisticApiContext | @egodigital/egoose</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_apis_index_.html">&quot;apis/index&quot;</a>
+					<a href="../modules/_apis_statistics_.html">&quot;apis/statistics&quot;</a>
 				</li>
 				<li>
-					<a href="_apis_index_.apierror.html">ApiError</a>
+					<a href="_apis_statistics_.statisticapicontext.html">StatisticApiContext</a>
 				</li>
 			</ul>
-			<h1>Interface ApiError</h1>
+			<h1>Interface StatisticApiContext</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An entry for an API error.</p>
+						<p>An statistic API request context.</p>
 					</div>
 				</div>
 			</section>
@@ -80,12 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ApiError</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="_apis_index_.apierrorwithkey.html" class="tsd-signature-type">ApiErrorWithKey</a>
-							</li>
-						</ul>
+						<span class="target">StatisticApiContext</span>
 					</li>
 				</ul>
 			</section>
@@ -96,8 +91,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_index_.apierror.html#de" class="tsd-kind-icon">de</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_index_.apierror.html#en" class="tsd-kind-icon">en</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_statistics_.statisticapicontext.html#request" class="tsd-kind-icon">request</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_statistics_.statisticapicontext.html#response" class="tsd-kind-icon">response</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_statistics_.statisticapicontext.html#value" class="tsd-kind-icon">value</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,32 +102,47 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="de" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> de</h3>
-					<div class="tsd-signature tsd-kind-icon">de<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="request" class="tsd-anchor"></a>
+					<h3>request</h3>
+					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">express.Request</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in apis/index.ts:34</li>
+							<li>Defined in apis/statistics.ts:77</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>German (de)</p>
+							<p>The HTTP request context.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="en" class="tsd-anchor"></a>
-					<h3>en</h3>
-					<div class="tsd-signature tsd-kind-icon">en<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="response" class="tsd-anchor"></a>
+					<h3>response</h3>
+					<div class="tsd-signature tsd-kind-icon">response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">express.Response</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in apis/index.ts:38</li>
+							<li>Defined in apis/statistics.ts:81</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>English (en)</p>
+							<p>The HTTP response context.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="value" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> value</h3>
+					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in apis/statistics.ts:85</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets or sets a value for the whole execution chain.</p>
 						</div>
 					</div>
 				</section>
@@ -144,68 +155,47 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_apis_index_.html">"apis/index"</a>
+						<a href="../modules/_apis_statistics_.html">"apis/statistics"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_apis_statistics_.registerstatisticsendpointoptions.html" class="tsd-kind-icon">Register<wbr>Statistics<wbr>Endpoint<wbr>Options</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_apis_index_.apierror.html" class="tsd-kind-icon">Api<wbr>Error</a>
+						<a href="_apis_statistics_.statisticapicontext.html" class="tsd-kind-icon">Statistic<wbr>Api<wbr>Context</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_apis_index_.apierror.html#de" class="tsd-kind-icon">de</a>
+								<a href="_apis_statistics_.statisticapicontext.html#request" class="tsd-kind-icon">request</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_apis_index_.apierror.html#en" class="tsd-kind-icon">en</a>
+								<a href="_apis_statistics_.statisticapicontext.html#response" class="tsd-kind-icon">response</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_apis_statistics_.statisticapicontext.html#value" class="tsd-kind-icon">value</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_apis_index_.apierrorwithkey.html" class="tsd-kind-icon">Api<wbr>Error<wbr>With<wbr>Key</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_apis_index_.apiresponse.html" class="tsd-kind-icon">Api<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_apis_index_.apiresult.html" class="tsd-kind-icon">Api<wbr>Result</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_apis_index_.createmonitoringapiresultoptions.html" class="tsd-kind-icon">Create<wbr>Monitoring<wbr>Api<wbr>Result<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_apis_index_.monitoringapiappversion.html" class="tsd-kind-icon">Monitoring<wbr>Api<wbr>App<wbr>Version</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_apis_index_.monitoringapiresult.html" class="tsd-kind-icon">Monitoring<wbr>Api<wbr>Result</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_apis_index_.sendresponseoptions.html" class="tsd-kind-icon">Send<wbr>Response<wbr>Options</a>
+						<a href="_apis_statistics_.statisticproviderapiresult.html" class="tsd-kind-icon">Statistic<wbr>Provider<wbr>Api<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_apis_index_.html#importapierrorsargument" class="tsd-kind-icon">Import<wbr>Api<wbr>Errors<wbr>Argument</a>
+						<a href="../modules/_apis_statistics_.html#statisticproviderdetector" class="tsd-kind-icon">Statistic<wbr>Provider<wbr>Detector</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_apis_index_.html#api_errors" class="tsd-kind-icon">API_<wbr>ERRORS</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_apis_statistics_.html#statisticproviderdetectorresult" class="tsd-kind-icon">Statistic<wbr>Provider<wbr>Detector<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_apis_statistics_.html#registerstatisticsendpoint" class="tsd-kind-icon">register<wbr>Statistics<wbr>Endpoint</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_apis_index_.html#applyapierrors" class="tsd-kind-icon">apply<wbr>Api<wbr>Errors</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_apis_index_.html#createmonitoringapiresult" class="tsd-kind-icon">create<wbr>Monitoring<wbr>Api<wbr>Result</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_apis_index_.html#importapierrors" class="tsd-kind-icon">import<wbr>Api<wbr>Errors</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_apis_index_.html#importapierrorssync" class="tsd-kind-icon">import<wbr>Api<wbr>Errors<wbr>Sync</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_apis_index_.html#sendresponse" class="tsd-kind-icon">send<wbr>Response</a>
+						<a href="../modules/_apis_statistics_.html#tostatisticparameters" class="tsd-kind-icon">to<wbr>Statistic<wbr>Parameters</a>
 					</li>
 				</ul>
 			</nav>

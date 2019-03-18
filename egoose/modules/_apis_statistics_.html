@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;events/index&quot; | @egodigital/egoose</title>
+	<title>&quot;apis/statistics&quot; | @egodigital/egoose</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,53 +56,40 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_events_index_.html">&quot;events/index&quot;</a>
+					<a href="_apis_statistics_.html">&quot;apis/statistics&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;events/index&quot;</h1>
+			<h1>External module &quot;apis/statistics&quot;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>This file is part of the @egodigital/egoose distribution.
-						Copyright (c) e.GO Digital GmbH, Aachen, Germany (<a href="https://www.e-go-digital.com/">https://www.e-go-digital.com/</a>)</p>
-					</div>
-					<dl class="tsd-comment-tags">
-						<dt>egodigital/egoose</dt>
-						<dd><p>is free software: you can redistribute it and/or modify
-								it under the terms of the GNU Lesser General Public License as
-							published by the Free Software Foundation, version 3.</p>
-						</dd>
-						<dt>egodigital/egoose</dt>
-						<dd><p>is distributed in the hope that it will be useful, but
-								WITHOUT ANY WARRANTY; without even the implied warranty of
-								MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-							Lesser General Public License for more details.</p>
-							<p>You should have received a copy of the GNU Lesser General Public License
-							along with this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_apis_statistics_.registerstatisticsendpointoptions.html" class="tsd-kind-icon">Register<wbr>Statistics<wbr>Endpoint<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_apis_statistics_.statisticapicontext.html" class="tsd-kind-icon">Statistic<wbr>Api<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_apis_statistics_.statisticproviderapiresult.html" class="tsd-kind-icon">Statistic<wbr>Provider<wbr>Api<wbr>Result</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_events_index_.html#eventlistener" class="tsd-kind-icon">Event<wbr>Listener</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_apis_statistics_.html#statisticproviderdetector" class="tsd-kind-icon">Statistic<wbr>Provider<wbr>Detector</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_apis_statistics_.html#statisticproviderdetectorresult" class="tsd-kind-icon">Statistic<wbr>Provider<wbr>Detector<wbr>Result</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_events_index_.html#tryremovelistener" class="tsd-kind-icon">try<wbr>Remove<wbr>Listener</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_apis_statistics_.html#registerstatisticsendpoint" class="tsd-kind-icon">register<wbr>Statistics<wbr>Endpoint</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_apis_statistics_.html#tostatisticparameters" class="tsd-kind-icon">to<wbr>Statistic<wbr>Parameters</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,21 +98,27 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
-					<a name="eventlistener" class="tsd-anchor"></a>
-					<h3>Event<wbr>Listener</h3>
-					<div class="tsd-signature tsd-kind-icon">Event<wbr>Listener<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<a name="statisticproviderdetector" class="tsd-anchor"></a>
+					<h3>Statistic<wbr>Provider<wbr>Detector</h3>
+					<div class="tsd-signature tsd-kind-icon">Statistic<wbr>Provider<wbr>Detector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in events/index.ts:23</li>
+							<li>Defined in apis/statistics.ts:118</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Describes a generic event listener.</p>
+							<p>A function that detects a statistic provider by name.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>param</dt>
-							<dd><p>One or more argument.</p>
+							<dd><p>The name of the provider, in lower case letters.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The context.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The result.</p>
 							</dd>
 						</dl>
 					</div>
@@ -134,67 +127,104 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, context<span class="tsd-signature-symbol">: </span><a href="../interfaces/_apis_statistics_.statisticapicontext.html" class="tsd-signature-type">StatisticApiContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_apis_statistics_.html#statisticproviderdetectorresult" class="tsd-signature-type">StatisticProviderDetectorResult</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="_apis_statistics_.html#statisticproviderdetectorresult" class="tsd-signature-type">StatisticProviderDetectorResult</a><span class="tsd-signature-symbol">&gt;</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+												<h5>name: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5>context: <a href="../interfaces/_apis_statistics_.statisticapicontext.html" class="tsd-signature-type">StatisticApiContext</a></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+										<h4 class="tsd-returns-title">Returns <a href="_apis_statistics_.html#statisticproviderdetectorresult" class="tsd-signature-type">StatisticProviderDetectorResult</a>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="_apis_statistics_.html#statisticproviderdetectorresult" class="tsd-signature-type">StatisticProviderDetectorResult</a><span class="tsd-signature-symbol">&gt;</span>
+										</h4>
 									</li>
 								</ul>
 							</li>
 						</ul>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="statisticproviderdetectorresult" class="tsd-anchor"></a>
+					<h3>Statistic<wbr>Provider<wbr>Detector<wbr>Result</h3>
+					<div class="tsd-signature tsd-kind-icon">Statistic<wbr>Provider<wbr>Detector<wbr>Result<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_statistics_index_.statisticprovider.html" class="tsd-signature-type">StatisticProvider</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in apis/statistics.ts:126</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The result of a statistic provider detection function.</p>
+						</div>
+					</div>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="tryremovelistener" class="tsd-anchor"></a>
-					<h3>try<wbr>Remove<wbr>Listener</h3>
+					<a name="registerstatisticsendpoint" class="tsd-anchor"></a>
+					<h3>register<wbr>Statistics<wbr>Endpoint</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">try<wbr>Remove<wbr>Listener<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventEmitter</span>, ev<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, listener<span class="tsd-signature-symbol">: </span><a href="_events_index_.html#eventlistener" class="tsd-signature-type">EventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Statistics<wbr>Endpoint<span class="tsd-signature-symbol">(</span>hostOrRouter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.Express</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">express.Router</span>, opts<span class="tsd-signature-symbol">: </span><a href="../interfaces/_apis_statistics_.registerstatisticsendpointoptions.html" class="tsd-signature-type">RegisterStatisticsEndpointOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in events/index.ts:34</li>
+									<li>Defined in apis/statistics.ts:134</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Tries to remove a listener from an event emitter.</p>
+									<p>Registers an API endpoint for providing statistics.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>obj: <span class="tsd-signature-type">EventEmitter</span></h5>
+									<h5>hostOrRouter: <span class="tsd-signature-type">express.Express</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">express.Router</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The emitter.</p>
+										<p>The host or router.</p>
 									</div>
 								</li>
 								<li>
-									<h5>ev: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+									<h5>opts: <a href="../interfaces/_apis_statistics_.registerstatisticsendpointoptions.html" class="tsd-signature-type">RegisterStatisticsEndpointOptions</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The event.</p>
-									</div>
-								</li>
-								<li>
-									<h5>listener: <a href="_events_index_.html#eventlistener" class="tsd-signature-type">EventListener</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The listener.</p>
+										<p>The options for the registration.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-							<p>Operation was successfull or not.</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="tostatisticparameters" class="tsd-anchor"></a>
+					<h3>to<wbr>Statistic<wbr>Parameters</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Statistic<wbr>Parameters<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_statistics_index_.html#statisticparameters" class="tsd-signature-type">StatisticParameters</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in apis/statistics.ts:254</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>query: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_statistics_index_.html#statisticparameters" class="tsd-signature-type">StatisticParameters</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -207,17 +237,32 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_events_index_.html">"events/index"</a>
+						<a href="_apis_statistics_.html">"apis/statistics"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_apis_statistics_.registerstatisticsendpointoptions.html" class="tsd-kind-icon">Register<wbr>Statistics<wbr>Endpoint<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_apis_statistics_.statisticapicontext.html" class="tsd-kind-icon">Statistic<wbr>Api<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_apis_statistics_.statisticproviderapiresult.html" class="tsd-kind-icon">Statistic<wbr>Provider<wbr>Api<wbr>Result</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="_events_index_.html#eventlistener" class="tsd-kind-icon">Event<wbr>Listener</a>
+						<a href="_apis_statistics_.html#statisticproviderdetector" class="tsd-kind-icon">Statistic<wbr>Provider<wbr>Detector</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_apis_statistics_.html#statisticproviderdetectorresult" class="tsd-kind-icon">Statistic<wbr>Provider<wbr>Detector<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_events_index_.html#tryremovelistener" class="tsd-kind-icon">try<wbr>Remove<wbr>Listener</a>
+						<a href="_apis_statistics_.html#registerstatisticsendpoint" class="tsd-kind-icon">register<wbr>Statistics<wbr>Endpoint</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_apis_statistics_.html#tostatisticparameters" class="tsd-kind-icon">to<wbr>Statistic<wbr>Parameters</a>
 					</li>
 				</ul>
 			</nav>

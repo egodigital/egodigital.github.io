@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AzureStorageClientOptions | @egodigital/egoose</title>
+	<title>RegisterStatisticsEndpointOptions | @egodigital/egoose</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_azure_storage_.html">&quot;azure/storage&quot;</a>
+					<a href="../modules/_apis_statistics_.html">&quot;apis/statistics&quot;</a>
 				</li>
 				<li>
-					<a href="_azure_storage_.azurestorageclientoptions.html">AzureStorageClientOptions</a>
+					<a href="_apis_statistics_.registerstatisticsendpointoptions.html">RegisterStatisticsEndpointOptions</a>
 				</li>
 			</ul>
-			<h1>Interface AzureStorageClientOptions</h1>
+			<h1>Interface RegisterStatisticsEndpointOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Options for an &#39;AzureStorageClient&#39;.</p>
+						<p>Options for &#39;registerStatisticsEndpoint()&#39; function.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">AzureStorageClientOptions</span>
+						<span class="target">RegisterStatisticsEndpointOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -91,11 +91,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_azure_storage_.azurestorageclientoptions.html#blobcontainerprovider" class="tsd-kind-icon">blob<wbr>Container<wbr>Provider</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_azure_storage_.azurestorageclientoptions.html#blobcontenttypedetector" class="tsd-kind-icon">blob<wbr>Content<wbr>Type<wbr>Detector</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_azure_storage_.azurestorageclientoptions.html#blobserviceprovider" class="tsd-kind-icon">blob<wbr>Service<wbr>Provider</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_azure_storage_.azurestorageclientoptions.html#tofullblobpath" class="tsd-kind-icon">to<wbr>Full<wbr>Blob<wbr>Path</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_azure_storage_.azurestorageclientoptions.html#uniqueblobnamecreator" class="tsd-kind-icon">unique<wbr>Blob<wbr>Name<wbr>Creator</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_statistics_.registerstatisticsendpointoptions.html#afterrequest" class="tsd-kind-icon">after<wbr>Request</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_statistics_.registerstatisticsendpointoptions.html#authorizer" class="tsd-kind-icon">authorizer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_statistics_.registerstatisticsendpointoptions.html#beforerequest" class="tsd-kind-icon">before<wbr>Request</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_statistics_.registerstatisticsendpointoptions.html#providerdetector" class="tsd-kind-icon">provider<wbr>Detector</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_statistics_.registerstatisticsendpointoptions.html#responsehandler" class="tsd-kind-icon">response<wbr>Handler</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_statistics_.registerstatisticsendpointoptions.html#rootname" class="tsd-kind-icon">root<wbr>Name</a></li>
 							</ul>
 						</section>
 					</div>
@@ -104,45 +105,24 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="blobcontainerprovider" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> blob<wbr>Container<wbr>Provider</h3>
-					<div class="tsd-signature tsd-kind-icon">blob<wbr>Container<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
+					<a name="afterrequest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> after<wbr>Request</h3>
+					<div class="tsd-signature tsd-kind-icon">after<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in azure/storage.ts:40</li>
+							<li>Defined in apis/statistics.ts:33</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A custom function or string that provides the name of the underlying container.
-							If not defined, &#39;AZURE_STORAGE_CONTAINER&#39; environment variable is used.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>returns</dt>
-							<dd><p>The result with the container name or the container name as string.</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="blobcontenttypedetector" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> blob<wbr>Content<wbr>Type<wbr>Detector</h3>
-					<div class="tsd-signature tsd-kind-icon">blob<wbr>Content<wbr>Type<wbr>Detector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in azure/storage.ts:49</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A custom function, which detects a MIME type by a blob name / path,</p>
+							<p>A custom function that is invoked AFTER a request.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>param</dt>
-							<dd><p>The blob path / name.</p>
+							<dd><p>The error (if occurred).</p>
 							</dd>
-							<dt>returns</dt>
-							<dd><p>The result with the detected MIME type.</p>
+							<dt>param</dt>
+							<dd><p>The context.</p>
 							</dd>
 						</dl>
 					</div>
@@ -151,20 +131,20 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, context<span class="tsd-signature-symbol">: </span><a href="_apis_statistics_.statisticapicontext.html" class="tsd-signature-type">StatisticApiContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>path: <span class="tsd-signature-type">string</span></h5>
+												<h5>err: <span class="tsd-signature-type">any</span></h5>
+											</li>
+											<li>
+												<h5>context: <a href="_apis_statistics_.statisticapicontext.html" class="tsd-signature-type">StatisticApiContext</a></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
-											<span class="tsd-signature-symbol"> | </span>
-											<span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span>
-										</h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -172,63 +152,24 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="blobserviceprovider" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> blob<wbr>Service<wbr>Provider</h3>
-					<div class="tsd-signature tsd-kind-icon">blob<wbr>Service<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<a name="authorizer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> authorizer</h3>
+					<div class="tsd-signature tsd-kind-icon">authorizer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in azure/storage.ts:57</li>
+							<li>Defined in apis/statistics.ts:41</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A custom function that provides the &#39;BlobService&#39; instance to use.
-							If not defined, default settings from environment are used.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>returns</dt>
-							<dd><p>The result with the service instance.</p>
-							</dd>
-						</dl>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">azureStorage.BlobService</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">azureStorage.BlobService</span><span class="tsd-signature-symbol">&gt;</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">azureStorage.BlobService</span>
-											<span class="tsd-signature-symbol"> | </span>
-											<span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">azureStorage.BlobService</span><span class="tsd-signature-symbol">&gt;</span>
-										</h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tofullblobpath" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> to<wbr>Full<wbr>Blob<wbr>Path</h3>
-					<div class="tsd-signature tsd-kind-icon">to<wbr>Full<wbr>Blob<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in azure/storage.ts:66</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A custom function that resolves a full blob path.</p>
+							<p>A function that checks if a request is authorized to access the endpoint or not.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>param</dt>
-							<dd><p>The input path.</p>
+							<dd><p>The context.</p>
 							</dd>
 							<dt>returns</dt>
-							<dd><p>The result with the full path.</p>
+							<dd><p>The result that indicates if request is authorized or not.</p>
 							</dd>
 						</dl>
 					</div>
@@ -237,19 +178,19 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="_apis_statistics_.statisticapicontext.html" class="tsd-signature-type">StatisticApiContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>path: <span class="tsd-signature-type">string</span></h5>
+												<h5>context: <a href="_apis_statistics_.statisticapicontext.html" class="tsd-signature-type">StatisticApiContext</a></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span>
 											<span class="tsd-signature-symbol"> | </span>
-											<span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span>
+											<span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span>
 										</h4>
 									</li>
 								</ul>
@@ -258,24 +199,21 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="uniqueblobnamecreator" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> unique<wbr>Blob<wbr>Name<wbr>Creator</h3>
-					<div class="tsd-signature tsd-kind-icon">unique<wbr>Blob<wbr>Name<wbr>Creator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<a name="beforerequest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> before<wbr>Request</h3>
+					<div class="tsd-signature tsd-kind-icon">before<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in azure/storage.ts:75</li>
+							<li>Defined in apis/statistics.ts:47</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A custom function that creates a unique blob name.</p>
+							<p>A custom function that is invoked BEFORE a request is handled.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>param</dt>
-							<dd><p>The input path / name of the blob.</p>
-							</dd>
-							<dt>returns</dt>
-							<dd><p>The result with a unique blob name / path.</p>
+							<dd><p>The context.</p>
 							</dd>
 						</dl>
 					</div>
@@ -284,24 +222,104 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="_apis_statistics_.statisticapicontext.html" class="tsd-signature-type">StatisticApiContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>path: <span class="tsd-signature-type">string</span></h5>
+												<h5>context: <a href="_apis_statistics_.statisticapicontext.html" class="tsd-signature-type">StatisticApiContext</a></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="providerdetector" class="tsd-anchor"></a>
+					<h3>provider<wbr>Detector</h3>
+					<div class="tsd-signature tsd-kind-icon">provider<wbr>Detector<span class="tsd-signature-symbol">:</span> <a href="../modules/_apis_statistics_.html#statisticproviderdetector" class="tsd-signature-type">StatisticProviderDetector</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in apis/statistics.ts:51</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A function that detects a statistic provider by name.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="responsehandler" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> response<wbr>Handler</h3>
+					<div class="tsd-signature tsd-kind-icon">response<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in apis/statistics.ts:64</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A custom response handler.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The result to handle.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The context.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The (new) response context.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="_apis_statistics_.statisticproviderapiresult.html" class="tsd-signature-type">StatisticProviderApiResult</a>, context<span class="tsd-signature-symbol">: </span><a href="_apis_statistics_.statisticapicontext.html" class="tsd-signature-type">StatisticApiContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.Response</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">express.Response</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>result: <a href="_apis_statistics_.statisticproviderapiresult.html" class="tsd-signature-type">StatisticProviderApiResult</a></h5>
+											</li>
+											<li>
+												<h5>context: <a href="_apis_statistics_.statisticapicontext.html" class="tsd-signature-type">StatisticApiContext</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">express.Response</span>
 											<span class="tsd-signature-symbol"> | </span>
-											<span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span>
+											<span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">express.Response</span><span class="tsd-signature-symbol">&gt;</span>
 										</h4>
 									</li>
 								</ul>
 							</li>
 						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="rootname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> root<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">root<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in apis/statistics.ts:55</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The custom name of API root.</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -313,44 +331,56 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_azure_storage_.html">"azure/storage"</a>
+						<a href="../modules/_apis_statistics_.html">"apis/statistics"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_azure_storage_.azurestorageclient.html" class="tsd-kind-icon">Azure<wbr>Storage<wbr>Client</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_azure_storage_.azurestorageclientoptions.html" class="tsd-kind-icon">Azure<wbr>Storage<wbr>Client<wbr>Options</a>
+						<a href="_apis_statistics_.registerstatisticsendpointoptions.html" class="tsd-kind-icon">Register<wbr>Statistics<wbr>Endpoint<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_azure_storage_.azurestorageclientoptions.html#blobcontainerprovider" class="tsd-kind-icon">blob<wbr>Container<wbr>Provider</a>
+								<a href="_apis_statistics_.registerstatisticsendpointoptions.html#afterrequest" class="tsd-kind-icon">after<wbr>Request</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_azure_storage_.azurestorageclientoptions.html#blobcontenttypedetector" class="tsd-kind-icon">blob<wbr>Content<wbr>Type<wbr>Detector</a>
+								<a href="_apis_statistics_.registerstatisticsendpointoptions.html#authorizer" class="tsd-kind-icon">authorizer</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_azure_storage_.azurestorageclientoptions.html#blobserviceprovider" class="tsd-kind-icon">blob<wbr>Service<wbr>Provider</a>
+								<a href="_apis_statistics_.registerstatisticsendpointoptions.html#beforerequest" class="tsd-kind-icon">before<wbr>Request</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_azure_storage_.azurestorageclientoptions.html#tofullblobpath" class="tsd-kind-icon">to<wbr>Full<wbr>Blob<wbr>Path</a>
+								<a href="_apis_statistics_.registerstatisticsendpointoptions.html#providerdetector" class="tsd-kind-icon">provider<wbr>Detector</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_azure_storage_.azurestorageclientoptions.html#uniqueblobnamecreator" class="tsd-kind-icon">unique<wbr>Blob<wbr>Name<wbr>Creator</a>
+								<a href="_apis_statistics_.registerstatisticsendpointoptions.html#responsehandler" class="tsd-kind-icon">response<wbr>Handler</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_apis_statistics_.registerstatisticsendpointoptions.html#rootname" class="tsd-kind-icon">root<wbr>Name</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_apis_statistics_.statisticapicontext.html" class="tsd-kind-icon">Statistic<wbr>Api<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_apis_statistics_.statisticproviderapiresult.html" class="tsd-kind-icon">Statistic<wbr>Provider<wbr>Api<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_apis_statistics_.html#statisticproviderdetector" class="tsd-kind-icon">Statistic<wbr>Provider<wbr>Detector</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_apis_statistics_.html#statisticproviderdetectorresult" class="tsd-kind-icon">Statistic<wbr>Provider<wbr>Detector<wbr>Result</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_azure_storage_.html#normalizeazureblobpath" class="tsd-kind-icon">normalize<wbr>Azure<wbr>Blob<wbr>Path</a>
+						<a href="../modules/_apis_statistics_.html#registerstatisticsendpoint" class="tsd-kind-icon">register<wbr>Statistics<wbr>Endpoint</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_azure_storage_.html#tofullblobpath" class="tsd-kind-icon">to<wbr>Full<wbr>Blob<wbr>Path</a>
+						<a href="../modules/_apis_statistics_.html#tostatisticparameters" class="tsd-kind-icon">to<wbr>Statistic<wbr>Parameters</a>
 					</li>
 				</ul>
 			</nav>
