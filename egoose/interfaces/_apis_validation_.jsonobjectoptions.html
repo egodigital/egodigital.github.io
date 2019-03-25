@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Cache | @egodigital/egoose</title>
+	<title>JsonObjectOptions | @egodigital/egoose</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_cache_index_.html">&quot;cache/index&quot;</a>
+					<a href="../modules/_apis_validation_.html">&quot;apis/validation&quot;</a>
 				</li>
 				<li>
-					<a href="_cache_index_.cache.html">Cache</a>
+					<a href="_apis_validation_.jsonobjectoptions.html">JsonObjectOptions</a>
 				</li>
 			</ul>
-			<h1>Interface Cache</h1>
+			<h1>Interface JsonObjectOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Describes a cache (client).</p>
+						<p>Options for &#39;jsonObject()&#39; function.</p>
 					</div>
 				</div>
 			</section>
@@ -80,15 +80,8 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Cache</span>
+						<span class="target">JsonObjectOptions</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/_cache_index_.cachebase.html" class="tsd-signature-type">CacheBase</a></li>
-					<li><a href="../classes/_cache_redis_.rediscache.html" class="tsd-signature-type">RedisCache</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -96,98 +89,94 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Methods</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="_cache_index_.cache.html#get" class="tsd-kind-icon">get</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_cache_index_.cache.html#set" class="tsd-kind-icon">set</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_validation_.jsonobjectoptions.html#canbenull" class="tsd-kind-icon">can<wbr>BeNull</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_validation_.jsonobjectoptions.html#canbeundefined" class="tsd-kind-icon">can<wbr>BeUndefined</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_validation_.jsonobjectoptions.html#failedhandler" class="tsd-kind-icon">failed<wbr>Handler</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_validation_.jsonobjectoptions.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_apis_validation_.jsonobjectoptions.html#schema" class="tsd-kind-icon">schema</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-					<a name="get" class="tsd-anchor"></a>
-					<h3>get</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">get&lt;TValue, TDefault&gt;<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, defaultValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TValue</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TValue</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TDefault</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/030a64a/src/cache/index.ts#L32">cache/index.ts:32</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Tries to return a value from the cache.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>TValue</h4>
-								</li>
-								<li>
-									<h4>TDefault</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>key: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The key.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> defaultValue: <span class="tsd-signature-type">TValue</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TValue</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TDefault</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>The promise with the value or the default value.</p>
-						</li>
-					</ul>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="canbenull" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> can<wbr>BeNull</h3>
+					<div class="tsd-signature tsd-kind-icon">can<wbr>BeNull<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/030a64a/src/apis/validation.ts#L31">apis/validation.ts:31</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Indicates if input body can be (null) or not.</p>
+						</div>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="set" class="tsd-anchor"></a>
-					<h3>set</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/egodigital/egoose/blob/030a64a/src/cache/index.ts#L41">cache/index.ts:41</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Sets a value.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>key: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The key.</p>
-									</div>
-								</li>
-								<li>
-									<h5>value: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The value.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>The promise that indicates if operation was successful or not.</p>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="canbeundefined" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> can<wbr>BeUndefined</h3>
+					<div class="tsd-signature tsd-kind-icon">can<wbr>BeUndefined<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/030a64a/src/apis/validation.ts#L35">apis/validation.ts:35</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Indicates if input body can be (undefined) or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="failedhandler" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> failed<wbr>Handler</h3>
+					<div class="tsd-signature tsd-kind-icon">failed<wbr>Handler<span class="tsd-signature-symbol">:</span> <a href="../modules/_apis_validation_.html#jsonobjectvalidationfailedhandler" class="tsd-signature-type">JsonObjectValidationFailedHandler</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/030a64a/src/apis/validation.ts#L39">apis/validation.ts:39</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A custom function, that handles a failed validation.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="options" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">OptionsJson</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/030a64a/src/apis/validation.ts#L43">apis/validation.ts:43</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Custom options for the Express json() middleware.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="schema" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> schema</h3>
+					<div class="tsd-signature tsd-kind-icon">schema<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ObjectSchema</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egodigital/egoose/blob/030a64a/src/apis/validation.ts#L47">apis/validation.ts:47</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The optional schema to use.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -198,32 +187,44 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_cache_index_.html">"cache/index"</a>
+						<a href="../modules/_apis_validation_.html">"apis/validation"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_cache_index_.cachebase.html" class="tsd-kind-icon">Cache<wbr>Base</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_cache_index_.cache.html" class="tsd-kind-icon">Cache</a>
+						<a href="_apis_validation_.jsonobjectoptions.html" class="tsd-kind-icon">Json<wbr>Object<wbr>Options</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-								<a href="_cache_index_.cache.html#get" class="tsd-kind-icon">get</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_apis_validation_.jsonobjectoptions.html#canbenull" class="tsd-kind-icon">can<wbr>BeNull</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_cache_index_.cache.html#set" class="tsd-kind-icon">set</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_apis_validation_.jsonobjectoptions.html#canbeundefined" class="tsd-kind-icon">can<wbr>BeUndefined</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_apis_validation_.jsonobjectoptions.html#failedhandler" class="tsd-kind-icon">failed<wbr>Handler</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_apis_validation_.jsonobjectoptions.html#options" class="tsd-kind-icon">options</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_apis_validation_.jsonobjectoptions.html#schema" class="tsd-kind-icon">schema</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_cache_index_.html#normalizecachekey" class="tsd-kind-icon">normalize<wbr>Cache<wbr>Key</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_apis_validation_.jsonobjectvalidationfailedhandlercontext.html" class="tsd-kind-icon">Json<wbr>Object<wbr>Validation<wbr>Failed<wbr>Handler<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_apis_validation_.html#jsonobjectvalidationfailedhandler" class="tsd-kind-icon">Json<wbr>Object<wbr>Validation<wbr>Failed<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_apis_validation_.html#jsonobject" class="tsd-kind-icon">json<wbr>Object</a>
 					</li>
 				</ul>
 			</nav>
