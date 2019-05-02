@@ -181,6 +181,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="_workspace_.workspace.html#ondispose" class="tsd-kind-icon">on<wbr>Dispose</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspace_.workspace.html#ondocumentopened" class="tsd-kind-icon">on<wbr>Document<wbr>Opened</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspace_.workspace.html#onfilechange" class="tsd-kind-icon">on<wbr>File<wbr>Change</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspace_.workspace.html#onwillsavetextdocument" class="tsd-kind-icon">on<wbr>Will<wbr>Save<wbr>Text<wbr>Document</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_workspace_.workspace.html#once" class="tsd-kind-icon">once</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_workspace_.workspace.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_workspace_.workspace.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
@@ -207,7 +208,7 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Workspace<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, folder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.WorkspaceFolder</span>, context<span class="tsd-signature-symbol">: </span><a href="../interfaces/_workspace_.workspacecontext.html" class="tsd-signature-type">WorkspaceContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_workspace_.workspace.html" class="tsd-signature-type">Workspace</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Workspace<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, folder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WorkspaceFolder</span>, context<span class="tsd-signature-symbol">: </span><a href="../interfaces/_workspace_.workspacecontext.html" class="tsd-signature-type">WorkspaceContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_workspace_.workspace.html" class="tsd-signature-type">Workspace</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -233,7 +234,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>folder: <span class="tsd-signature-type">vscode.WorkspaceFolder</span></h5>
+									<h5>folder: <span class="tsd-signature-type">WorkspaceFolder</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The folder instance.</p>
@@ -259,7 +260,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="_disposables" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _DISPOSABLES</h3>
-					<div class="tsd-signature tsd-kind-icon">_DISPOSABLES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.Disposable</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">_DISPOSABLES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Disposable</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from DisposableBase._DISPOSABLES</p>
 						<ul>
@@ -372,7 +373,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="folder" class="tsd-anchor"></a>
 					<h3>folder</h3>
-					<div class="tsd-signature tsd-kind-icon">folder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.WorkspaceFolder</span></div>
+					<div class="tsd-signature tsd-kind-icon">folder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WorkspaceFolder</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from WorkspaceBase.folder</p>
 						<ul>
@@ -575,7 +576,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:861</li>
+									<li>Defined in workspace.ts:883</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -597,7 +598,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:1082</li>
+									<li>Defined in workspace.ts:1104</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -619,7 +620,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:1089</li>
+									<li>Defined in workspace.ts:1111</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1688,7 +1689,7 @@
 					<a name="ondidchangeconfiguration" class="tsd-anchor"></a>
 					<h3>on<wbr>Did<wbr>Change<wbr>Configuration</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Configuration<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ConfigurationChangeEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Configuration<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConfigurationChangeEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1707,7 +1708,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>e: <span class="tsd-signature-type">vscode.ConfigurationChangeEvent</span></h5>
+									<h5>e: <span class="tsd-signature-type">ConfigurationChangeEvent</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1718,7 +1719,7 @@
 					<a name="ondidopentextdocument" class="tsd-anchor"></a>
 					<h3>on<wbr>Did<wbr>Open<wbr>Text<wbr>Document</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Open<wbr>Text<wbr>Document<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.TextDocument</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Open<wbr>Text<wbr>Document<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TextDocument</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1735,7 +1736,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>doc: <span class="tsd-signature-type">vscode.TextDocument</span></h5>
+									<h5>doc: <span class="tsd-signature-type">TextDocument</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The underlying text document.</p>
 									</div>
@@ -1749,7 +1750,7 @@
 					<a name="ondidsavetextdocument" class="tsd-anchor"></a>
 					<h3>on<wbr>Did<wbr>Save<wbr>Text<wbr>Document</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Save<wbr>Text<wbr>Document<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.TextDocument</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Save<wbr>Text<wbr>Document<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TextDocument</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1760,13 +1761,13 @@
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Is invoked when a text document has been changed.</p>
+									<p>Is invoked when a text document has been saved.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>doc: <span class="tsd-signature-type">vscode.TextDocument</span></h5>
+									<h5>doc: <span class="tsd-signature-type">TextDocument</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The underlying text document.</p>
 									</div>
@@ -1804,7 +1805,7 @@
 					<a name="ondocumentopened" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> on<wbr>Document<wbr>Opened</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Document<wbr>Opened<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.TextDocument</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Document<wbr>Opened<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TextDocument</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1816,7 +1817,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>doc: <span class="tsd-signature-type">vscode.TextDocument</span></h5>
+									<h5>doc: <span class="tsd-signature-type">TextDocument</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1827,7 +1828,7 @@
 					<a name="onfilechange" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> on<wbr>File<wbr>Change</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>File<wbr>Change<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_contracts_.filechangetype.html" class="tsd-signature-type">FileChangeType</a>, file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.Uri</span>, doc<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">vscode.TextDocument</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>File<wbr>Change<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_contracts_.filechangetype.html" class="tsd-signature-type">FileChangeType</a>, file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uri</span>, doc<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TextDocument</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1842,10 +1843,44 @@
 									<h5>type: <a href="../enums/_contracts_.filechangetype.html" class="tsd-signature-type">FileChangeType</a></h5>
 								</li>
 								<li>
-									<h5>file: <span class="tsd-signature-type">vscode.Uri</span></h5>
+									<h5>file: <span class="tsd-signature-type">Uri</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> doc: <span class="tsd-signature-type">vscode.TextDocument</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> doc: <span class="tsd-signature-type">TextDocument</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onwillsavetextdocument" class="tsd-anchor"></a>
+					<h3>on<wbr>Will<wbr>Save<wbr>Text<wbr>Document</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Will<wbr>Save<wbr>Text<wbr>Document<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TextDocumentWillSaveEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspace.ts:870</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Is invoked when a text document is going to be saved.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>e: <span class="tsd-signature-type">TextDocumentWillSaveEvent</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The event arguments.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2000,7 +2035,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:868</li>
+									<li>Defined in workspace.ts:890</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2047,7 +2082,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:874</li>
+									<li>Defined in workspace.ts:896</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2135,7 +2170,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:926</li>
+									<li>Defined in workspace.ts:948</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2167,7 +2202,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:943</li>
+									<li>Defined in workspace.ts:965</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2193,7 +2228,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:973</li>
+									<li>Defined in workspace.ts:995</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2252,7 +2287,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:1100</li>
+									<li>Defined in workspace.ts:1122</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2287,7 +2322,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspace.ts:1121</li>
+									<li>Defined in workspace.ts:1143</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2554,6 +2589,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_workspace_.workspace.html#onfilechange" class="tsd-kind-icon">on<wbr>File<wbr>Change</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_workspace_.workspace.html#onwillsavetextdocument" class="tsd-kind-icon">on<wbr>Will<wbr>Save<wbr>Text<wbr>Document</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_workspace_.workspace.html#once" class="tsd-kind-icon">once</a>

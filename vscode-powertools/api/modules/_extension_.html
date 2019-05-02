@@ -95,6 +95,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#ondidchangeconfiguration" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Configuration</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#ondidopentextdocument" class="tsd-kind-icon">on<wbr>Did<wbr>Open<wbr>Text<wbr>Document</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#ondidsavetextdocument" class="tsd-kind-icon">on<wbr>Did<wbr>Save<wbr>Text<wbr>Document</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#onwillsavetextdocument" class="tsd-kind-icon">on<wbr>Will<wbr>Save<wbr>Text<wbr>Document</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_extension_.html#runshellcommand" class="tsd-kind-icon">run<wbr>Shell<wbr>Command</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#withtextdocument" class="tsd-kind-icon">with<wbr>Text<wbr>Document</a></li>
 							</ul>
@@ -117,7 +118,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="currentcontext" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagLet">Let</span> current<wbr>Context</h3>
-					<div class="tsd-signature tsd-kind-icon">current<wbr>Context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.ExtensionContext</span></div>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ExtensionContext</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in extension.ts:43</li>
@@ -147,7 +148,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="outputchannel" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagLet">Let</span> output<wbr>Channel</h3>
-					<div class="tsd-signature tsd-kind-icon">output<wbr>Channel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.OutputChannel</span></div>
+					<div class="tsd-signature tsd-kind-icon">output<wbr>Channel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">OutputChannel</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in extension.ts:46</li>
@@ -181,19 +182,19 @@
 					<a name="activate" class="tsd-anchor"></a>
 					<h3>activate</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">activate<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">activate<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ExtensionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in extension.ts:417</li>
+									<li>Defined in extension.ts:423</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>context: <span class="tsd-signature-type">vscode.ExtensionContext</span></h5>
+									<h5>context: <span class="tsd-signature-type">ExtensionContext</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -204,7 +205,7 @@
 					<a name="createnewworkspace" class="tsd-anchor"></a>
 					<h3>create<wbr>New<wbr>Workspace</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>New<wbr>Workspace<span class="tsd-signature-symbol">(</span>folder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.WorkspaceFolder</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_workspace_.workspace.html" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>New<wbr>Workspace<span class="tsd-signature-symbol">(</span>folder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WorkspaceFolder</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_workspace_.workspace.html" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -216,7 +217,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>folder: <span class="tsd-signature-type">vscode.WorkspaceFolder</span></h5>
+									<h5>folder: <span class="tsd-signature-type">WorkspaceFolder</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_workspace_.workspace.html" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -233,7 +234,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in extension.ts:737</li>
+									<li>Defined in extension.ts:752</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -350,7 +351,7 @@
 					<a name="getcontext" class="tsd-anchor"></a>
 					<h3>get<wbr>Context</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ExtensionContext</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -364,7 +365,7 @@
 									<p>Returns the current extension context.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">vscode.ExtensionContext</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ExtensionContext</span></h4>
 							<p>The current extension context.</p>
 						</li>
 					</ul>
@@ -414,7 +415,7 @@
 					<a name="ondidchangeconfiguration" class="tsd-anchor"></a>
 					<h3>on<wbr>Did<wbr>Change<wbr>Configuration</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Configuration<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ConfigurationChangeEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Configuration<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConfigurationChangeEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -426,7 +427,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>e: <span class="tsd-signature-type">vscode.ConfigurationChangeEvent</span></h5>
+									<h5>e: <span class="tsd-signature-type">ConfigurationChangeEvent</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -437,7 +438,7 @@
 					<a name="ondidopentextdocument" class="tsd-anchor"></a>
 					<h3>on<wbr>Did<wbr>Open<wbr>Text<wbr>Document</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Open<wbr>Text<wbr>Document<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.TextDocument</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Open<wbr>Text<wbr>Document<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TextDocument</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -449,7 +450,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>doc: <span class="tsd-signature-type">vscode.TextDocument</span></h5>
+									<h5>doc: <span class="tsd-signature-type">TextDocument</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -460,7 +461,7 @@
 					<a name="ondidsavetextdocument" class="tsd-anchor"></a>
 					<h3>on<wbr>Did<wbr>Save<wbr>Text<wbr>Document</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Save<wbr>Text<wbr>Document<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.TextDocument</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Save<wbr>Text<wbr>Document<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TextDocument</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -472,7 +473,30 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>doc: <span class="tsd-signature-type">vscode.TextDocument</span></h5>
+									<h5>doc: <span class="tsd-signature-type">TextDocument</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="onwillsavetextdocument" class="tsd-anchor"></a>
+					<h3>on<wbr>Will<wbr>Save<wbr>Text<wbr>Document</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Will<wbr>Save<wbr>Text<wbr>Document<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TextDocumentWillSaveEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in extension.ts:281</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>e: <span class="tsd-signature-type">TextDocumentWillSaveEvent</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -489,7 +513,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in extension.ts:287</li>
+									<li>Defined in extension.ts:293</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -517,26 +541,26 @@
 					<a name="withtextdocument" class="tsd-anchor"></a>
 					<h3>with<wbr>Text<wbr>Document</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">with<wbr>Text<wbr>Document<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.TextDocument</span>, action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Text<wbr>Document<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TextDocument</span>, action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in extension.ts:394</li>
+									<li>Defined in extension.ts:400</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>doc: <span class="tsd-signature-type">vscode.TextDocument</span></h5>
+									<h5>doc: <span class="tsd-signature-type">TextDocument</span></h5>
 								</li>
 								<li>
 									<h5>action: <span class="tsd-signature-type">function</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>ws<span class="tsd-signature-symbol">: </span><a href="../classes/_workspace_.workspace.html" class="tsd-signature-type">Workspace</a>, d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.TextDocument</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>ws<span class="tsd-signature-symbol">: </span><a href="../classes/_workspace_.workspace.html" class="tsd-signature-type">Workspace</a>, d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TextDocument</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
@@ -546,7 +570,7 @@
 															<h5>ws: <a href="../classes/_workspace_.workspace.html" class="tsd-signature-type">Workspace</a></h5>
 														</li>
 														<li>
-															<h5>d: <span class="tsd-signature-type">vscode.TextDocument</span></h5>
+															<h5>d: <span class="tsd-signature-type">TextDocument</span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span>
@@ -628,6 +652,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_extension_.html#ondidsavetextdocument" class="tsd-kind-icon">on<wbr>Did<wbr>Save<wbr>Text<wbr>Document</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_extension_.html#onwillsavetextdocument" class="tsd-kind-icon">on<wbr>Will<wbr>Save<wbr>Text<wbr>Document</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_extension_.html#runshellcommand" class="tsd-kind-icon">run<wbr>Shell<wbr>Command</a>

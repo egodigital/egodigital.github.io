@@ -125,7 +125,7 @@
 					<a name="buildbuttonsync" class="tsd-anchor"></a>
 					<h3>build<wbr>Button<wbr>Sync</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">build<wbr>Button<wbr>Sync&lt;TButton&gt;<span class="tsd-signature-symbol">(</span>button<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TButton</span>, setup<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.StatusBarItem</span></li>
+						<li class="tsd-signature tsd-kind-icon">build<wbr>Button<wbr>Sync&lt;TButton&gt;<span class="tsd-signature-symbol">(</span>button<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TButton</span>, setup<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StatusBarItem</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -158,14 +158,14 @@
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>newStatusBarItem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.StatusBarItem</span>, button<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TButton</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>newStatusBarItem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StatusBarItem</span>, button<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TButton</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>newStatusBarItem: <span class="tsd-signature-type">vscode.StatusBarItem</span></h5>
+															<h5>newStatusBarItem: <span class="tsd-signature-type">StatusBarItem</span></h5>
 														</li>
 														<li>
 															<h5>button: <span class="tsd-signature-type">TButton</span></h5>
@@ -178,7 +178,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">vscode.StatusBarItem</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">StatusBarItem</span></h4>
 							<p>The new status bar item.</p>
 						</li>
 					</ul>
@@ -441,9 +441,6 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> codeExecutor: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A custom code executor.</p>
-									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
@@ -828,12 +825,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:528</li>
+									<li>Defined in helpers.ts:529</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Converts a button to a global button.</p>
+									<p>Converts a button to a button object, which can be used in code.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -881,7 +878,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:639</li>
+									<li>Defined in helpers.ts:640</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -913,7 +910,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:653</li>
+									<li>Defined in helpers.ts:654</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
