@@ -79,6 +79,18 @@ npm install
 
 <span class="hljs-comment"># build</span>
 npm run build</code></pre>
+				<h3 id="requirements">Requirements</h3>
+				<h4 id="typescript">TypeScript</h4>
+				<p>You have to enable <a href="https://www.typescriptlang.org/docs/handbook/decorators.html">decorator</a> feature in your <code>tsconfig.json</code> file:</p>
+				<pre><code class="language-jsonc">{
+    &quot;compilerOptions&quot;: {
+        // ...
+
+        &quot;experimentalDecorators&quot;: true
+    },
+
+    // ...
+}</code></pre>
 				<h3 id="examples">Examples</h3>
 				<h3 id="quick-start">Quick start</h3>
 				<p>First create a root directory, where all your controllers will be stored and implemented, lets say <code>/controllers</code>.</p>
@@ -223,7 +235,7 @@ app.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><s
     <span class="hljs-comment">// serialize the results of any</span>
     <span class="hljs-comment">// controller route method and</span>
     <span class="hljs-comment">// send each as response</span>
-    <span class="hljs-keyword">public</span> __serialize(context: ResponseSerializerContext) {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> __serialize(context: ResponseSerializerContext) {
         <span class="hljs-keyword">return</span> context.response
             .header(<span class="hljs-string">'Content-Type'</span>, <span class="hljs-string">'application/json'</span>)
             .send(<span class="hljs-built_in">JSON</span>.stringify(
@@ -294,7 +306,7 @@ app.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><s
  */</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> Controller <span class="hljs-keyword">extends</span> ControllerBase {
     <span class="hljs-comment">// handle exceptions</span>
-    <span class="hljs-keyword">public</span> __error(context: RequestErrorHandlerContext) {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> __error(context: RequestErrorHandlerContext) {
         <span class="hljs-keyword">return</span> context.response
             .status(<span class="hljs-number">500</span>)
             .send(<span class="hljs-string">'SERVER ERROR: '</span> + context.error);
