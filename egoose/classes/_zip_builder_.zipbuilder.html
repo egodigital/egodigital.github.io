@@ -100,6 +100,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_zip_builder_.zipbuilder.html#addbuffer" class="tsd-kind-icon">add<wbr>Buffer</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_zip_builder_.zipbuilder.html#adddir" class="tsd-kind-icon">add<wbr>Dir</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_zip_builder_.zipbuilder.html#addfiles" class="tsd-kind-icon">add<wbr>Files</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_zip_builder_.zipbuilder.html#createzipinstance" class="tsd-kind-icon">create<wbr>Zip<wbr>Instance</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_zip_builder_.zipbuilder.html#tobuffer" class="tsd-kind-icon">to<wbr>Buffer</a></li>
 							</ul>
@@ -115,7 +116,7 @@
 					<div class="tsd-signature tsd-kind-icon">_STEPS<span class="tsd-signature-symbol">:</span> <a href="../modules/_zip_builder_.html#zipbuilderstep" class="tsd-signature-type">ZipBuilderStep</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in zip/builder.ts:30</li>
+							<li>Defined in zip/builder.ts:31</li>
 						</ul>
 					</aside>
 				</section>
@@ -125,7 +126,7 @@
 					<div class="tsd-signature tsd-kind-icon">_buffer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in zip/builder.ts:29</li>
+							<li>Defined in zip/builder.ts:30</li>
 						</ul>
 					</aside>
 				</section>
@@ -136,13 +137,13 @@
 					<a name="addbuffer" class="tsd-anchor"></a>
 					<h3>add<wbr>Buffer</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Buffer<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Buffer<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in zip/builder.ts:40</li>
+									<li>Defined in zip/builder.ts:41</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -153,7 +154,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<h5>p: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The path in the zip file.</p>
 									</div>
@@ -174,13 +175,13 @@
 					<a name="adddir" class="tsd-anchor"></a>
 					<h3>add<wbr>Dir</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Dir<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Dir<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in zip/builder.ts:56</li>
+									<li>Defined in zip/builder.ts:57</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -191,7 +192,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<h5>p: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The path in the zip file.</p>
 									</div>
@@ -199,6 +200,40 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 							<p>this</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addfiles" class="tsd-anchor"></a>
+					<h3>add<wbr>Files</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Files<span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, basePath<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in zip/builder.ts:72</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds all files of a local directory.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dir: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path of the local directory.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> basePath: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -212,7 +247,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in zip/builder.ts:64</li>
+									<li>Defined in zip/builder.ts:112</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ZipFile</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -229,7 +264,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in zip/builder.ts:81</li>
+									<li>Defined in zip/builder.ts:129</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -274,6 +309,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_zip_builder_.zipbuilder.html#adddir" class="tsd-kind-icon">add<wbr>Dir</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_zip_builder_.zipbuilder.html#addfiles" class="tsd-kind-icon">add<wbr>Files</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_zip_builder_.zipbuilder.html#createzipinstance" class="tsd-kind-icon">create<wbr>Zip<wbr>Instance</a>
 							</li>
@@ -289,6 +327,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_zip_builder_.html#buildzip" class="tsd-kind-icon">build<wbr>Zip</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_zip_builder_.html#normalizezippath" class="tsd-kind-icon">normalize<wbr>Zip<wbr>Path</a>
 					</li>
 				</ul>
 			</nav>
