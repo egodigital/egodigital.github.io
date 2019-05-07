@@ -1,0 +1,283 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>swagger-jsdoc-express</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">swagger-jsdoc-express</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> swagger-jsdoc-express</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p><a href="https://www.npmjs.com/package/swagger-jsdoc-express"><img src="https://img.shields.io/npm/v/swagger-jsdoc-express.svg" alt="npm"></a></p>
+				<h1 id="swagger-jsdoc-express">swagger-jsdoc-express</h1>
+				<p>Sets up one or more <a href="https://swagger.io/">Swagger</a> documentation UIs via <a href="https://expressjs.com/">Express</a> using <a href="https://en.wikipedia.org/wiki/JSDoc">JSDoc</a> from source files.</p>
+				<h2 id="install">Install</h2>
+				<p>Execute the following command from your project folder, where your <code>package.json</code> file is stored:</p>
+				<pre><code class="language-bash">npm install --save swagger-jsdoc-express</code></pre>
+				<h2 id="example">Example</h2>
+				<h3 id="setup-ui">Setup UI</h3>
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">'express'</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> swaggerJSDocExpress <span class="hljs-keyword">from</span> <span class="hljs-string">'swagger-jsdoc-express'</span>;
+
+<span class="hljs-keyword">const</span> app = express();
+
+<span class="hljs-comment">// create a '/swagger' endpoint ...</span>
+swaggerJSDocExpress.setupSwaggerUIFromSourceFiles(
+    {
+        cwd: <span class="hljs-string">'/root/path/to/source/files'</span>,
+        files: [ <span class="hljs-string">'**/*.ts'</span>, <span class="hljs-string">'**/*.js'</span> ],
+    },
+
+    <span class="hljs-comment">// ... and directly register it</span>
+    <span class="hljs-comment">// in 'app'</span>
+    app
+);
+
+app.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-comment">// should be available via</span>
+    <span class="hljs-comment">// https://localhost:8080/swagger</span>
+    <span class="hljs-comment">// now</span>
+});</code></pre>
+				<h3 id="document-api">Document API</h3>
+				<p>The following code shows, how to document API (you can put the JSDoc to all locations inside the files, which are handled by <code>setupSwaggerUIFromSourceFiles()</code> function):</p>
+				<pre><code class="language-typescript"><span class="hljs-comment">/**
+ * @swaggerDefinition
+ *
+ * MonitoringStatusResult:
+ *   type: object
+ *   properties:
+ *     data:
+ *       type: object
+ *       description: The monitoring data (if operation was successful).
+ *       properties:
+ *         cpu_load:
+ *           type: number
+ *           description: The CPU load in percentage.
+ *           example: 0.05
+ *         database_connected:
+ *           type: boolean
+ *           description: Indicates if app could connect to database or not.
+ *           example: true
+ *         disk_space:
+ *           type: number
+ *           description: 'The total disc space, in bytes.'
+ *           example: 509197923979
+ *         disk_space_used:
+ *           type: number
+ *           description: 'The disc space in use, in bytes.'
+ *           example: 23979
+ *         ram:
+ *           type: number
+ *           description: 'The total ram, in bytes.'
+ *           example: 5091979000
+ *         ram_used:
+ *           type: number
+ *           description: 'The ram in use, in bytes.'
+ *           example: 23979
+ *         version:
+ *           type: object
+ *           description: The app version.
+ *           properties:
+ *             date:
+ *               type: string
+ *               description: The last commit date.
+ *               example: '1979-09-05T23:09:19.790Z'
+ *             hash:
+ *               type: string
+ *               description: The last commit hash.
+ *               example: 0123456789012345678901234567890123456789
+ *     success:
+ *       type: boolean
+ *       description: Indicates if operation was successful or not.
+ *       example: true
+ */</span>
+<span class="hljs-keyword">interface</span> MonitoringStatusResult {
+    <span class="hljs-comment">// ...</span>
+}
+
+
+<span class="hljs-comment">/**
+ * @swaggerPath
+ *
+ * /monitoring/status:
+ *   get:
+ *     summary: Returns monitoring data.
+ *     produces:
+ *       - application/json
+ *     responses:
+ *       '200':
+ *         description: Operation was successful.
+ *         schema:
+ *           $ref: '#/definitions/MonitoringStatusResult'
+ *       '500':
+ *         description: Server error
+ */</span>
+app.get(<span class="hljs-string">'/monitoring/status'</span>, <span class="hljs-function">(<span class="hljs-params">request, response</span>) =&gt;</span> {
+    <span class="hljs-keyword">return</span> response.status(<span class="hljs-number">200</span>)
+        .send(<span class="hljs-built_in">JSON</span>.stringify(&lt;MonitoringStatusResult&gt;{
+            <span class="hljs-comment">// ...</span>
+        }));
+});</code></pre>
+				<p>Instead of using <a href="https://en.wikipedia.org/wiki/YAML">YAML</a>, you are also able to use <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> format.</p>
+				<h2 id="contributors">Contributors</h2>
+				<ul>
+					<li><a href="https://github.com/m1h43l">m1h43l</a></li>
+				</ul>
+				<h2 id="documentation">Documentation</h2>
+				<p>The complete API documentation can be found <a href="https://egodigital.github.io/swagger-jsdoc-express/">here</a>.</p>
+				<h2 id="resources">Resources</h2>
+				<ul>
+					<li><a href="https://swagger.io/docs/specification/2-0/basic-structure/">Swagger 2.0 defintion</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_generate_.html">"generate"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_index_.html">"index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_parse_.html">"parse"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_utils_.html">"utils"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
