@@ -110,6 +110,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_commands_job_index_.egocommand.html#_executescriptfile" class="tsd-kind-icon">_execute<wbr>Script<wbr>File</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_commands_job_index_.egocommand.html#_executeshellscript" class="tsd-kind-icon">_execute<wbr>Shell<wbr>Script</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_job_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_job_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a></li>
 							</ul>
@@ -122,12 +123,12 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="description" class="tsd-anchor"></a>
 					<h3>description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Executes one or more script periodically."</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Executes one or more script periodically.&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Executes one or more scripts periodically."</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Executes one or more scripts periodically.&quot;</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_contracts_.command.html">Command</a>.<a href="../interfaces/_contracts_.command.html#description">description</a></p>
 						<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#description">description</a></p>
 						<ul>
-							<li>Defined in commands/job/index.ts:32</li>
+							<li>Defined in commands/job/index.ts:34</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -144,7 +145,7 @@
 						<p>Implementation of <a href="../interfaces/_contracts_.command.html">Command</a>.<a href="../interfaces/_contracts_.command.html#syntax">syntax</a></p>
 						<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#syntax">syntax</a></p>
 						<ul>
-							<li>Defined in commands/job/index.ts:164</li>
+							<li>Defined in commands/job/index.ts:188</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -166,7 +167,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in commands/job/index.ts:167</li>
+									<li>Defined in commands/job/index.ts:203</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ctx: <a href="../interfaces/_contracts_.commandexecutecontext.html" class="tsd-signature-type">CommandExecuteContext</a></h5>
+								</li>
+								<li>
+									<h5>scriptFile: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_executeshellscript" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _execute<wbr>Shell<wbr>Script</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_execute<wbr>Shell<wbr>Script<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.commandexecutecontext.html" class="tsd-signature-type">CommandExecuteContext</a>, scriptFile<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in commands/job/index.ts:191</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -193,7 +220,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#execute">execute</a></p>
 								<ul>
-									<li>Defined in commands/job/index.ts:35</li>
+									<li>Defined in commands/job/index.ts:37</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -223,7 +250,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#showhelp">showHelp</a></p>
 								<ul>
-									<li>Defined in commands/job/index.ts:123</li>
+									<li>Defined in commands/job/index.ts:144</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -264,6 +291,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_commands_job_index_.egocommand.html#_executescriptfile" class="tsd-kind-icon">_execute<wbr>Script<wbr>File</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_commands_job_index_.egocommand.html#_executeshellscript" class="tsd-kind-icon">_execute<wbr>Shell<wbr>Script</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_commands_job_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a>
