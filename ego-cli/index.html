@@ -1,0 +1,276 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ego-cli</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">ego-cli</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> ego-cli</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p><a href="https://www.npmjs.com/package/ego-cli"><img src="https://img.shields.io/npm/v/ego-cli.svg" alt="npm"></a></p>
+				<h1 id="ego-cli">ego-cli</h1>
+				<p>Command Line Interface, which is designed to handle things, like Dev(Op) tasks, much faster.</p>
+				<h2 id="install">Install</h2>
+				<p>You can install it globally:</p>
+				<pre><code class="language-bash">npm install -g ego-cli</code></pre>
+				<p>Or for your project, from where your <code>package.json</code> file is stored:</p>
+				<pre><code class="language-bash">npm install --save-dev ego-cli</code></pre>
+				<h2 id="execute">Execute</h2>
+				<p>For example run the integrated <a href="https://github.com/egodigital/generator-ego">Yeoman generator</a> by executing:</p>
+				<pre><code class="language-bash">ego new</code></pre>
+				<p>To list all available commands, simply run</p>
+				<pre><code class="language-bash">ego</code></pre>
+				<h2 id="available-commands">Available commands</h2>
+				<p>A (non complete) list of some interesting commands:</p>
+				<pre><code>build         <span class="hljs-comment"># Shorthand for 'npm run build'.</span>
+docker-<span class="hljs-literal">stop</span>   <span class="hljs-comment"># Stops all running Docker containers.</span>
+docker-up     <span class="hljs-comment"># Shorthand for 'docker-compose up'.</span>
+git-checkout  <span class="hljs-comment"># Checks out (to) a branch.</span>
+git-export    <span class="hljs-comment"># Clones a repository to the working directory and removes the '.git' subfolder.</span>
+git-pull      <span class="hljs-comment"># Pulls from all remotes to the current branch.</span>
+git-push      <span class="hljs-comment"># Pushes the current branch to all remotes.</span>
+git-sync      <span class="hljs-comment"># Syncs the current branch with all remotes.</span>
+new           <span class="hljs-comment"># Starts the e.GO generator for Yeoman.</span>
+<span class="hljs-keyword">node</span><span class="hljs-title">-install</span>  <span class="hljs-comment"># Removes the 'node_modules' subfolder and executes 'npm install'.</span>
+run           <span class="hljs-comment"># Runs one or more Node.js based script file(s).</span></code></pre><h2 id="custom-commands">Custom commands</h2>
+				<p>To implement a command, lets say <code>my-command</code>, create a <code>my-command.sh</code> (<code>my-command.cmd</code> on Windows) file inside the <code>.ego</code> subfolder of your home directory, give it enough rights to be executed and fill it with the code, you would like to execute.</p>
+				<p>To execute the new command, simply run</p>
+				<pre><code class="language-bash">ego my-command ARG1 ARG2</code></pre>
+				<p>All additional arguments, after <code>my-command</code>, will be passed to the shell / batch script.</p>
+				<h3 id="scripts">Scripts</h3>
+				<p>With the help of <code>run</code> command, you can implement <a href="">Node.js</a> based scripts.</p>
+				<p>Create a <code>.js</code> file, like <code>test.js</code>, and use the following skeleton:</p>
+				<pre><code class="language-javascript">exports.execute = <span class="hljs-keyword">async</span> (context) =&gt; {
+    <span class="hljs-comment">// context.args     =&gt;  List of command line arguments, s. https://www.npmjs.com/package/minimist</span>
+    <span class="hljs-comment">// context.cwd      =&gt;  The full path of the current working directory</span>
+    <span class="hljs-comment">// context.package  =&gt;  The 'package.json' file of the e.GO CLI</span>
+    <span class="hljs-comment">// context.queue    =&gt;  A queue, that only executes 1 action at the same time, s. https://www.npmjs.com/package/p-queue</span>
+    <span class="hljs-comment">// context.require  =&gt;  Allows to include a NPM module of the e.GO CLI</span>
+    <span class="hljs-comment">// context.values   =&gt;  A key/value pair storage, that is available while the execution</span>
+    <span class="hljs-comment">// context.verbose  =&gt;  Indicates, if script should output additional information or not</span>
+
+    <span class="hljs-comment">// docker utils</span>
+    <span class="hljs-keyword">const</span> docker = context.require(<span class="hljs-string">'./docker'</span>);
+    <span class="hljs-comment">// git utils</span>
+    <span class="hljs-keyword">const</span> git = context.require(<span class="hljs-string">'./git'</span>);
+    <span class="hljs-comment">// common app utils</span>
+    <span class="hljs-keyword">const</span> util = context.require(<span class="hljs-string">'./util'</span>);
+
+    util.writeLine(<span class="hljs-string">'Hello, from '</span> + __filename);
+};</code></pre>
+				<p>You can run the script, by executing</p>
+				<pre><code class="language-bash">ego run test.js</code></pre>
+				<p>from the folder, that contains the file.</p>
+				<p>You are also able to store it globally, inside the <code>.ego</code> subfolder, inside your user&#39;s home directory (<code>${HOME}/.ego/test.js</code>).</p>
+				<h2 id="contribute">Contribute</h2>
+				<p>The <a href="./CONTRIBUTE.md">contribution guide</a> explains, how to implement a new command, work with the code and open a pull request.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_build_index_.html">"commands/build/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_docker_stop_index_.html">"commands/docker-<wbr>stop/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_docker_up_index_.html">"commands/docker-<wbr>up/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_get_index_.html">"commands/get/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_git_checkout_index_.html">"commands/git-<wbr>checkout/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_git_export_index_.html">"commands/git-<wbr>export/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_git_pull_index_.html">"commands/git-<wbr>pull/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_git_push_index_.html">"commands/git-<wbr>push/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_git_sync_index_.html">"commands/git-<wbr>sync/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_help_index_.html">"commands/help/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_init_index_.html">"commands/init/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_new_index_.html">"commands/new/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_node_install_index_.html">"commands/node-<wbr>install/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_run_index_.html">"commands/run/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_set_index_.html">"commands/set/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_contracts_.html">"contracts"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_docker_.html">"docker"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_git_.html">"git"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_help_.html">"help"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_index_.html">"index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_scripts_.html">"scripts"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_storage_.html">"storage"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_util_.html">"util"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
