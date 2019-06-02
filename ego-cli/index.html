@@ -79,16 +79,17 @@
 				<pre><code class="language-bash">ego</code></pre>
 				<h2 id="available-commands">Available commands</h2>
 				<p>A (non complete) list of some interesting commands:</p>
-				<pre><code>build         <span class="hljs-comment"># Shorthand for 'npm run build'.</span>
-docker-<span class="hljs-literal">stop</span>   <span class="hljs-comment"># Stops all running Docker containers.</span>
+				<pre><code><span class="hljs-keyword">backup</span>        <span class="hljs-comment"># Backups the current directory.</span>
+<span class="hljs-keyword">build</span>         <span class="hljs-comment"># Shorthand for 'npm run build'.</span>
+docker-<span class="hljs-keyword">stop</span>   <span class="hljs-comment"># Stops all running Docker containers.</span>
 docker-up     <span class="hljs-comment"># Shorthand for 'docker-compose up'.</span>
 git-checkout  <span class="hljs-comment"># Checks out (to) a branch.</span>
-git-export    <span class="hljs-comment"># Clones a repository to the working directory and removes the '.git' subfolder.</span>
+git-<span class="hljs-keyword">export</span>    <span class="hljs-comment"># Clones a repository to the working directory and removes the '.git' subfolder.</span>
 git-pull      <span class="hljs-comment"># Pulls from all remotes to the current branch.</span>
 git-push      <span class="hljs-comment"># Pushes the current branch to all remotes.</span>
-git-sync      <span class="hljs-comment"># Syncs the current branch with all remotes.</span>
-new           <span class="hljs-comment"># Starts the e.GO generator for Yeoman.</span>
-<span class="hljs-keyword">node</span><span class="hljs-title">-install</span>  <span class="hljs-comment"># Removes the 'node_modules' subfolder and executes 'npm install'.</span>
+git-<span class="hljs-keyword">sync</span>      <span class="hljs-comment"># Syncs the current branch with all remotes.</span>
+<span class="hljs-keyword">new</span>           <span class="hljs-comment"># Starts the e.GO generator for Yeoman.</span>
+node-<span class="hljs-keyword">install</span>  <span class="hljs-comment"># Removes the 'node_modules' subfolder and executes 'npm install'.</span>
 run           <span class="hljs-comment"># Runs one or more Node.js based script file(s).</span></code></pre><h2 id="custom-commands">Custom commands</h2>
 				<p>To implement a command, lets say <code>my-command</code>, create a <code>my-command.sh</code> (<code>my-command.cmd</code> on Windows) file inside the <code>.ego</code> subfolder of your home directory, give it enough rights to be executed and fill it with the code, you would like to execute.</p>
 				<p>To execute the new command, simply run</p>
@@ -98,19 +99,22 @@ run           <span class="hljs-comment"># Runs one or more Node.js based script
 				<p>With the help of <code>run</code> command, you can implement <a href="">Node.js</a> based scripts.</p>
 				<p>Create a <code>.js</code> file, like <code>test.js</code>, and use the following skeleton:</p>
 				<pre><code class="language-javascript">exports.execute = <span class="hljs-keyword">async</span> (context) =&gt; {
-    <span class="hljs-comment">// context.args     =&gt;  List of command line arguments, s. https://www.npmjs.com/package/minimist</span>
-    <span class="hljs-comment">// context.cwd      =&gt;  The full path of the current working directory</span>
-    <span class="hljs-comment">// context.package  =&gt;  The 'package.json' file of the e.GO CLI</span>
-    <span class="hljs-comment">// context.queue    =&gt;  A queue, that only executes 1 action at the same time, s. https://www.npmjs.com/package/p-queue</span>
-    <span class="hljs-comment">// context.require  =&gt;  Allows to include a NPM module of the e.GO CLI</span>
-    <span class="hljs-comment">// context.values   =&gt;  A key/value pair storage, that is available while the execution</span>
-    <span class="hljs-comment">// context.verbose  =&gt;  Indicates, if script should output additional information or not</span>
+    <span class="hljs-comment">// context  =&gt;  s. https://egodigital.github.io/ego-cli/interfaces/_contracts_.commandexecutecontext.html</span>
 
-    <span class="hljs-comment">// docker utils</span>
+    <span class="hljs-comment">// context.args            =&gt;  List of command line arguments, s. https://www.npmjs.com/package/minimist</span>
+    <span class="hljs-comment">// context.cwd             =&gt;  The full path of the current working directory</span>
+    <span class="hljs-comment">// context.getFullPath()   =&gt;  Returns the full version of a path, based on the value of 'cwd'</span>
+    <span class="hljs-comment">// context.package         =&gt;  The 'package.json' file of the e.GO CLI</span>
+    <span class="hljs-comment">// context.queue           =&gt;  A queue, that only executes 1 action at the same time, s. https://www.npmjs.com/package/p-queue</span>
+    <span class="hljs-comment">// context.require         =&gt;  Allows to include a NPM module of the e.GO CLI</span>
+    <span class="hljs-comment">// context.values          =&gt;  A key/value pair storage, that is available while the execution</span>
+    <span class="hljs-comment">// context.verbose         =&gt;  Indicates, if script should output additional information or not</span>
+
+    <span class="hljs-comment">// docker utils, s. https://egodigital.github.io/ego-cli/modules/_docker_.html</span>
     <span class="hljs-keyword">const</span> docker = context.require(<span class="hljs-string">'./docker'</span>);
-    <span class="hljs-comment">// git utils</span>
+    <span class="hljs-comment">// git utils, s. https://egodigital.github.io/ego-cli/modules/_git_.html</span>
     <span class="hljs-keyword">const</span> git = context.require(<span class="hljs-string">'./git'</span>);
-    <span class="hljs-comment">// common app utils</span>
+    <span class="hljs-comment">// common app utils, s. https://egodigital.github.io/ego-cli/modules/_util_.html</span>
     <span class="hljs-keyword">const</span> util = context.require(<span class="hljs-string">'./util'</span>);
 
     util.writeLine(<span class="hljs-string">'Hello, from '</span> + __filename);
@@ -128,6 +132,9 @@ run           <span class="hljs-comment"># Runs one or more Node.js based script
 				<ul>
 					<li class="globals  ">
 						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_backup_index_.html">"commands/backup/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_commands_build_index_.html">"commands/build/index"</a>

@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_commands_get_index_.html">&quot;commands/get/index&quot;</a>
+					<a href="../modules/_commands_backup_index_.html">&quot;commands/backup/index&quot;</a>
 				</li>
 				<li>
-					<a href="_commands_get_index_.egocommand.html">EgoCommand</a>
+					<a href="_commands_backup_index_.egocommand.html">EgoCommand</a>
 				</li>
 			</ul>
 			<h1>Class EgoCommand</h1>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Get command.</p>
+						<p>Backup command.</p>
 					</div>
 				</div>
 			</section>
@@ -102,15 +102,20 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_get_index_.egocommand.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_get_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_backup_index_.egocommand.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_commands_backup_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_get_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_get_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_commands_backup_index_.egocommand.html#_applyfiletimes" class="tsd-kind-icon">_apply<wbr>File<wbr>Times</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_commands_backup_index_.egocommand.html#_arefilesequal" class="tsd-kind-icon">_are<wbr>Files<wbr>Equal</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_commands_backup_index_.egocommand.html#_backupfolder" class="tsd-kind-icon">_backup<wbr>Folder</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_commands_backup_index_.egocommand.html#_normalizefsname" class="tsd-kind-icon">_normalizeFSName</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_commands_backup_index_.egocommand.html#_scandir" class="tsd-kind-icon">_scan<wbr>Dir</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_backup_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_backup_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a></li>
 							</ul>
 						</section>
 					</div>
@@ -121,12 +126,12 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="description" class="tsd-anchor"></a>
 					<h3>description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Lists one or more config value(s)."</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Lists one or more config value(s).&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Backups the current directory."</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Backups the current directory.&quot;</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_contracts_.command.html">Command</a>.<a href="../interfaces/_contracts_.command.html#description">description</a></p>
 						<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#description">description</a></p>
 						<ul>
-							<li>Defined in commands/get/index.ts:31</li>
+							<li>Defined in commands/backup/index.ts:36</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -135,15 +140,15 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="syntax" class="tsd-anchor"></a>
 					<h3>syntax</h3>
-					<div class="tsd-signature tsd-kind-icon">syntax<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"[REGEX_FILTER*] [options]"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;[REGEX_FILTER*] [options]&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">syntax<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;[options]&quot;</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_contracts_.command.html">Command</a>.<a href="../interfaces/_contracts_.command.html#syntax">syntax</a></p>
-						<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#syntax">syntax</a></p>
+						<p>Inherited from <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#syntax">syntax</a></p>
 						<ul>
-							<li>Defined in commands/get/index.ts:154</li>
+							<li>Defined in contracts.ts:216</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -155,6 +160,133 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_applyfiletimes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _apply<wbr>File<wbr>Times</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_apply<wbr>File<wbr>Times<span class="tsd-signature-symbol">(</span>src<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Stats</span>, dest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in commands/backup/index.ts:234</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>src: <span class="tsd-signature-type">Stats</span></h5>
+								</li>
+								<li>
+									<h5>dest: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_arefilesequal" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _are<wbr>Files<wbr>Equal</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_are<wbr>Files<wbr>Equal<span class="tsd-signature-symbol">(</span>src<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Stats</span>, dest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Stats</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in commands/backup/index.ts:247</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>src: <span class="tsd-signature-type">Stats</span></h5>
+								</li>
+								<li>
+									<h5>dest: <span class="tsd-signature-type">Stats</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_backupfolder" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _backup<wbr>Folder</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_backup<wbr>Folder<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.commandexecutecontext.html" class="tsd-signature-type">CommandExecuteContext</a>, src<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in commands/backup/index.ts:110</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ctx: <a href="../interfaces/_contracts_.commandexecutecontext.html" class="tsd-signature-type">CommandExecuteContext</a></h5>
+								</li>
+								<li>
+									<h5>src: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>dest: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_normalizefsname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _normalizeFSName</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_normalizeFSName<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in commands/backup/index.ts:256</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_scandir" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _scan<wbr>Dir</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_scan<wbr>Dir<span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_commands_backup_index_.directoryentry.html" class="tsd-signature-type">DirectoryEntry</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in commands/backup/index.ts:264</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dir: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_commands_backup_index_.directoryentry.html" class="tsd-signature-type">DirectoryEntry</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="execute" class="tsd-anchor"></a>
 					<h3>execute</h3>
@@ -166,7 +298,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#execute">execute</a></p>
 								<ul>
-									<li>Defined in commands/get/index.ts:34</li>
+									<li>Defined in commands/backup/index.ts:39</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -196,7 +328,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#showhelp">showHelp</a></p>
 								<ul>
-									<li>Defined in commands/get/index.ts:141</li>
+									<li>Defined in commands/backup/index.ts:95</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -217,7 +349,7 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_commands_backup_index_.html">"commands/backup/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -229,7 +361,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_commands_docker_up_index_.html">"commands/docker-<wbr>up/index"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_commands_get_index_.html">"commands/get/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -296,24 +428,42 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_commands_get_index_.egocommand.html" class="tsd-kind-icon">Ego<wbr>Command</a>
+						<a href="_commands_backup_index_.egocommand.html" class="tsd-kind-icon">Ego<wbr>Command</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_commands_get_index_.egocommand.html#description" class="tsd-kind-icon">description</a>
+								<a href="_commands_backup_index_.egocommand.html#description" class="tsd-kind-icon">description</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_commands_get_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_commands_backup_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_commands_backup_index_.egocommand.html#_applyfiletimes" class="tsd-kind-icon">_apply<wbr>File<wbr>Times</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_commands_backup_index_.egocommand.html#_arefilesequal" class="tsd-kind-icon">_are<wbr>Files<wbr>Equal</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_commands_backup_index_.egocommand.html#_backupfolder" class="tsd-kind-icon">_backup<wbr>Folder</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_commands_backup_index_.egocommand.html#_normalizefsname" class="tsd-kind-icon">_normalizeFSName</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_commands_backup_index_.egocommand.html#_scandir" class="tsd-kind-icon">_scan<wbr>Dir</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_commands_get_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a>
+								<a href="_commands_backup_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_commands_get_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a>
+								<a href="_commands_backup_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_commands_backup_index_.directoryentry.html" class="tsd-kind-icon">Directory<wbr>Entry</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
