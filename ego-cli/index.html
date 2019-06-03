@@ -75,8 +75,6 @@
 				<h2 id="execute">Execute</h2>
 				<p>For example run the integrated <a href="https://github.com/egodigital/generator-ego">Yeoman generator</a> by executing:</p>
 				<pre><code class="language-bash">ego new</code></pre>
-				<p>To list all available commands, simply run</p>
-				<pre><code class="language-bash">ego</code></pre>
 				<h2 id="available-commands">Available commands</h2>
 				<p>A (non complete) list of some interesting commands:</p>
 				<pre><code><span class="hljs-keyword">backup</span>        <span class="hljs-comment"># Backups the current directory.</span>
@@ -94,7 +92,9 @@ node-<span class="hljs-keyword">install</span>  <span class="hljs-comment"># Rem
 run           <span class="hljs-comment"># Runs one or more Node.js based script file(s).</span>
 serve         <span class="hljs-comment"># Starts a HTTP server that shares files via a web interface.</span>
 ssl-<span class="hljs-keyword">new</span>       <span class="hljs-comment"># Creates a new self-signed SSL certificate.</span>
-watch         <span class="hljs-comment"># Runs one or more scripts for file changes.</span></code></pre><h2 id="custom-commands">Custom commands</h2>
+watch         <span class="hljs-comment"># Runs one or more scripts for file changes.</span></code></pre><p>To list all available commands, simply run</p>
+				<pre><code class="language-bash">ego</code></pre>
+				<h2 id="custom-commands">Custom commands</h2>
 				<p>To implement a command, lets say <code>my-command</code>, create a <code>my-command.sh</code> (<code>my-command.cmd</code> on Windows) file inside the <code>.ego</code> subfolder of your home directory, give it enough rights to be executed and fill it with the code, you would like to execute.</p>
 				<p>To execute the new command, simply run</p>
 				<pre><code class="language-bash">ego my-command ARG1 ARG2</code></pre>
