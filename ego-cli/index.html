@@ -93,7 +93,8 @@ job           <span class="hljs-comment"># Executes one or more scripts periodic
 node-<span class="hljs-keyword">install</span>  <span class="hljs-comment"># Removes the 'node_modules' subfolder and executes 'npm install'.</span>
 run           <span class="hljs-comment"># Runs one or more Node.js based script file(s).</span>
 serve         <span class="hljs-comment"># Starts a HTTP server that shares files via a web interface.</span>
-ssl-<span class="hljs-keyword">new</span>       <span class="hljs-comment"># Creates a new self-signed SSL certificate.</span></code></pre><h2 id="custom-commands">Custom commands</h2>
+ssl-<span class="hljs-keyword">new</span>       <span class="hljs-comment"># Creates a new self-signed SSL certificate.</span>
+watch         <span class="hljs-comment"># Runs one or more scripts for file changes.</span></code></pre><h2 id="custom-commands">Custom commands</h2>
 				<p>To implement a command, lets say <code>my-command</code>, create a <code>my-command.sh</code> (<code>my-command.cmd</code> on Windows) file inside the <code>.ego</code> subfolder of your home directory, give it enough rights to be executed and fill it with the code, you would like to execute.</p>
 				<p>To execute the new command, simply run</p>
 				<pre><code class="language-bash">ego my-command ARG1 ARG2</code></pre>
@@ -194,6 +195,9 @@ ssl-<span class="hljs-keyword">new</span>       <span class="hljs-comment"># Cre
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_commands_ssl_new_index_.html">"commands/ssl-<wbr>new/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_watch_index_.html">"commands/watch/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_contracts_.html">"contracts"</a>

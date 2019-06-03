@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_commands_git_push_index_.html">&quot;commands/git-push/index&quot;</a>
+					<a href="../modules/_commands_watch_index_.html">&quot;commands/watch/index&quot;</a>
 				</li>
 				<li>
-					<a href="_commands_git_push_index_.egocommand.html">EgoCommand</a>
+					<a href="_commands_watch_index_.egocommand.html">EgoCommand</a>
 				</li>
 			</ul>
 			<h1>Class EgoCommand</h1>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Git-Push command.</p>
+						<p>Watch command.</p>
 					</div>
 				</div>
 			</section>
@@ -102,15 +102,17 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_git_push_index_.egocommand.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_commands_git_push_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_watch_index_.egocommand.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_watch_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_git_push_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_git_push_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_commands_watch_index_.egocommand.html#_executescriptfile" class="tsd-kind-icon">_execute<wbr>Script<wbr>File</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_commands_watch_index_.egocommand.html#_executeshellscript" class="tsd-kind-icon">_execute<wbr>Shell<wbr>Script</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_watch_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_watch_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a></li>
 							</ul>
 						</section>
 					</div>
@@ -121,12 +123,12 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="description" class="tsd-anchor"></a>
 					<h3>description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Pushes the current branch to all remotes."</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Pushes the current branch to all remotes.&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Runs one or more scripts for file changes."</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Runs one or more scripts for file changes.&quot;</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_contracts_.command.html">Command</a>.<a href="../interfaces/_contracts_.command.html#description">description</a></p>
 						<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#description">description</a></p>
 						<ul>
-							<li>Defined in commands/git-push/index.ts:29</li>
+							<li>Defined in commands/watch/index.ts:35</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -135,15 +137,15 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="syntax" class="tsd-anchor"></a>
 					<h3>syntax</h3>
-					<div class="tsd-signature tsd-kind-icon">syntax<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;[options]&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">syntax<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"[WATCHER_FILE+]"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;[WATCHER_FILE+]&quot;</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_contracts_.command.html">Command</a>.<a href="../interfaces/_contracts_.command.html#syntax">syntax</a></p>
-						<p>Inherited from <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#syntax">syntax</a></p>
+						<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#syntax">syntax</a></p>
 						<ul>
-							<li>Defined in contracts.ts:242</li>
+							<li>Defined in commands/watch/index.ts:193</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -155,6 +157,70 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_executescriptfile" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _execute<wbr>Script<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_execute<wbr>Script<wbr>File<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.commandexecutecontext.html" class="tsd-signature-type">CommandExecuteContext</a>, scriptFile<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, ev<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in commands/watch/index.ts:209</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ctx: <a href="../interfaces/_contracts_.commandexecutecontext.html" class="tsd-signature-type">CommandExecuteContext</a></h5>
+								</li>
+								<li>
+									<h5>scriptFile: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>ev: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>p: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_executeshellscript" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _execute<wbr>Shell<wbr>Script</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_execute<wbr>Shell<wbr>Script<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.commandexecutecontext.html" class="tsd-signature-type">CommandExecuteContext</a>, scriptFile<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, ev<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in commands/watch/index.ts:196</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ctx: <a href="../interfaces/_contracts_.commandexecutecontext.html" class="tsd-signature-type">CommandExecuteContext</a></h5>
+								</li>
+								<li>
+									<h5>scriptFile: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>ev: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>p: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="execute" class="tsd-anchor"></a>
 					<h3>execute</h3>
@@ -166,7 +232,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#execute">execute</a></p>
 								<ul>
-									<li>Defined in commands/git-push/index.ts:32</li>
+									<li>Defined in commands/watch/index.ts:38</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -196,7 +262,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#showhelp">showHelp</a></p>
 								<ul>
-									<li>Defined in commands/git-push/index.ts:68</li>
+									<li>Defined in commands/watch/index.ts:149</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -218,7 +284,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_commands_git_push_index_.html">"commands/git-<wbr>push/index"</a>
+						<a href="../modules/_commands_watch_index_.html">"commands/watch/index"</a>
 					</li>
 				</ul>
 			</nav>
@@ -227,19 +293,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_commands_git_push_index_.egocommand.html" class="tsd-kind-icon">Ego<wbr>Command</a>
+						<a href="_commands_watch_index_.egocommand.html" class="tsd-kind-icon">Ego<wbr>Command</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_commands_git_push_index_.egocommand.html#description" class="tsd-kind-icon">description</a>
+								<a href="_commands_watch_index_.egocommand.html#description" class="tsd-kind-icon">description</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_commands_git_push_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_commands_watch_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_commands_watch_index_.egocommand.html#_executescriptfile" class="tsd-kind-icon">_execute<wbr>Script<wbr>File</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_commands_watch_index_.egocommand.html#_executeshellscript" class="tsd-kind-icon">_execute<wbr>Shell<wbr>Script</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_commands_git_push_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a>
+								<a href="_commands_watch_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_commands_git_push_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a>
+								<a href="_commands_watch_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a>
 							</li>
 						</ul>
 					</li>
