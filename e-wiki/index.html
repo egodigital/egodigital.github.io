@@ -74,12 +74,12 @@
 				<h2 id="quick-start">Quick start</h2>
 				<h3 id="setup-ui">Setup UI</h3>
 				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">'express'</span>;
-<span class="hljs-keyword">import</span> { setupWikiUI } <span class="hljs-keyword">from</span> <span class="hljs-string">'e-wiki'</span>;
+<span class="hljs-keyword">import</span> { setupWiki } <span class="hljs-keyword">from</span> <span class="hljs-string">'e-wiki'</span>;
 
 <span class="hljs-keyword">const</span> app = express();
 
 <span class="hljs-comment">// create a '/swagger' endpoint ...</span>
-setupWikiUI(
+setupWiki(
     {
         cwd: <span class="hljs-string">'/root/path/to/wiki/files'</span>,
         title: <span class="hljs-string">'My wiki'</span>,
