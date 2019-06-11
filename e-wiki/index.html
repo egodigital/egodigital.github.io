@@ -76,19 +76,20 @@
 				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">'express'</span>;
 <span class="hljs-keyword">import</span> { setupWiki } <span class="hljs-keyword">from</span> <span class="hljs-string">'e-wiki'</span>;
 
-<span class="hljs-keyword">const</span> APP = express();
+<span class="hljs-keyword">const</span> app = express();
 
 <span class="hljs-comment">// create a '/wiki' endpoint ...</span>
 setupWiki(
     {
-        <span class="hljs-comment">// directly register it in 'APP'</span>
-        app: APP,
         cwd: <span class="hljs-string">'/root/path/to/wiki/files'</span>,
         title: <span class="hljs-string">'My wiki'</span>,
     },
+
+    <span class="hljs-comment">// directly register it in 'APP'</span>
+    app
 );
 
-APP.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+app.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     <span class="hljs-comment">// should be available via</span>
     <span class="hljs-comment">// http://localhost:8080/wiki</span>
     <span class="hljs-comment">// now</span>
