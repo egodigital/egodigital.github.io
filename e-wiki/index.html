@@ -66,7 +66,7 @@
 			<div class="tsd-panel tsd-typography">
 				<p><a href="https://www.npmjs.com/package/e-wiki"><img src="https://img.shields.io/npm/v/e-wiki.svg" alt="npm"></a></p>
 				<h1 id="e-wiki">e-wiki</h1>
-				<p>Sets up one or more <a href="https://github.com/showdownjs/showdown">wikis</a> via <a href="https://expressjs.com/">Express</a>.</p>
+				<p>Sets up one or more static <a href="https://github.com/showdownjs/showdown">wikis</a> via <a href="https://expressjs.com/">Express</a>.</p>
 				<h2 id="install">Install</h2>
 				<p>Execute the following command from your project folder, where your <code>package.json</code> file is stored:</p>
 				<pre><code class="language-bash">npm install --save e-wiki</code></pre>
@@ -76,21 +76,19 @@
 				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">'express'</span>;
 <span class="hljs-keyword">import</span> { setupWiki } <span class="hljs-keyword">from</span> <span class="hljs-string">'e-wiki'</span>;
 
-<span class="hljs-keyword">const</span> app = express();
+<span class="hljs-keyword">const</span> APP = express();
 
 <span class="hljs-comment">// create a '/swagger' endpoint ...</span>
 setupWiki(
     {
+        <span class="hljs-comment">// directly register it in 'APP'</span>
+        app: APP,
         cwd: <span class="hljs-string">'/root/path/to/wiki/files'</span>,
         title: <span class="hljs-string">'My wiki'</span>,
     },
-
-    <span class="hljs-comment">// ... and directly register it</span>
-    <span class="hljs-comment">// in 'app'</span>
-    app
 );
 
-app.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+APP.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     <span class="hljs-comment">// should be available via</span>
     <span class="hljs-comment">// http://localhost:8080/wiki</span>
     <span class="hljs-comment">// now</span>
@@ -129,9 +127,6 @@ graph TD;
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_index_.html">"index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_sandbox_.html">"sandbox"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_util_.html">"util"</a>
