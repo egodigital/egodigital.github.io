@@ -77,8 +77,10 @@
 				<pre><code class="language-bash">ego new</code></pre>
 				<h2 id="available-commands">Available commands</h2>
 				<p>A (non complete) list of some interesting commands:</p>
-				<pre><code><span class="hljs-keyword">backup</span>        <span class="hljs-comment"># Backups the current directory.</span>
+				<pre><code>api           <span class="hljs-comment"># Runs an Express.js based REST API from current directory.</span>
+<span class="hljs-keyword">backup</span>        <span class="hljs-comment"># Backups the current directory.</span>
 <span class="hljs-keyword">build</span>         <span class="hljs-comment"># Shorthand for 'npm run build'.</span>
+csv-<span class="hljs-keyword">split</span>     <span class="hljs-comment"># Splits one or more (huge) CSV file(s) into separates parts.</span>
 docker-<span class="hljs-keyword">stop</span>   <span class="hljs-comment"># Stops all running Docker containers.</span>
 docker-up     <span class="hljs-comment"># Shorthand for 'docker-compose up'.</span>
 git-checkout  <span class="hljs-comment"># Checks out (to) a branch.</span>
@@ -105,14 +107,14 @@ watch         <span class="hljs-comment"># Runs one or more scripts for file cha
 				<pre><code class="language-javascript">exports.execute = <span class="hljs-keyword">async</span> (context) =&gt; {
     <span class="hljs-comment">// context  =&gt;  s. https://egodigital.github.io/ego-cli/interfaces/_contracts_.commandexecutecontext.html</span>
 
-    <span class="hljs-comment">// context.args            =&gt;  List of command line arguments, s. https://www.npmjs.com/package/minimist</span>
-    <span class="hljs-comment">// context.cwd             =&gt;  The full path of the current working directory</span>
-    <span class="hljs-comment">// context.getFullPath()   =&gt;  Returns the full version of a path, based on the value of 'cwd'</span>
-    <span class="hljs-comment">// context.package         =&gt;  The 'package.json' file of the e.GO CLI</span>
-    <span class="hljs-comment">// context.queue           =&gt;  A queue, that only executes 1 action at the same time, s. https://www.npmjs.com/package/p-queue</span>
-    <span class="hljs-comment">// context.require         =&gt;  Allows to include a NPM module of the e.GO CLI</span>
-    <span class="hljs-comment">// context.values          =&gt;  A key/value pair storage, that is available while the execution</span>
-    <span class="hljs-comment">// context.verbose         =&gt;  Indicates, if script should output additional information or not</span>
+    <span class="hljs-comment">// context.args           =&gt;  List of command line arguments, s. https://www.npmjs.com/package/minimist</span>
+    <span class="hljs-comment">// context.cwd            =&gt;  The full path of the current working directory</span>
+    <span class="hljs-comment">// context.getFullPath()  =&gt;  Returns the full version of a path, based on the value of 'cwd'</span>
+    <span class="hljs-comment">// context.package        =&gt;  The 'package.json' file of the e.GO CLI</span>
+    <span class="hljs-comment">// context.queue          =&gt;  A queue, that only executes 1 action at the same time, s. https://www.npmjs.com/package/p-queue</span>
+    <span class="hljs-comment">// context.require()      =&gt;  Allows to include a NPM module of the e.GO CLI</span>
+    <span class="hljs-comment">// context.values         =&gt;  A key/value pair storage, that is available while the execution</span>
+    <span class="hljs-comment">// context.verbose        =&gt;  Indicates, if script should output additional information or not</span>
 
     <span class="hljs-comment">// docker utils, s. https://egodigital.github.io/ego-cli/modules/_docker_.html</span>
     <span class="hljs-keyword">const</span> docker = context.require(<span class="hljs-string">'./docker'</span>);
@@ -127,8 +129,59 @@ watch         <span class="hljs-comment"># Runs one or more scripts for file cha
 				<pre><code class="language-bash">ego run test.js</code></pre>
 				<p>from the folder, that contains the file.</p>
 				<p>You are also able to store it globally, inside the <code>.ego</code> subfolder, inside your user&#39;s home directory (<code>${HOME}/.ego/test.js</code>).</p>
+				<h2 id="api">API</h2>
+				<p><code>api</code> command allows you to run a REST API, using <a href="https://expressjs.com/">Express.js</a> framework, from current directory.</p>
+				<p>To start, create an <code>index.js</code> file with the following skeleton:</p>
+				<pre><code class="language-javascript">exports.GET = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+    <span class="hljs-comment">// s. https://egodigital.github.io/ego-cli/interfaces/_contracts_.commandexecutecontext.html</span>
+    <span class="hljs-keyword">const</span> CONTEXT = <span class="hljs-keyword">this</span>;
+
+    <span class="hljs-keyword">return</span> res.status(<span class="hljs-number">200</span>)
+        .send(<span class="hljs-string">'Hello, e.GO!'</span>);
+};</code></pre>
+				<p>Run a host instace, by executing</p>
+				<pre><code class="language-bash">ego api</code></pre>
+				<p>from that directory and open <a href="http://localhost:8080/api/">http://localhost:8080/api/</a> from browser to see the result of the endpoint.</p>
+				<h3 id="other-methods">Other methods</h3>
+				<p>To use other HTTP methods, like <code>POST</code>, <code>PUT</code> or <code>DELETE</code>, simply export functions with their names, in upper case characters:</p>
+				<pre><code class="language-javascript">exports.POST = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+    <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> implement</span>
+};
+
+exports.PUT = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+    <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> implement</span>
+};
+
+exports.PATCH = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+    <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> implement</span>
+};
+
+exports.DELETE = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+    <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> implement</span>
+};</code></pre>
+				<p>To handle any method, you only need to implement a <code>request</code> function:</p>
+				<pre><code class="language-javascript">exports.request = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+    <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> implement</span>
+};</code></pre>
+				<h3 id="routes">Routes</h3>
+				<p>If you would like to implement an <code>/foo/bar</code> endpoint, you have to create on of the following files</p>
+				<ul>
+					<li><code>/foo/bar.js</code></li>
+					<li>or <code>/foo/bar/index.js</code></li>
+				</ul>
+				<p>Files with leading <code>_</code> will be ignored, if you want to use them for endpoints.</p>
+				<h3 id="bootstrap-and-shutdown-scripts">Bootstrap and shutdown scripts</h3>
+				<p>To define startup logic, create a <code>_bootstrap.js</code> at the root of your API directory:</p>
+				<pre><code class="language-javascript">exports.execute = <span class="hljs-keyword">async</span> (context, apiRouter, app) =&gt; {
+    <span class="hljs-comment">// context    =&gt;  https://egodigital.github.io/ego-cli/interfaces/_contracts_.commandexecutecontext.html</span>
+    <span class="hljs-comment">// apiRouter  =&gt;  https://expressjs.com/en/guide/routing.html</span>
+    <span class="hljs-comment">// app        =&gt;  https://expressjs.com/en/starter/hello-world.html</span>
+};</code></pre>
+				<p>You can do the same thing with a <code>_shutdown.js</code> file.</p>
+				<h3 id="ssl">SSL</h3>
+				<p>Use <code>ssl-new</code> to generate a new, self-signed certificate.</p>
 				<h2 id="contribute">Contribute</h2>
-				<p>The <a href="./CONTRIBUTE.md">contribution guide</a> explains, how to implement a new command, work with the code and open a pull request.</p>
+				<p>The <a href="./CONTRIBUTION.md">contribution guide</a> explains, how to implement a new command, work with the code and open a pull request.</p>
 				<h2 id="copyright">Copyright</h2>
 				<p>That software makes use of free version of <a href="https://mdbootstrap.com/">MD Bootstrap</a>.</p>
 			</div>
@@ -140,10 +193,16 @@ watch         <span class="hljs-comment"># Runs one or more scripts for file cha
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_api_index_.html">"commands/api/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_commands_backup_index_.html">"commands/backup/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_commands_build_index_.html">"commands/build/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_csv_split_index_.html">"commands/csv-<wbr>split/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_commands_docker_stop_index_.html">"commands/docker-<wbr>stop/index"</a>

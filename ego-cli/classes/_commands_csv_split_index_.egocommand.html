@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_commands_new_index_.html">&quot;commands/new/index&quot;</a>
+					<a href="../modules/_commands_csv_split_index_.html">&quot;commands/csv-split/index&quot;</a>
 				</li>
 				<li>
-					<a href="_commands_new_index_.egocommand.html">EgoCommand</a>
+					<a href="_commands_csv_split_index_.egocommand.html">EgoCommand</a>
 				</li>
 			</ul>
 			<h1>Class EgoCommand</h1>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>New command.</p>
+						<p>Csv-Split command.</p>
 					</div>
 				</div>
 			</section>
@@ -102,15 +102,16 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_new_index_.egocommand.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_commands_new_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_csv_split_index_.egocommand.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_csv_split_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_new_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_new_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_csv_split_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_csv_split_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_commands_csv_split_index_.egocommand.html#splitcsvfile" class="tsd-kind-icon">splitCSVFile</a></li>
 							</ul>
 						</section>
 					</div>
@@ -121,12 +122,12 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="description" class="tsd-anchor"></a>
 					<h3>description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Starts the e.GO generator for Yeoman."</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Starts the e.GO generator for Yeoman.&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Splits one or more (huge) CSV file(s) into separates parts."</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Splits one or more (huge) CSV file(s) into separates parts.&quot;</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_contracts_.command.html">Command</a>.<a href="../interfaces/_contracts_.command.html#description">description</a></p>
 						<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#description">description</a></p>
 						<ul>
-							<li>Defined in commands/new/index.ts:28</li>
+							<li>Defined in commands/csv-split/index.ts:33</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -135,15 +136,15 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="syntax" class="tsd-anchor"></a>
 					<h3>syntax</h3>
-					<div class="tsd-signature tsd-kind-icon">syntax<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;[options]&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">syntax<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"[FILES+] [OPTIONS*]"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;[FILES+] [OPTIONS*]&quot;</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_contracts_.command.html">Command</a>.<a href="../interfaces/_contracts_.command.html#syntax">syntax</a></p>
-						<p>Inherited from <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#syntax">syntax</a></p>
+						<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#syntax">syntax</a></p>
 						<ul>
-							<li>Defined in contracts.ts:242</li>
+							<li>Defined in commands/csv-split/index.ts:248</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -166,7 +167,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#execute">execute</a></p>
 								<ul>
-									<li>Defined in commands/new/index.ts:31</li>
+									<li>Defined in commands/csv-split/index.ts:36</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -196,7 +197,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#showhelp">showHelp</a></p>
 								<ul>
-									<li>Defined in commands/new/index.ts:115</li>
+									<li>Defined in commands/csv-split/index.ts:66</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -205,6 +206,35 @@
 									<dd></dd>
 								</dl>
 							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="splitcsvfile" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> splitCSVFile</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">splitCSVFile<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.commandexecutecontext.html" class="tsd-signature-type">CommandExecuteContext</a>, file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, onProgess<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">progressStream.ProgressListener</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in commands/csv-split/index.ts:84</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ctx: <a href="../interfaces/_contracts_.commandexecutecontext.html" class="tsd-signature-type">CommandExecuteContext</a></h5>
+								</li>
+								<li>
+									<h5>file: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>onProgess: <span class="tsd-signature-type">progressStream.ProgressListener</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -218,7 +248,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_commands_new_index_.html">"commands/new/index"</a>
+						<a href="../modules/_commands_csv_split_index_.html">"commands/csv-<wbr>split/index"</a>
 					</li>
 				</ul>
 			</nav>
@@ -227,24 +257,30 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_commands_new_index_.egocommand.html" class="tsd-kind-icon">Ego<wbr>Command</a>
+						<a href="_commands_csv_split_index_.egocommand.html" class="tsd-kind-icon">Ego<wbr>Command</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_commands_new_index_.egocommand.html#description" class="tsd-kind-icon">description</a>
+								<a href="_commands_csv_split_index_.egocommand.html#description" class="tsd-kind-icon">description</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_commands_new_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_commands_new_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_commands_csv_split_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_commands_new_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a>
+								<a href="_commands_csv_split_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_commands_csv_split_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_commands_csv_split_index_.egocommand.html#splitcsvfile" class="tsd-kind-icon">splitCSVFile</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_commands_csv_split_index_.html#trimfilenameifneeded" class="tsd-kind-icon">trim<wbr>Filename<wbr>IfNeeded</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

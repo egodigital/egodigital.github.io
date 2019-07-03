@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_commands_new_index_.html">&quot;commands/new/index&quot;</a>
+					<a href="../modules/_commands_api_index_.html">&quot;commands/api/index&quot;</a>
 				</li>
 				<li>
-					<a href="_commands_new_index_.egocommand.html">EgoCommand</a>
+					<a href="_commands_api_index_.egocommand.html">EgoCommand</a>
 				</li>
 			</ul>
 			<h1>Class EgoCommand</h1>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>New command.</p>
+						<p>Api command.</p>
 					</div>
 				</div>
 			</section>
@@ -102,15 +102,16 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_new_index_.egocommand.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_commands_new_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_api_index_.egocommand.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_commands_api_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_new_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_new_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_api_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_commands_api_index_.egocommand.html#setupapiroute" class="tsd-kind-icon">setupAPIRoute</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_commands_api_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a></li>
 							</ul>
 						</section>
 					</div>
@@ -121,12 +122,12 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="description" class="tsd-anchor"></a>
 					<h3>description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Starts the e.GO generator for Yeoman."</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Starts the e.GO generator for Yeoman.&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Runs an Express.js based REST API from current directory."</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Runs an Express.js based REST API from current directory.&quot;</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_contracts_.command.html">Command</a>.<a href="../interfaces/_contracts_.command.html#description">description</a></p>
 						<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#description">description</a></p>
 						<ul>
-							<li>Defined in commands/new/index.ts:28</li>
+							<li>Defined in commands/api/index.ts:65</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -166,7 +167,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#execute">execute</a></p>
 								<ul>
-									<li>Defined in commands/new/index.ts:31</li>
+									<li>Defined in commands/api/index.ts:68</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -185,6 +186,35 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="setupapiroute" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> setupAPIRoute</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">setupAPIRoute<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.commandexecutecontext.html" class="tsd-signature-type">CommandExecuteContext</a>, route<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.Router</span>, app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.Express</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in commands/api/index.ts:271</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ctx: <a href="../interfaces/_contracts_.commandexecutecontext.html" class="tsd-signature-type">CommandExecuteContext</a></h5>
+								</li>
+								<li>
+									<h5>route: <span class="tsd-signature-type">express.Router</span></h5>
+								</li>
+								<li>
+									<h5>app: <span class="tsd-signature-type">express.Express</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="showhelp" class="tsd-anchor"></a>
 					<h3>show<wbr>Help</h3>
@@ -196,7 +226,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_contracts_.commandbase.html">CommandBase</a>.<a href="_contracts_.commandbase.html#showhelp">showHelp</a></p>
 								<ul>
-									<li>Defined in commands/new/index.ts:115</li>
+									<li>Defined in commands/api/index.ts:195</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -218,7 +248,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_commands_new_index_.html">"commands/new/index"</a>
+						<a href="../modules/_commands_api_index_.html">"commands/api/index"</a>
 					</li>
 				</ul>
 			</nav>
@@ -227,24 +257,51 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_commands_new_index_.egocommand.html" class="tsd-kind-icon">Ego<wbr>Command</a>
+						<a href="_commands_api_index_.egocommand.html" class="tsd-kind-icon">Ego<wbr>Command</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_commands_new_index_.egocommand.html#description" class="tsd-kind-icon">description</a>
+								<a href="_commands_api_index_.egocommand.html#description" class="tsd-kind-icon">description</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_commands_new_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a>
+								<a href="_commands_api_index_.egocommand.html#syntax" class="tsd-kind-icon">syntax</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_commands_new_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a>
+								<a href="_commands_api_index_.egocommand.html#execute" class="tsd-kind-icon">execute</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_commands_api_index_.egocommand.html#setupapiroute" class="tsd-kind-icon">setupAPIRoute</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_commands_new_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a>
+								<a href="_commands_api_index_.egocommand.html#showhelp" class="tsd-kind-icon">show<wbr>Help</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_commands_api_index_.apimodule.html" class="tsd-kind-icon">Api<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_commands_api_index_.apirequest.html" class="tsd-kind-icon">Api<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_commands_api_index_.bootstrapmodule.html" class="tsd-kind-icon">Bootstrap<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_commands_api_index_.shutdownmodule.html" class="tsd-kind-icon">Shutdown<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_commands_api_index_.html#apiendpoint" class="tsd-kind-icon">Api<wbr>Endpoint</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_commands_api_index_.html#api_module_property" class="tsd-kind-icon">API_<wbr>MODULE_<wbr>PROPERTY</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_commands_api_index_.html#bootstrap_filename" class="tsd-kind-icon">BOOTSTRAP_<wbr>FILENAME</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_commands_api_index_.html#shutdown_filename" class="tsd-kind-icon">SHUTDOWN_<wbr>FILENAME</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
