@@ -132,7 +132,7 @@ watch         <span class="hljs-comment"># Runs one or more scripts for file cha
 				<h2 id="api">API</h2>
 				<p><code>api</code> command allows you to run a REST API, using <a href="https://expressjs.com/">Express.js</a> framework, from current directory.</p>
 				<p>To start, create an <code>index.js</code> file with the following skeleton:</p>
-				<pre><code class="language-javascript">exports.GET = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+				<pre><code class="language-javascript">exports.GET = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
     <span class="hljs-comment">// s. https://egodigital.github.io/ego-cli/interfaces/_contracts_.commandexecutecontext.html</span>
     <span class="hljs-keyword">const</span> CONTEXT = <span class="hljs-keyword">this</span>;
 
@@ -144,23 +144,23 @@ watch         <span class="hljs-comment"># Runs one or more scripts for file cha
 				<p>from that directory and open <a href="http://localhost:8080/api/">http://localhost:8080/api/</a> from browser to see the result of the endpoint.</p>
 				<h3 id="other-methods">Other methods</h3>
 				<p>To use other HTTP methods, like <code>POST</code>, <code>PUT</code> or <code>DELETE</code>, simply export functions with their names, in upper case characters:</p>
-				<pre><code class="language-javascript">exports.POST = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+				<pre><code class="language-javascript">exports.POST = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
     <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> implement</span>
 };
 
-exports.PUT = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+exports.PUT = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
     <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> implement</span>
 };
 
-exports.PATCH = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+exports.PATCH = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
     <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> implement</span>
 };
 
-exports.DELETE = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+exports.DELETE = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
     <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> implement</span>
 };</code></pre>
 				<p>To handle any method, you only need to implement a <code>request</code> function:</p>
-				<pre><code class="language-javascript">exports.request = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+				<pre><code class="language-javascript">exports.request = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
     <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> implement</span>
 };</code></pre>
 				<h3 id="routes">Routes</h3>
