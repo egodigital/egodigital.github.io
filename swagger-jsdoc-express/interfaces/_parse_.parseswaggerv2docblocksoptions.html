@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SwaggerV2DocBlock | swagger-jsdoc-express</title>
+	<title>ParseSwaggerV2DocBlocksOptions | swagger-jsdoc-express</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_parse_.html">&quot;parse&quot;</a>
 				</li>
 				<li>
-					<a href="_parse_.swaggerv2docblock.html">SwaggerV2DocBlock</a>
+					<a href="_parse_.parseswaggerv2docblocksoptions.html">ParseSwaggerV2DocBlocksOptions</a>
 				</li>
 			</ul>
-			<h1>Interface SwaggerV2DocBlock&lt;TDetails&gt;</h1>
+			<h1>Interface ParseSwaggerV2DocBlocksOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,31 +72,15 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A general Swagger V2 documentation block.</p>
+						<p>Additional and custom options for &#39;parseSwaggerV2DocBlocks()&#39; function.</p>
 					</div>
 				</div>
-			</section>
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>TDetails<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h4>
-					</li>
-				</ul>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">SwaggerV2DocBlock</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="_parse_.swaggerv2definitiondocblock.html" class="tsd-signature-type">SwaggerV2DefinitionDocBlock</a>
-							</li>
-							<li>
-								<a href="_parse_.swaggerv2pathdocblock.html" class="tsd-signature-type">SwaggerV2PathDocBlock</a>
-							</li>
-						</ul>
+						<span class="target">ParseSwaggerV2DocBlocksOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -107,10 +91,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_parse_.swaggerv2docblock.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_parse_.swaggerv2docblock.html#details" class="tsd-kind-icon">details</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_parse_.swaggerv2docblock.html#jsdoc" class="tsd-kind-icon">js<wbr>Doc</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_parse_.swaggerv2docblock.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_parse_.parseswaggerv2docblocksoptions.html#debug" class="tsd-kind-icon">debug</a></li>
 							</ul>
 						</section>
 					</div>
@@ -119,62 +100,17 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="description" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="debug" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> debug</h3>
+					<div class="tsd-signature tsd-kind-icon">debug<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in parse.ts:40</li>
+							<li>Defined in parse.ts:30</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The summary.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="details" class="tsd-anchor"></a>
-					<h3>details</h3>
-					<div class="tsd-signature tsd-kind-icon">details<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TDetails</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in parse.ts:44</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The details.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="jsdoc" class="tsd-anchor"></a>
-					<h3>js<wbr>Doc</h3>
-					<div class="tsd-signature tsd-kind-icon">js<wbr>Doc<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Annotation</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in parse.ts:48</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The underlying JSDoc annotation.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in parse.ts:52</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The type.</p>
+							<p>Show debug message(s), like errors or not.</p>
 						</div>
 					</div>
 				</section>
@@ -202,33 +138,24 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_parse_.parseswaggerv2docblocksoptions.html" class="tsd-kind-icon">Parse<wbr>Swagger<wbr>V2Doc<wbr>Blocks<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_parse_.swaggerv2definitiondocblock.html" class="tsd-kind-icon">Swagger<wbr>V2Definition<wbr>Doc<wbr>Block</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_parse_.swaggerv2docblock.html" class="tsd-kind-icon">Swagger<wbr>V2Doc<wbr>Block</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_parse_.parseswaggerv2docblocksoptions.html" class="tsd-kind-icon">Parse<wbr>Swagger<wbr>V2Doc<wbr>Blocks<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_parse_.swaggerv2docblock.html#description" class="tsd-kind-icon">description</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_parse_.swaggerv2docblock.html#details" class="tsd-kind-icon">details</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_parse_.swaggerv2docblock.html#jsdoc" class="tsd-kind-icon">js<wbr>Doc</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_parse_.swaggerv2docblock.html#type" class="tsd-kind-icon">type</a>
+								<a href="_parse_.parseswaggerv2docblocksoptions.html#debug" class="tsd-kind-icon">debug</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_parse_.swaggerv2definitiondocblock.html" class="tsd-kind-icon">Swagger<wbr>V2Definition<wbr>Doc<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_parse_.swaggerv2docblock.html" class="tsd-kind-icon">Swagger<wbr>V2Doc<wbr>Block</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_parse_.swaggerv2pathdocblock.html" class="tsd-kind-icon">Swagger<wbr>V2Path<wbr>Doc<wbr>Block</a>
 					</li>
