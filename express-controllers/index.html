@@ -323,6 +323,51 @@ app.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><s
         <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">'Test error!'</span>);
     }
 }</code></pre>
+				<h3 id="authorize">Authorize</h3>
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">'express'</span>;
+<span class="hljs-keyword">import</span> { Authorize, AuthorizeFailedHandlerContext, AuthorizeHandlerContext, ControllerBase, GET, RequestErrorHandlerContext } <span class="hljs-keyword">from</span> <span class="hljs-string">'@egodigital/express-controllers'</span>;
+
+<span class="hljs-comment">/**
+ * /controllers/index.ts
+ *
+ * Base path: '/'
+ */</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> Controller <span class="hljs-keyword">extends</span> ControllerBase {
+    <span class="hljs-comment">// check if authorized</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> __authorize(context: AuthorizeHandlerContext) {
+        <span class="hljs-comment">// return (true) or (false)</span>
+        <span class="hljs-comment">// or a non empty string, which is returned as error message by default</span>
+
+        <span class="hljs-comment">// default: (false)</span>
+
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'The authorization has been failed'</span>;
+    }
+
+    <span class="hljs-comment">// handle failed authorization</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> __authorizeFailed(context: AuthorizeFailedHandlerContext) {
+        <span class="hljs-comment">// s. result of __authorize()</span>
+        <span class="hljs-keyword">const</span> ERROR_MSG = context.result <span class="hljs-keyword">as</span> <span class="hljs-built_in">string</span>;
+
+        <span class="hljs-keyword">return</span> context.response
+            .status(<span class="hljs-number">401</span>)
+            .send(<span class="hljs-string">'AUTHORIZE FAILED: '</span> + ERROR_MSG);
+    }
+
+
+    <span class="hljs-comment">/**
+     * [GET] / endpoint
+     */</span>
+    <span class="hljs-meta">@Authorize</span>()
+    <span class="hljs-meta">@GET</span>()
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> index(req: express.Request, res: express.Response) {
+        <span class="hljs-comment">// this will only be invoked</span>
+        <span class="hljs-comment">// if __authorize() returns (true)</span>
+        <span class="hljs-comment">// or nothing (null, undefined or empty string)</span>
+
+        <span class="hljs-keyword">return</span> res.status(<span class="hljs-number">204</span>)
+            .send();
+    }
+}</code></pre>
 				<h2 id="documentation">Documentation</h2>
 				<p>The API documentation can be found <a href="https://egodigital.github.io/express-controllers/">here</a>.</p>
 			</div>

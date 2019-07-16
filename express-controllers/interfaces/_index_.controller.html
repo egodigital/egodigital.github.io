@@ -98,6 +98,8 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.controller.html#__app" class="tsd-kind-icon">__app</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.controller.html#__authorize" class="tsd-kind-icon">__authorize</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.controller.html#__authorizefailed" class="tsd-kind-icon">__authorize<wbr>Failed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.controller.html#__dbg" class="tsd-kind-icon">__dbg</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.controller.html#__error" class="tsd-kind-icon">__error</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.controller.html#__file" class="tsd-kind-icon">__file</a></li>
@@ -119,7 +121,7 @@
 					<div class="tsd-signature tsd-kind-icon">__app<span class="tsd-signature-symbol">:</span> <a href="../modules/_index_.html#expressapp" class="tsd-signature-type">ExpressApp</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:33</li>
+							<li>Defined in index.ts:135</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -129,12 +131,42 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="__authorize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> __authorize</h3>
+					<div class="tsd-signature tsd-kind-icon">__authorize<span class="tsd-signature-symbol">:</span> <a href="../modules/_index_.html#authorizehandler" class="tsd-signature-type">AuthorizeHandler</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:139</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The controller-wide authorization handler.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="__authorizefailed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> __authorize<wbr>Failed</h3>
+					<div class="tsd-signature tsd-kind-icon">__authorize<wbr>Failed<span class="tsd-signature-symbol">:</span> <a href="../modules/_index_.html#authorizefailedhandler" class="tsd-signature-type">AuthorizeFailedHandler</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:143</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The controller-wide &quot;authorization failed handler&quot;.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="__dbg" class="tsd-anchor"></a>
 					<h3>__dbg</h3>
 					<div class="tsd-signature tsd-kind-icon">__dbg<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:40</li>
+							<li>Defined in index.ts:150</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -181,7 +213,7 @@
 					<div class="tsd-signature tsd-kind-icon">__error<span class="tsd-signature-symbol">:</span> <a href="../modules/_index_.html#requesterrorhandler" class="tsd-signature-type">RequestErrorHandler</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:44</li>
+							<li>Defined in index.ts:154</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -196,7 +228,7 @@
 					<div class="tsd-signature tsd-kind-icon">__file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:48</li>
+							<li>Defined in index.ts:158</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -211,7 +243,7 @@
 					<div class="tsd-signature tsd-kind-icon">__init<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:52</li>
+							<li>Defined in index.ts:162</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -241,7 +273,7 @@
 					<div class="tsd-signature tsd-kind-icon">__root<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:60</li>
+							<li>Defined in index.ts:170</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -256,7 +288,7 @@
 					<div class="tsd-signature tsd-kind-icon">__router<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">express.Router</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:56</li>
+							<li>Defined in index.ts:166</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -271,7 +303,7 @@
 					<div class="tsd-signature tsd-kind-icon">__serialize<span class="tsd-signature-symbol">:</span> <a href="../modules/_index_.html#responseserializer" class="tsd-signature-type">ResponseSerializer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:64</li>
+							<li>Defined in index.ts:174</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -286,7 +318,7 @@
 					<div class="tsd-signature tsd-kind-icon">__use<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">express.RequestHandler</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">express.RequestHandler</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:69</li>
+							<li>Defined in index.ts:179</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -321,6 +353,12 @@
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_index_.controller.html#__app" class="tsd-kind-icon">__app</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_index_.controller.html#__authorize" class="tsd-kind-icon">__authorize</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_index_.controller.html#__authorizefailed" class="tsd-kind-icon">__authorize<wbr>Failed</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_index_.controller.html#__dbg" class="tsd-kind-icon">__dbg</a>
