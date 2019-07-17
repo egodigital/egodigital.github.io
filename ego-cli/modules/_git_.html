@@ -75,7 +75,9 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_git_.getcurrentgitbranchoptions.html" class="tsd-kind-icon">Get<wbr>Current<wbr>Git<wbr>Branch<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_git_.getgitbranchesoptions.html" class="tsd-kind-icon">Get<wbr>Git<wbr>Branches<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_git_.getgitremoteurloptions.html" class="tsd-kind-icon">Get<wbr>Git<wbr>Remote<wbr>Url<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_git_.getgitremotesoptions.html" class="tsd-kind-icon">Get<wbr>Git<wbr>Remotes<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_git_.hasgitchangesoptions.html" class="tsd-kind-icon">Has<wbr>Git<wbr>Changes<wbr>Options</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -83,7 +85,9 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_git_.html#getcurrentgitbranch" class="tsd-kind-icon">get<wbr>Current<wbr>Git<wbr>Branch</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_git_.html#getgitbranches" class="tsd-kind-icon">get<wbr>Git<wbr>Branches</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_git_.html#getgitremoteurl" class="tsd-kind-icon">get<wbr>Git<wbr>Remote<wbr>Url</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_git_.html#getgitremotes" class="tsd-kind-icon">get<wbr>Git<wbr>Remotes</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_git_.html#hasgitchanges" class="tsd-kind-icon">has<wbr>Git<wbr>Changes</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,7 +105,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in git.ts:48</li>
+									<li>Defined in git.ts:60</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -130,7 +134,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in git.ts:69</li>
+									<li>Defined in git.ts:81</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -150,6 +154,41 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getgitremoteurl" class="tsd-anchor"></a>
+					<h3>get<wbr>Git<wbr>Remote<wbr>Url</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Git<wbr>Remote<wbr>Url<span class="tsd-signature-symbol">(</span>remote<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_git_.getgitremoteurloptions.html" class="tsd-signature-type">GetGitRemoteUrlOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in git.ts:158</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tries to return the remote URL of a git repository.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> remote: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/_git_.getgitremoteurloptions.html" class="tsd-signature-type">GetGitRemoteUrlOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">false</span>
+							</h4>
+							<p>The remote URL or (false) if not possible.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="getgitremotes" class="tsd-anchor"></a>
 					<h3>get<wbr>Git<wbr>Remotes</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -159,7 +198,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in git.ts:110</li>
+									<li>Defined in git.ts:122</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -175,6 +214,35 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 							<p>The list of remotes.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="hasgitchanges" class="tsd-anchor"></a>
+					<h3>has<wbr>Git<wbr>Changes</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Git<wbr>Changes<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_git_.hasgitchangesoptions.html" class="tsd-signature-type">HasGitChangesOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in git.ts:192</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if a git repository has uncommited changes or not.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/_git_.hasgitchangesoptions.html" class="tsd-signature-type">HasGitChangesOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Has uncomitted changes or not.</p>
 						</li>
 					</ul>
 				</section>
@@ -200,7 +268,13 @@
 						<a href="../interfaces/_git_.getgitbranchesoptions.html" class="tsd-kind-icon">Get<wbr>Git<wbr>Branches<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_git_.getgitremoteurloptions.html" class="tsd-kind-icon">Get<wbr>Git<wbr>Remote<wbr>Url<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_git_.getgitremotesoptions.html" class="tsd-kind-icon">Get<wbr>Git<wbr>Remotes<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_git_.hasgitchangesoptions.html" class="tsd-kind-icon">Has<wbr>Git<wbr>Changes<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_git_.html#getcurrentgitbranch" class="tsd-kind-icon">get<wbr>Current<wbr>Git<wbr>Branch</a>
@@ -209,7 +283,13 @@
 						<a href="_git_.html#getgitbranches" class="tsd-kind-icon">get<wbr>Git<wbr>Branches</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_git_.html#getgitremoteurl" class="tsd-kind-icon">get<wbr>Git<wbr>Remote<wbr>Url</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_git_.html#getgitremotes" class="tsd-kind-icon">get<wbr>Git<wbr>Remotes</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_git_.html#hasgitchanges" class="tsd-kind-icon">has<wbr>Git<wbr>Changes</a>
 					</li>
 				</ul>
 			</nav>
