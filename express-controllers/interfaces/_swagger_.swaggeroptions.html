@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ResponseSerializerContext | @egodigital/express-controllers</title>
+	<title>SwaggerOptions | @egodigital/express-controllers</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_index_.html">&quot;index&quot;</a>
+					<a href="../modules/_swagger_.html">&quot;swagger&quot;</a>
 				</li>
 				<li>
-					<a href="_index_.responseserializercontext.html">ResponseSerializerContext</a>
+					<a href="_swagger_.swaggeroptions.html">SwaggerOptions</a>
 				</li>
 			</ul>
-			<h1>Interface ResponseSerializerContext&lt;TRequest&gt;</h1>
+			<h1>Interface SwaggerOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,23 +72,15 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The context for a &#39;ResponseSerializer&#39;.</p>
+						<p>Additional, custom options for &#39;Swagger()&#39; decorator.</p>
 					</div>
 				</div>
-			</section>
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>TRequest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.Request</span></h4>
-					</li>
-				</ul>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ResponseSerializerContext</span>
+						<span class="target">SwaggerOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -99,9 +91,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.responseserializercontext.html#request" class="tsd-kind-icon">request</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.responseserializercontext.html#response" class="tsd-kind-icon">response</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.responseserializercontext.html#result" class="tsd-kind-icon">result</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_swagger_.swaggeroptions.html#pathdefinitionupdater" class="tsd-kind-icon">path<wbr>Definition<wbr>Updater</a></li>
 							</ul>
 						</section>
 					</div>
@@ -110,47 +100,17 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="request" class="tsd-anchor"></a>
-					<h3>request</h3>
-					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TRequest</span></div>
+					<a name="pathdefinitionupdater" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> path<wbr>Definition<wbr>Updater</h3>
+					<div class="tsd-signature tsd-kind-icon">path<wbr>Definition<wbr>Updater<span class="tsd-signature-symbol">:</span> <a href="../modules/_swagger_.html#swaggerpathdefinitionupdater" class="tsd-signature-type">SwaggerPathDefinitionUpdater</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:296</li>
+							<li>Defined in swagger.ts:223</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The request context.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="response" class="tsd-anchor"></a>
-					<h3>response</h3>
-					<div class="tsd-signature tsd-kind-icon">response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">express.Response</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in index.ts:300</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The response context.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="result" class="tsd-anchor"></a>
-					<h3>result</h3>
-					<div class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in index.ts:304</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The result of the wrapped request handler.</p>
+							<p>A function that updates swagger path definitions.</p>
 						</div>
 					</div>
 				</section>
@@ -165,10 +125,10 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_authorize_.html">"authorize"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_index_.html">"index"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_swagger_.html">"swagger"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -178,24 +138,78 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.initcontrollersswaggerdocumentoptions.html" class="tsd-kind-icon">Init<wbr>Controllers<wbr>Swagger<wbr>Document<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.initcontrollersswaggeroptions.html" class="tsd-kind-icon">Init<wbr>Controllers<wbr>Swagger<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.swaggerdocumentinfo.html" class="tsd-kind-icon">Swagger<wbr>Document<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.swaggerdocumentinfocontact.html" class="tsd-kind-icon">Swagger<wbr>Document<wbr>Info<wbr>Contact</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.swaggerdocumentinfolicense.html" class="tsd-kind-icon">Swagger<wbr>Document<wbr>Info<wbr>License</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.swaggerexternaldocs.html" class="tsd-kind-icon">Swagger<wbr>External<wbr>Docs</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.swaggerinfo.html" class="tsd-kind-icon">Swagger<wbr>Info</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_index_.responseserializercontext.html" class="tsd-kind-icon">Response<wbr>Serializer<wbr>Context</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.swaggeroptions.html" class="tsd-kind-icon">Swagger<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_index_.responseserializercontext.html#request" class="tsd-kind-icon">request</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_index_.responseserializercontext.html#response" class="tsd-kind-icon">response</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_index_.responseserializercontext.html#result" class="tsd-kind-icon">result</a>
+								<a href="_swagger_.swaggeroptions.html#pathdefinitionupdater" class="tsd-kind-icon">path<wbr>Definition<wbr>Updater</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.swaggerpathdefinitionupdatercontext.html" class="tsd-kind-icon">Swagger<wbr>Path<wbr>Definition<wbr>Updater<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#apiurlscheme" class="tsd-kind-icon">Api<wbr>Url<wbr>Scheme</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#initcontrollersswaggeroptionsvalue" class="tsd-kind-icon">Init<wbr>Controllers<wbr>Swagger<wbr>Options<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#swaggerdefinitionlist" class="tsd-kind-icon">Swagger<wbr>Definition<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#swaggerpathdefinition" class="tsd-kind-icon">Swagger<wbr>Path<wbr>Definition</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#swaggerpathdefinitionupdater" class="tsd-kind-icon">Swagger<wbr>Path<wbr>Definition<wbr>Updater</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#swagger_info" class="tsd-kind-icon">SWAGGER_<wbr>INFO</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_swagger_.html#swaggerpathdefinitionupdater-1" class="tsd-kind-icon">swagger<wbr>Path<wbr>Definition<wbr>Updater</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#swagger" class="tsd-kind-icon">Swagger</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#getswaggerpathdefinitionupdater" class="tsd-kind-icon">get<wbr>Swagger<wbr>Path<wbr>Definition<wbr>Updater</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#setswaggerpathdefinitionupdater" class="tsd-kind-icon">set<wbr>Swagger<wbr>Path<wbr>Definition<wbr>Updater</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#setupswaggerui" class="tsd-kind-icon">setup<wbr>SwaggerUI</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_swagger_.html#toswaggerinfo" class="tsd-kind-icon">to<wbr>Swagger<wbr>Info</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

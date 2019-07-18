@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>InitControllersOptions | @egodigital/express-controllers</title>
+	<title>InitControllersSwaggerDocumentOptions | @egodigital/express-controllers</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_index_.html">&quot;index&quot;</a>
+					<a href="../modules/_swagger_.html">&quot;swagger&quot;</a>
 				</li>
 				<li>
-					<a href="_index_.initcontrollersoptions.html">InitControllersOptions</a>
+					<a href="_swagger_.initcontrollersswaggerdocumentoptions.html">InitControllersSwaggerDocumentOptions</a>
 				</li>
 			</ul>
-			<h1>Interface InitControllersOptions</h1>
+			<h1>Interface InitControllersSwaggerDocumentOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Options for &#39;initControllers()&#39; function.</p>
+						<p>General information of a Swagger document.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">InitControllersOptions</span>
+						<span class="target">InitControllersSwaggerDocumentOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -91,12 +91,13 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.initcontrollersoptions.html#app" class="tsd-kind-icon">app</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.initcontrollersoptions.html#controllerclass" class="tsd-kind-icon">controller<wbr>Class</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.initcontrollersoptions.html#controllerconstructorargs" class="tsd-kind-icon">controller<wbr>Constructor<wbr>Args</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.initcontrollersoptions.html#cwd" class="tsd-kind-icon">cwd</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.initcontrollersoptions.html#files" class="tsd-kind-icon">files</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.initcontrollersoptions.html#swagger" class="tsd-kind-icon">swagger</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_swagger_.initcontrollersswaggerdocumentoptions.html#basepath" class="tsd-kind-icon">base<wbr>Path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_swagger_.initcontrollersswaggerdocumentoptions.html#externaldocs" class="tsd-kind-icon">external<wbr>Docs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_swagger_.initcontrollersswaggerdocumentoptions.html#host" class="tsd-kind-icon">host</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_swagger_.initcontrollersswaggerdocumentoptions.html#info" class="tsd-kind-icon">info</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_swagger_.initcontrollersswaggerdocumentoptions.html#schemes" class="tsd-kind-icon">schemes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_swagger_.initcontrollersswaggerdocumentoptions.html#securitydefinitions" class="tsd-kind-icon">security<wbr>Definitions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_swagger_.initcontrollersswaggerdocumentoptions.html#tags" class="tsd-kind-icon">tags</a></li>
 							</ul>
 						</section>
 					</div>
@@ -105,93 +106,116 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="app" class="tsd-anchor"></a>
-					<h3>app</h3>
-					<div class="tsd-signature tsd-kind-icon">app<span class="tsd-signature-symbol">:</span> <a href="../modules/_index_.html#expressapp" class="tsd-signature-type">ExpressApp</a></div>
+					<a name="basepath" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> base<wbr>Path</h3>
+					<div class="tsd-signature tsd-kind-icon">base<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:172</li>
+							<li>Defined in swagger.ts:37</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The underlying Express host or router.</p>
+							<p>The base path of the API.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="controllerclass" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> controller<wbr>Class</h3>
-					<div class="tsd-signature tsd-kind-icon">controller<wbr>Class<span class="tsd-signature-symbol">:</span> <a href="../modules/_index_.html#controllerclassnameprovider" class="tsd-signature-type">ControllerClassNameProvider</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="externaldocs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> external<wbr>Docs</h3>
+					<div class="tsd-signature tsd-kind-icon">external<wbr>Docs<span class="tsd-signature-symbol">:</span> <a href="_swagger_.swaggerexternaldocs.html" class="tsd-signature-type">SwaggerExternalDocs</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:176</li>
+							<li>Defined in swagger.ts:41</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The custom name for the controller class or a function that provides it. Default &#39;Controller&#39;</p>
+							<p>External docs.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="controllerconstructorargs" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> controller<wbr>Constructor<wbr>Args</h3>
-					<div class="tsd-signature tsd-kind-icon">controller<wbr>Constructor<wbr>Args<span class="tsd-signature-symbol">:</span> <a href="../modules/_index_.html#controllerclassconstructorargsprovider" class="tsd-signature-type">ControllerClassConstructorArgsProvider</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="host" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> host</h3>
+					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:180</li>
+							<li>Defined in swagger.ts:45</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The custom list of arguments for a controller class contructor or the function that provides it.</p>
+							<p>The host name.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="cwd" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> cwd</h3>
-					<div class="tsd-signature tsd-kind-icon">cwd<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="info" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> info</h3>
+					<div class="tsd-signature tsd-kind-icon">info<span class="tsd-signature-symbol">:</span> <a href="_swagger_.swaggerdocumentinfo.html" class="tsd-signature-type">SwaggerDocumentInfo</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:184</li>
+							<li>Defined in swagger.ts:49</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The custom current work directory. Default: &#39;{PROCESS}/controllers&#39;</p>
+							<p>Information about the document.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="files" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> files</h3>
-					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="schemes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> schemes</h3>
+					<div class="tsd-signature tsd-kind-icon">schemes<span class="tsd-signature-symbol">:</span> <a href="../modules/_swagger_.html#apiurlscheme" class="tsd-signature-type">ApiUrlScheme</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_swagger_.html#apiurlscheme" class="tsd-signature-type">ApiUrlScheme</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:188</li>
+							<li>Defined in swagger.ts:53</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>One or more custom glob patterns of files to scan. Default: [ *.js, *.ts ]</p>
+							<p>The list of possible schemes.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="swagger" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> swagger</h3>
-					<div class="tsd-signature tsd-kind-icon">swagger<span class="tsd-signature-symbol">:</span> <a href="../modules/_swagger_.html#initcontrollersswaggeroptionsvalue" class="tsd-signature-type">InitControllersSwaggerOptionsValue</a></div>
+					<a name="securitydefinitions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> security<wbr>Definitions</h3>
+					<div class="tsd-signature tsd-kind-icon">security<wbr>Definitions<span class="tsd-signature-symbol">:</span> <a href="../modules/_swagger_.html#swaggerdefinitionlist" class="tsd-signature-type">SwaggerDefinitionList</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:192</li>
+							<li>Defined in swagger.ts:57</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Swagger options.</p>
+							<p>Security definitions.</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="tags" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tags</h3>
+					<div class="tsd-signature tsd-kind-icon">tags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in swagger.ts:61</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>List of tags (key =&gt; name; value =&gt; description).</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>name: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -205,10 +229,10 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_authorize_.html">"authorize"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_index_.html">"index"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_swagger_.html">"swagger"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -221,30 +245,93 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_index_.initcontrollersoptions.html" class="tsd-kind-icon">Init<wbr>Controllers<wbr>Options</a>
+						<a href="_swagger_.initcontrollersswaggerdocumentoptions.html" class="tsd-kind-icon">Init<wbr>Controllers<wbr>Swagger<wbr>Document<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_index_.initcontrollersoptions.html#app" class="tsd-kind-icon">app</a>
+								<a href="_swagger_.initcontrollersswaggerdocumentoptions.html#basepath" class="tsd-kind-icon">base<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_index_.initcontrollersoptions.html#controllerclass" class="tsd-kind-icon">controller<wbr>Class</a>
+								<a href="_swagger_.initcontrollersswaggerdocumentoptions.html#externaldocs" class="tsd-kind-icon">external<wbr>Docs</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_index_.initcontrollersoptions.html#controllerconstructorargs" class="tsd-kind-icon">controller<wbr>Constructor<wbr>Args</a>
+								<a href="_swagger_.initcontrollersswaggerdocumentoptions.html#host" class="tsd-kind-icon">host</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_index_.initcontrollersoptions.html#cwd" class="tsd-kind-icon">cwd</a>
+								<a href="_swagger_.initcontrollersswaggerdocumentoptions.html#info" class="tsd-kind-icon">info</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_index_.initcontrollersoptions.html#files" class="tsd-kind-icon">files</a>
+								<a href="_swagger_.initcontrollersswaggerdocumentoptions.html#schemes" class="tsd-kind-icon">schemes</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_index_.initcontrollersoptions.html#swagger" class="tsd-kind-icon">swagger</a>
+								<a href="_swagger_.initcontrollersswaggerdocumentoptions.html#securitydefinitions" class="tsd-kind-icon">security<wbr>Definitions</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_swagger_.initcontrollersswaggerdocumentoptions.html#tags" class="tsd-kind-icon">tags</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.initcontrollersswaggeroptions.html" class="tsd-kind-icon">Init<wbr>Controllers<wbr>Swagger<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.swaggerdocumentinfo.html" class="tsd-kind-icon">Swagger<wbr>Document<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.swaggerdocumentinfocontact.html" class="tsd-kind-icon">Swagger<wbr>Document<wbr>Info<wbr>Contact</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.swaggerdocumentinfolicense.html" class="tsd-kind-icon">Swagger<wbr>Document<wbr>Info<wbr>License</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.swaggerexternaldocs.html" class="tsd-kind-icon">Swagger<wbr>External<wbr>Docs</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.swaggerinfo.html" class="tsd-kind-icon">Swagger<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.swaggeroptions.html" class="tsd-kind-icon">Swagger<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_swagger_.swaggerpathdefinitionupdatercontext.html" class="tsd-kind-icon">Swagger<wbr>Path<wbr>Definition<wbr>Updater<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#apiurlscheme" class="tsd-kind-icon">Api<wbr>Url<wbr>Scheme</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#initcontrollersswaggeroptionsvalue" class="tsd-kind-icon">Init<wbr>Controllers<wbr>Swagger<wbr>Options<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#swaggerdefinitionlist" class="tsd-kind-icon">Swagger<wbr>Definition<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#swaggerpathdefinition" class="tsd-kind-icon">Swagger<wbr>Path<wbr>Definition</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#swaggerpathdefinitionupdater" class="tsd-kind-icon">Swagger<wbr>Path<wbr>Definition<wbr>Updater</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#swagger_info" class="tsd-kind-icon">SWAGGER_<wbr>INFO</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_swagger_.html#swaggerpathdefinitionupdater-1" class="tsd-kind-icon">swagger<wbr>Path<wbr>Definition<wbr>Updater</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#swagger" class="tsd-kind-icon">Swagger</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#getswaggerpathdefinitionupdater" class="tsd-kind-icon">get<wbr>Swagger<wbr>Path<wbr>Definition<wbr>Updater</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#setswaggerpathdefinitionupdater" class="tsd-kind-icon">set<wbr>Swagger<wbr>Path<wbr>Definition<wbr>Updater</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_swagger_.html#setupswaggerui" class="tsd-kind-icon">setup<wbr>SwaggerUI</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_swagger_.html#toswaggerinfo" class="tsd-kind-icon">to<wbr>Swagger<wbr>Info</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
