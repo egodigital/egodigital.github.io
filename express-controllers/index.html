@@ -368,6 +368,114 @@ app.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><s
             .send();
     }
 }</code></pre>
+				<h3 id="swagger">Swagger</h3>
+				<p>First define the main information of the document:</p>
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">'express'</span>;
+<span class="hljs-keyword">import</span> { initControllers } <span class="hljs-keyword">from</span> <span class="hljs-string">'@egodigital/express-controllers'</span>;
+
+<span class="hljs-keyword">const</span> app = express();
+
+initControllers({
+    app,
+    cwd: __dirname + <span class="hljs-string">'/controllers'</span>,
+    swagger: {
+        definitions: {
+            <span class="hljs-string">'SuccessResponse'</span>: {
+                <span class="hljs-string">"type"</span>: <span class="hljs-string">"object"</span>,
+                <span class="hljs-string">"properties"</span>: {
+                    <span class="hljs-string">"success"</span>: {
+                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"Indicates if operation was successful or not."</span>,
+                        <span class="hljs-string">"type"</span>: <span class="hljs-string">"boolean"</span>
+                    },
+                    <span class="hljs-string">"data"</span>: {
+                        <span class="hljs-string">"description"</span>: <span class="hljs-string">"The result data."</span>,
+                        <span class="hljs-string">"type"</span>: <span class="hljs-string">"string"</span>
+                    },
+                }
+            }
+        },
+        <span class="hljs-built_in">document</span>: {
+            host: <span class="hljs-string">'api.example.com'</span>,
+            info: {
+                contact: {
+                    email: <span class="hljs-string">"hello@e-go-digital.com"</span>,
+                },
+                description: <span class="hljs-string">"Describes all API endpoints."</span>,
+                title: <span class="hljs-string">"Test API"</span>,
+                version: <span class="hljs-string">"1.0.0"</span>,
+            },
+            schemes: [<span class="hljs-string">'http'</span>, <span class="hljs-string">'https'</span>],
+            tags: {
+                <span class="hljs-string">'test'</span>: <span class="hljs-string">'A test tag'</span>,
+            },
+        },
+        title: <span class="hljs-string">'Swagger Test'</span>,
+    },
+});
+
+app.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Swagger document: http://localhost:8080/swagger'</span>);
+});</code></pre>
+				<p>Now use <code>@Swagger</code> decorator for each of your method, to document your API:</p>
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Request, Response } <span class="hljs-keyword">from</span> <span class="hljs-string">'express'</span>;
+<span class="hljs-keyword">import</span> { ControllerBase, GET, Swagger, SwaggerPathDefinitionUpdaterContext } <span class="hljs-keyword">from</span> <span class="hljs-string">'@egodigital/express-controllers'</span>;
+
+<span class="hljs-comment">/**
+ * /controllers/api/index.ts
+ *
+ * Base path: '/api'
+ */</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> Controller <span class="hljs-keyword">extends</span> ControllerBase {
+    <span class="hljs-comment">/**
+     * [GET]  /api
+     */</span>
+    <span class="hljs-meta">@GET</span>()
+    <span class="hljs-meta">@Swagger</span>({
+        <span class="hljs-string">"tags"</span>: [
+            <span class="hljs-string">"test"</span>
+        ],
+        <span class="hljs-string">"summary"</span>: <span class="hljs-string">"A test."</span>,
+        <span class="hljs-string">"produces"</span>: [
+            <span class="hljs-string">"application/json"</span>
+        ],
+        <span class="hljs-string">"parameters"</span>: [
+            {
+                <span class="hljs-string">"in"</span>: <span class="hljs-string">"header"</span>,
+                <span class="hljs-string">"name"</span>: <span class="hljs-string">"X-My-Header"</span>,
+                <span class="hljs-string">"required"</span>: <span class="hljs-literal">false</span>,
+                <span class="hljs-string">"type"</span>: <span class="hljs-string">"string"</span>
+            },
+        ],
+        <span class="hljs-string">"responses"</span>: {
+            <span class="hljs-string">"200"</span>: {
+                <span class="hljs-string">"description"</span>: <span class="hljs-string">"Operation was successful."</span>,
+                <span class="hljs-string">"schema"</span>: {
+                    <span class="hljs-string">"$ref"</span>: <span class="hljs-string">"#/definitions/SuccessResponse"</span>,
+                }
+            },
+        }
+    }, pathDefinitionUpdater)
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> index(req: Request, res: Response) {
+        <span class="hljs-keyword">return</span> res.json({
+            success: <span class="hljs-literal">true</span>,
+            data: <span class="hljs-string">'Swagger test: OK'</span>,
+        });
+    }
+}
+
+
+<span class="hljs-comment">// update each path definition with default values</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pathDefinitionUpdater</span>(<span class="hljs-params">ctx: SwaggerPathDefinitionUpdaterContext</span>) </span>{
+    <span class="hljs-comment">// Bad Request</span>
+    ctx.definition[<span class="hljs-string">'responses'</span>][<span class="hljs-string">'400'</span>] = {
+        <span class="hljs-string">"description"</span>: <span class="hljs-string">"Bad request!"</span>
+    };
+
+    <span class="hljs-comment">// Internal Server Error</span>
+    ctx.definition[<span class="hljs-string">'responses'</span>][<span class="hljs-string">'500'</span>] = {
+        <span class="hljs-string">"description"</span>: <span class="hljs-string">"Operation was failed!"</span>
+    };
+}</code></pre>
 				<h2 id="documentation">Documentation</h2>
 				<p>The API documentation can be found <a href="https://egodigital.github.io/express-controllers/">here</a>.</p>
 			</div>
