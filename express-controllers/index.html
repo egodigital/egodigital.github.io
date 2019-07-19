@@ -369,7 +369,7 @@ app.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><s
     }
 }</code></pre>
 				<h3 id="swagger">Swagger</h3>
-				<p>First define the main information of the document:</p>
+				<p>First, define the main information of the document:</p>
 				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">'express'</span>;
 <span class="hljs-keyword">import</span> { initControllers } <span class="hljs-keyword">from</span> <span class="hljs-string">'@egodigital/express-controllers'</span>;
 
@@ -473,7 +473,7 @@ app.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><s
 
     <span class="hljs-comment">// Internal Server Error</span>
     ctx.definition[<span class="hljs-string">'responses'</span>][<span class="hljs-string">'500'</span>] = {
-        <span class="hljs-string">"description"</span>: <span class="hljs-string">"Operation was failed!"</span>
+        <span class="hljs-string">"description"</span>: <span class="hljs-string">"Operation has failed!"</span>
     };
 }</code></pre>
 				<h2 id="documentation">Documentation</h2>
