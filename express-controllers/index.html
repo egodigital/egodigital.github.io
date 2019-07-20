@@ -416,7 +416,8 @@ initControllers({
 app.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Swagger document: http://localhost:8080/swagger'</span>);
 });</code></pre>
-				<p>Now use <code>@Swagger</code> decorator for each of your method, to document your API:</p>
+				<p>Now use <code>@Swagger</code> decorator for each of your method, to document your API (for more information, visit <a href="https://swagger.io/docs/specification/2-0/paths-and-operations/">Paths and Operations
+				</a>):</p>
 				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Request, Response } <span class="hljs-keyword">from</span> <span class="hljs-string">'express'</span>;
 <span class="hljs-keyword">import</span> { ControllerBase, GET, Swagger, SwaggerPathDefinitionUpdaterContext } <span class="hljs-keyword">from</span> <span class="hljs-string">'@egodigital/express-controllers'</span>;
 
@@ -430,6 +431,7 @@ app.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><s
      * [GET]  /api
      */</span>
     <span class="hljs-meta">@GET</span>()
+    <span class="hljs-comment">// s. https://swagger.io/docs/specification/2-0/paths-and-operations/</span>
     <span class="hljs-meta">@Swagger</span>({
         <span class="hljs-string">"tags"</span>: [
             <span class="hljs-string">"test"</span>
