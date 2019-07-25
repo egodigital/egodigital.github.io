@@ -379,6 +379,7 @@ initControllers({
     app,
     cwd: __dirname + <span class="hljs-string">'/controllers'</span>,
     swagger: {
+        <span class="hljs-comment">// s. https://swagger.io/docs/specification/2-0/describing-responses/</span>
         definitions: {
             <span class="hljs-string">'SuccessResponse'</span>: {
                 <span class="hljs-string">"type"</span>: <span class="hljs-string">"object"</span>,
@@ -420,6 +421,21 @@ app.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><s
 				</a>):</p>
 				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Request, Response } <span class="hljs-keyword">from</span> <span class="hljs-string">'express'</span>;
 <span class="hljs-keyword">import</span> { ControllerBase, GET, Swagger, SwaggerPathDefinitionUpdaterContext } <span class="hljs-keyword">from</span> <span class="hljs-string">'@egodigital/express-controllers'</span>;
+
+
+<span class="hljs-comment">// update each path definition with default values (s. below)</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pathDefinitionUpdater</span>(<span class="hljs-params">ctx: SwaggerPathDefinitionUpdaterContext</span>) </span>{
+    <span class="hljs-comment">// Bad Request</span>
+    ctx.definition[<span class="hljs-string">'responses'</span>][<span class="hljs-string">'400'</span>] = {
+        <span class="hljs-string">"description"</span>: <span class="hljs-string">"Bad request!"</span>
+    };
+
+    <span class="hljs-comment">// Internal Server Error</span>
+    ctx.definition[<span class="hljs-string">'responses'</span>][<span class="hljs-string">'500'</span>] = {
+        <span class="hljs-string">"description"</span>: <span class="hljs-string">"Operation has failed!"</span>
+    };
+}
+
 
 <span class="hljs-comment">/**
  * /controllers/api/index.ts
@@ -463,20 +479,6 @@ app.listen(<span class="hljs-number">8080</span>, <span class="hljs-function"><s
             data: <span class="hljs-string">'Swagger test: OK'</span>,
         });
     }
-}
-
-
-<span class="hljs-comment">// update each path definition with default values</span>
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pathDefinitionUpdater</span>(<span class="hljs-params">ctx: SwaggerPathDefinitionUpdaterContext</span>) </span>{
-    <span class="hljs-comment">// Bad Request</span>
-    ctx.definition[<span class="hljs-string">'responses'</span>][<span class="hljs-string">'400'</span>] = {
-        <span class="hljs-string">"description"</span>: <span class="hljs-string">"Bad request!"</span>
-    };
-
-    <span class="hljs-comment">// Internal Server Error</span>
-    ctx.definition[<span class="hljs-string">'responses'</span>][<span class="hljs-string">'500'</span>] = {
-        <span class="hljs-string">"description"</span>: <span class="hljs-string">"Operation has failed!"</span>
-    };
 }</code></pre>
 				<h2 id="documentation">Documentation</h2>
 				<p>The API documentation can be found <a href="https://egodigital.github.io/express-controllers/">here</a>.</p>
