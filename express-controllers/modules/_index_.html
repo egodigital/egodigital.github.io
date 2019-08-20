@@ -121,6 +121,7 @@
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#response_serializer" class="tsd-kind-icon">RESPONSE_<wbr>SERIALIZER</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#objvalidatefailedhandler" class="tsd-kind-icon">obj<wbr>Validate<wbr>Failed<wbr>Handler</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#reqerrorhandler" class="tsd-kind-icon">req<wbr>Error<wbr>Handler</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#resserializer" class="tsd-kind-icon">res<wbr>Serializer</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -140,12 +141,14 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#formvalidate" class="tsd-kind-icon">form<wbr>Validate</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#getobjectvalidationfailedhandler" class="tsd-kind-icon">get<wbr>Object<wbr>Validation<wbr>Failed<wbr>Handler</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#getrequesterrorhandler" class="tsd-kind-icon">get<wbr>Request<wbr>Error<wbr>Handler</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#getresponseserializer" class="tsd-kind-icon">get<wbr>Response<wbr>Serializer</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#initcontrollers" class="tsd-kind-icon">init<wbr>Controllers</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#jsonvalidate" class="tsd-kind-icon">json<wbr>Validate</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#normalizeroutepath" class="tsd-kind-icon">normalize<wbr>Route<wbr>Path</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#objectvalidate" class="tsd-kind-icon">object<wbr>Validate</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#setobjectvalidationfailedhandler" class="tsd-kind-icon">set<wbr>Object<wbr>Validation<wbr>Failed<wbr>Handler</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#setrequesterrorhandler" class="tsd-kind-icon">set<wbr>Request<wbr>Error<wbr>Handler</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#setresponseserializer" class="tsd-kind-icon">set<wbr>Response<wbr>Serializer</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#tocontrollerrouteoptions" class="tsd-kind-icon">to<wbr>Controller<wbr>Route<wbr>Options</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#tocontrollerroutewithbodyoptions" class="tsd-kind-icon">to<wbr>Controller<wbr>Route<wbr>With<wbr>Body<wbr>Options</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#wraphandlerforcontroller" class="tsd-kind-icon">wrap<wbr>Handler<wbr>For<wbr>Controller</a></li>
@@ -339,7 +342,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="objectvalidationfailedhandler" class="tsd-anchor"></a>
 					<h3>Object<wbr>Validation<wbr>Failed<wbr>Handler</h3>
-					<div class="tsd-signature tsd-kind-icon">Object<wbr>Validation<wbr>Failed<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">Object<wbr>Validation<wbr>Failed<wbr>Handler&lt;TRequest&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in index.ts:204</li>
@@ -355,6 +358,12 @@
 							</dd>
 						</dl>
 					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>TRequest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.Request</span></h4>
+						</li>
+					</ul>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -395,7 +404,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="requesterrorhandler" class="tsd-anchor"></a>
 					<h3>Request<wbr>Error<wbr>Handler</h3>
-					<div class="tsd-signature tsd-kind-icon">Request<wbr>Error<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">Request<wbr>Error<wbr>Handler&lt;TRequest&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in index.ts:265</li>
@@ -411,6 +420,12 @@
 							</dd>
 						</dl>
 					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>TRequest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.Request</span></h4>
+						</li>
+					</ul>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -436,7 +451,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="responseserializer" class="tsd-anchor"></a>
 					<h3>Response<wbr>Serializer</h3>
-					<div class="tsd-signature tsd-kind-icon">Response<wbr>Serializer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">Response<wbr>Serializer&lt;TRequest&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in index.ts:291</li>
@@ -453,6 +468,12 @@
 							</dd>
 						</dl>
 					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>TRequest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.Request</span></h4>
+						</li>
+					</ul>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -578,6 +599,16 @@
 						</ul>
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="resserializer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagLet">Let</span> res<wbr>Serializer</h3>
+					<div class="tsd-signature tsd-kind-icon">res<wbr>Serializer<span class="tsd-signature-symbol">:</span> <a href="_index_.html#responseserializer" class="tsd-signature-type">ResponseSerializer</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:357</li>
+						</ul>
+					</aside>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
@@ -595,7 +626,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:405</li>
+									<li>Defined in index.ts:406</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -615,7 +646,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:416</li>
+									<li>Defined in index.ts:417</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -645,7 +676,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:428</li>
+									<li>Defined in index.ts:429</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -678,7 +709,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:437</li>
+									<li>Defined in index.ts:438</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -704,7 +735,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:448</li>
+									<li>Defined in index.ts:449</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -744,7 +775,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:465</li>
+									<li>Defined in index.ts:466</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -764,7 +795,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:475</li>
+									<li>Defined in index.ts:476</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -794,7 +825,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:487</li>
+									<li>Defined in index.ts:488</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -827,7 +858,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:495</li>
+									<li>Defined in index.ts:496</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -853,7 +884,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:506</li>
+									<li>Defined in index.ts:507</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -890,7 +921,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:523</li>
+									<li>Defined in index.ts:524</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -910,7 +941,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:532</li>
+									<li>Defined in index.ts:533</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -944,7 +975,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:549</li>
+									<li>Defined in index.ts:550</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -964,7 +995,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:558</li>
+									<li>Defined in index.ts:559</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -998,7 +1029,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:575</li>
+									<li>Defined in index.ts:576</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1018,7 +1049,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:584</li>
+									<li>Defined in index.ts:585</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1055,7 +1086,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:601</li>
+									<li>Defined in index.ts:602</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1075,7 +1106,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:612</li>
+									<li>Defined in index.ts:613</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1105,7 +1136,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:624</li>
+									<li>Defined in index.ts:625</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1138,7 +1169,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:633</li>
+									<li>Defined in index.ts:634</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1164,7 +1195,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:644</li>
+									<li>Defined in index.ts:645</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1204,7 +1235,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:661</li>
+									<li>Defined in index.ts:662</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1224,7 +1255,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:672</li>
+									<li>Defined in index.ts:673</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1254,7 +1285,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:684</li>
+									<li>Defined in index.ts:685</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1287,7 +1318,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:693</li>
+									<li>Defined in index.ts:694</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1313,7 +1344,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:704</li>
+									<li>Defined in index.ts:705</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1353,7 +1384,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:721</li>
+									<li>Defined in index.ts:722</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1373,7 +1404,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:732</li>
+									<li>Defined in index.ts:733</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1403,7 +1434,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:744</li>
+									<li>Defined in index.ts:745</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1436,7 +1467,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:753</li>
+									<li>Defined in index.ts:754</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1462,7 +1493,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:764</li>
+									<li>Defined in index.ts:765</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1502,7 +1533,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:781</li>
+									<li>Defined in index.ts:782</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1522,7 +1553,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:792</li>
+									<li>Defined in index.ts:793</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1552,7 +1583,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:804</li>
+									<li>Defined in index.ts:805</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1585,7 +1616,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:813</li>
+									<li>Defined in index.ts:814</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1611,7 +1642,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:824</li>
+									<li>Defined in index.ts:825</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1647,7 +1678,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1138</li>
+									<li>Defined in index.ts:1160</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1754,7 +1785,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1230</li>
+									<li>Defined in index.ts:1252</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1786,7 +1817,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1376</li>
+									<li>Defined in index.ts:1398</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1830,7 +1861,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:840</li>
+									<li>Defined in index.ts:841</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1853,7 +1884,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:869</li>
+									<li>Defined in index.ts:870</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1867,6 +1898,34 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getresponseserializer" class="tsd-anchor"></a>
+					<h3>get<wbr>Response<wbr>Serializer</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Response<wbr>Serializer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_index_.html#responseserializer" class="tsd-signature-type">ResponseSerializer</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.ts:890</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the global response serializer.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_index_.html#responseserializer" class="tsd-signature-type">ResponseSerializer</a>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">null</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">undefined</span>
+							</h4>
+							<p>The serializer, if defined.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="initcontrollers" class="tsd-anchor"></a>
 					<h3>init<wbr>Controllers</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -1876,7 +1935,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:888</li>
+									<li>Defined in index.ts:899</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1907,7 +1966,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1387</li>
+									<li>Defined in index.ts:1409</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1951,7 +2010,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1474</li>
+									<li>Defined in index.ts:1496</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1974,7 +2033,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1398</li>
+									<li>Defined in index.ts:1420</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2021,7 +2080,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1120</li>
+									<li>Defined in index.ts:1131</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2052,7 +2111,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1131</li>
+									<li>Defined in index.ts:1142</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2073,6 +2132,37 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="setresponseserializer" class="tsd-anchor"></a>
+					<h3>set<wbr>Response<wbr>Serializer</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Response<wbr>Serializer<span class="tsd-signature-symbol">(</span>newSerializer<span class="tsd-signature-symbol">: </span><a href="_index_.html#responseserializer" class="tsd-signature-type">ResponseSerializer</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.ts:1153</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a global response serializer.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>newSerializer: <a href="_index_.html#responseserializer" class="tsd-signature-type">ResponseSerializer</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new serializer.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="tocontrollerrouteoptions" class="tsd-anchor"></a>
 					<h3>to<wbr>Controller<wbr>Route<wbr>Options</h3>
@@ -2083,7 +2173,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1493</li>
+									<li>Defined in index.ts:1515</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2106,7 +2196,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1515</li>
+									<li>Defined in index.ts:1537</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2129,7 +2219,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1567</li>
+									<li>Defined in index.ts:1589</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2256,6 +2346,9 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_index_.html#reqerrorhandler" class="tsd-kind-icon">req<wbr>Error<wbr>Handler</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_index_.html#resserializer" class="tsd-kind-icon">res<wbr>Serializer</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_index_.html#connect" class="tsd-kind-icon">CONNECT</a>
 					</li>
@@ -2299,6 +2392,9 @@
 						<a href="_index_.html#getrequesterrorhandler" class="tsd-kind-icon">get<wbr>Request<wbr>Error<wbr>Handler</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_index_.html#getresponseserializer" class="tsd-kind-icon">get<wbr>Response<wbr>Serializer</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_index_.html#initcontrollers" class="tsd-kind-icon">init<wbr>Controllers</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
@@ -2315,6 +2411,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_index_.html#setrequesterrorhandler" class="tsd-kind-icon">set<wbr>Request<wbr>Error<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_index_.html#setresponseserializer" class="tsd-kind-icon">set<wbr>Response<wbr>Serializer</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_index_.html#tocontrollerrouteoptions" class="tsd-kind-icon">to<wbr>Controller<wbr>Route<wbr>Options</a>
@@ -2342,6 +2441,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -2390,7 +2490,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
