@@ -77,28 +77,31 @@
 				<pre><code class="language-bash">ego new</code></pre>
 				<h2 id="available-commands">Available commands</h2>
 				<p>A (non complete) list of some interesting commands:</p>
-				<pre><code>aptdate       <span class="hljs-comment"># Runs 'apt-get update', 'apt-get upgrade' and 'apt-get autoremove' in one command.</span>
-api           <span class="hljs-comment"># Runs an Express.js based REST API from current directory.</span>
-<span class="hljs-keyword">backup</span>        <span class="hljs-comment"># Backups the current directory.</span>
-<span class="hljs-keyword">build</span>         <span class="hljs-comment"># Shorthand for 'npm run build'.</span>
-csv-<span class="hljs-keyword">split</span>     <span class="hljs-comment"># Splits one or more (huge) CSV file(s) into separates parts.</span>
-chuck         <span class="hljs-comment"># Print a random Chuck Norris joke. Jep it is true! Just try it 😎</span>
-docker-<span class="hljs-keyword">stop</span>   <span class="hljs-comment"># Stops all running Docker containers.</span>
-docker-up     <span class="hljs-comment"># Shorthand for 'docker-compose up'.</span>
-git-checkout  <span class="hljs-comment"># Checks out (to) a branch.</span>
-git-<span class="hljs-keyword">export</span>    <span class="hljs-comment"># Clones a repository to the working directory and removes the '.git' subfolder.</span>
-git-pull      <span class="hljs-comment"># Pulls from all remotes to the current branch.</span>
-git-push      <span class="hljs-comment"># Pushes the current branch to all remotes.</span>
-git-<span class="hljs-keyword">sync</span>      <span class="hljs-comment"># Syncs the current branch with all remotes.</span>
-job           <span class="hljs-comment"># Executes one or more scripts periodically.</span>
-<span class="hljs-keyword">new</span>           <span class="hljs-comment"># Starts the e.GO generator for Yeoman.</span>
-node-<span class="hljs-keyword">install</span>  <span class="hljs-comment"># Removes the 'node_modules' subfolder and executes 'npm install'.</span>
-pull-request  <span class="hljs-comment"># Starts a pull request (Azure DevOps) for the branch of the current git repository.</span>
-<span class="hljs-keyword">public</span>-ip     <span class="hljs-comment"># Print public ipv4 and ipv6 ip address.</span>
-run           <span class="hljs-comment"># Runs one or more Node.js based script file(s).</span>
-serve         <span class="hljs-comment"># Starts a HTTP server that shares files via a web interface.</span>
-ssl-<span class="hljs-keyword">new</span>       <span class="hljs-comment"># Creates a new self-signed SSL certificate.</span>
-watch         <span class="hljs-comment"># Runs one or more scripts for file changes.</span></code></pre><p>To list all available commands, simply run</p>
+				<pre><code>aptdate              <span class="hljs-comment"># Runs 'apt-get update', 'apt-get upgrade' and 'apt-get autoremove' in one command.</span>
+api                  <span class="hljs-comment"># Runs an Express.js based REST API from current directory.</span>
+<span class="hljs-keyword">backup</span>               <span class="hljs-comment"># Backups the current directory.</span>
+<span class="hljs-keyword">build</span>                <span class="hljs-comment"># Shorthand for 'npm run build'.</span>
+csv-<span class="hljs-keyword">split</span>            <span class="hljs-comment"># Splits one or more (huge) CSV file(s) into separates parts.</span>
+chuck                <span class="hljs-comment"># Print a random Chuck Norris joke. Jep it is true! Just try it 😎</span>
+devops-items-<span class="hljs-keyword">update</span>  <span class="hljs-comment"># Updates one or more Azure DevOps work items.</span>
+docker-<span class="hljs-keyword">stop</span>          <span class="hljs-comment"># Stops all running Docker containers.</span>
+docker-up            <span class="hljs-comment"># Shorthand for 'docker-compose up'.</span>
+git-checkout         <span class="hljs-comment"># Checks out (to) a branch.</span>
+git-<span class="hljs-keyword">export</span>           <span class="hljs-comment"># Clones a repository to the working directory and removes the '.git' subfolder.</span>
+git-pull             <span class="hljs-comment"># Pulls from all remotes to the current branch.</span>
+git-push             <span class="hljs-comment"># Pushes the current branch to all remotes.</span>
+git-<span class="hljs-keyword">sync</span>             <span class="hljs-comment"># Syncs the current branch with all remotes.</span>
+job                  <span class="hljs-comment"># Executes one or more scripts periodically.</span>
+<span class="hljs-keyword">new</span>                  <span class="hljs-comment"># Starts the e.GO generator for Yeoman.</span>
+node-<span class="hljs-keyword">install</span>         <span class="hljs-comment"># Removes the 'node_modules' subfolder and executes 'npm install'.</span>
+<span class="hljs-keyword">public</span>-ip            <span class="hljs-comment"># Print public ipv4 and ipv6 ip address.</span>
+pull-request         <span class="hljs-comment"># Starts a pull request (Azure DevOps) for the branch of the current git repository.</span>
+qr                   <span class="hljs-comment"># Creates an image file with a QR code from a text.</span>
+run                  <span class="hljs-comment"># Runs one or more Node.js based script file(s).</span>
+serve                <span class="hljs-comment"># Starts a HTTP server that shares files via a web interface.</span>
+slack-post           <span class="hljs-comment"># Posts a message to one or more Slack channels.</span>
+ssl-<span class="hljs-keyword">new</span>              <span class="hljs-comment"># Creates a new self-signed SSL certificate.</span>
+watch                <span class="hljs-comment"># Runs one or more scripts for file changes.</span></code></pre><p>To list all available commands, simply run</p>
 				<pre><code class="language-bash">ego</code></pre>
 				<h2 id="wiki">Wiki</h2>
 				<p>Have a look at the <a href="https://github.com/egodigital/ego-cli/wiki">wiki</a>, which contains interesting articles and recipes like:</p>
@@ -136,6 +139,9 @@ watch         <span class="hljs-comment"># Runs one or more scripts for file cha
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_commands_csv_split_index_.html">"commands/csv-<wbr>split/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_devops_items_update_index_.html">"commands/devops-<wbr>items-<wbr>update/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_commands_docker_stop_index_.html">"commands/docker-<wbr>stop/index"</a>
@@ -183,6 +189,9 @@ watch         <span class="hljs-comment"># Runs one or more scripts for file cha
 						<a href="modules/_commands_pull_request_index_.html">"commands/pull-<wbr>request/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_qr_index_.html">"commands/qr/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_commands_run_index_.html">"commands/run/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -190,6 +199,9 @@ watch         <span class="hljs-comment"># Runs one or more scripts for file cha
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_commands_set_index_.html">"commands/set/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commands_slack_post_index_.html">"commands/slack-<wbr>post/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_commands_ssl_new_index_.html">"commands/ssl-<wbr>new/index"</a>
