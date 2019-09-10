@@ -78,6 +78,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_.html#isemptystring" class="tsd-kind-icon">is<wbr>Empty<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_utils_.html#isjoi" class="tsd-kind-icon">is<wbr>Joi</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_.html#normalizestring" class="tsd-kind-icon">normalize<wbr>String</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_.html#readall" class="tsd-kind-icon">read<wbr>All</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_.html#tobooleansafe" class="tsd-kind-icon">to<wbr>Boolean<wbr>Safe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_.html#tostringsafe" class="tsd-kind-icon">to<wbr>String<wbr>Safe</a></li>
 							</ul>
@@ -299,6 +300,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="readall" class="tsd-anchor"></a>
+					<h3>read<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">read<wbr>All<span class="tsd-signature-symbol">(</span>stream<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadStream</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in utils.ts:109</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reads all data from a readable stream.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stream: <span class="tsd-signature-type">ReadStream</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The stream to read.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise<Buffer> The promise with the read data.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="tobooleansafe" class="tsd-anchor"></a>
 					<h3>to<wbr>Boolean<wbr>Safe</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -308,7 +341,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in utils.ts:110</li>
+									<li>Defined in utils.ts:158</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -343,7 +376,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in utils.ts:125</li>
+									<li>Defined in utils.ts:173</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -382,6 +415,9 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_swagger_.html">"swagger"</a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_tools_.html">"tools"</a>
+					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="_utils_.html">"utils"</a>
 					</li>
@@ -403,6 +439,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_utils_.html#normalizestring" class="tsd-kind-icon">normalize<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_utils_.html#readall" class="tsd-kind-icon">read<wbr>All</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_utils_.html#tobooleansafe" class="tsd-kind-icon">to<wbr>Boolean<wbr>Safe</a>
@@ -427,7 +466,6 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -476,7 +514,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
