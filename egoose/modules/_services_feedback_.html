@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;cryptography/bcrypt&quot; | @egodigital/egoose</title>
+	<title>&quot;services/feedback&quot; | @egodigital/egoose</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_cryptography_bcrypt_.html">&quot;cryptography/bcrypt&quot;</a>
+					<a href="_services_feedback_.html">&quot;services/feedback&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;cryptography/bcrypt&quot;</h1>
+			<h1>External module &quot;services/feedback&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -71,10 +71,15 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_services_feedback_.sendappfeedbackoptions.html" class="tsd-kind-icon">Send<wbr>App<wbr>Feedback<wbr>Options</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_cryptography_bcrypt_.html#checkbcrypt" class="tsd-kind-icon">checkBCrypt</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_cryptography_bcrypt_.html#hashbcrypt" class="tsd-kind-icon">hashBCrypt</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_services_feedback_.html#sendappfeedback" class="tsd-kind-icon">send<wbr>App<wbr>Feedback</a></li>
 							</ul>
 						</section>
 					</div>
@@ -83,57 +88,34 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="checkbcrypt" class="tsd-anchor"></a>
-					<h3>checkBCrypt</h3>
+					<a name="sendappfeedback" class="tsd-anchor"></a>
+					<h3>send<wbr>App<wbr>Feedback</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">checkBCrypt<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">send<wbr>App<wbr>Feedback<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">: </span><a href="../interfaces/_services_feedback_.sendappfeedbackoptions.html" class="tsd-signature-type">SendAppFeedbackOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_http_index_.httpresponse.html" class="tsd-signature-type">HttpResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in cryptography/bcrypt.ts:18</li>
+									<li>Defined in services/feedback.ts:63</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>This file is part of the @egodigital/egoose distribution.
-									Copyright (c) e.GO Digital GmbH, Aachen, Germany (<a href="https://www.e-go-digital.com/">https://www.e-go-digital.com/</a>)</p>
+									<p>Sends an app feedback to a service.</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>egodigital/egoose</dt>
-									<dd><p>is free software: you can redistribute it and/or modify
-											it under the terms of the GNU Lesser General Public License as
-										published by the Free Software Foundation, version 3.</p>
-									</dd>
-									<dt>egodigital/egoose</dt>
-									<dd><p>is distributed in the hope that it will be useful, but
-											WITHOUT ANY WARRANTY; without even the implied warranty of
-											MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-										Lesser General Public License for more details.</p>
-										<p>You should have received a copy of the GNU Lesser General Public License
-										along with this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
-									</dd>
-								</dl>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="hashbcrypt" class="tsd-anchor"></a>
-					<h3>hashBCrypt</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">hashBCrypt<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in cryptography/bcrypt.ts:22</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>opts: <a href="../interfaces/_services_feedback_.sendappfeedbackoptions.html" class="tsd-signature-type">SendAppFeedbackOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The options for sending the feedback.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_http_index_.httpresponse.html" class="tsd-signature-type">HttpResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise with the HTTP response.</p>
 						</li>
 					</ul>
 				</section>
@@ -146,17 +128,17 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_cryptography_bcrypt_.html">"cryptography/bcrypt"</a>
+						<a href="_services_feedback_.html">"services/feedback"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_cryptography_bcrypt_.html#checkbcrypt" class="tsd-kind-icon">checkBCrypt</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_services_feedback_.sendappfeedbackoptions.html" class="tsd-kind-icon">Send<wbr>App<wbr>Feedback<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_cryptography_bcrypt_.html#hashbcrypt" class="tsd-kind-icon">hashBCrypt</a>
+						<a href="_services_feedback_.html#sendappfeedback" class="tsd-kind-icon">send<wbr>App<wbr>Feedback</a>
 					</li>
 				</ul>
 			</nav>
@@ -175,6 +157,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -223,7 +206,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
