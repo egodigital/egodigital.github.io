@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;resources&quot; | vscode-powertools</title>
+	<title>&quot;resources&quot; | vscode-powertools - v0.53.0</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">vscode-powertools</a>
+					<a href="../index.html" class="title">vscode-powertools - v0.53.0</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -104,7 +104,7 @@
 					<div class="tsd-signature tsd-kind-icon">EXAMPLE_<wbr>SCRIPT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"const MAX_USER_COUNT &#x3D; 20;$clear();await $withProgress(async (progress, cancelToken) &#x3D;&gt; {progress.report({message: &#x60;Loading list of random users from &#x27;randomuser.me&#x27; ...&#x60;,});// s. https://github.com/mkloubert/vscode-helpers#get-const RESPONSE &#x3D; await $helpers.GET(&#x27;https://randomuser.me/api?nat&#x3D;de&amp;results&#x3D;&#x27; + MAX_USER_COUNT);if (200 !&#x3D;&#x3D; RESPONSE.code) {throw new Error(&#x60;Unexpected response: [${ RESPONSE.code }] &#x27;${ RESPONSE.status }&#x27;&#x60;);}const RESULTS_WITH_USERS &#x3D; JSON.parse((await RESPONSE.readBody()).toString(&#x27;utf8&#x27;));if (!RESULTS_WITH_USERS.info.results) {$vscode.window.showWarningMessage(&#x27;No users available!&#x27;);return;}const ALL_USERS &#x3D; RESULTS_WITH_USERS.results;for (let i &#x3D; 0; i &lt; ALL_USERS.length; i++) {if (cancelToken.isCancellationRequested) {return;  // user wants to cancel// from progress window}if ($cancel.isCancellationRequested) {return;  // user wants to cancel// from console window}const USER &#x3D; ALL_USERS[i];progress.report({message: &#x60;Processing user &#x27;${ USER.name.last }, ${ USER.name.first }&#x27; ...&#x60;,increment: 1 / ALL_USERS.length * 100.0,});const USER_META &#x3D; [&#x60;gender: ${ USER.gender }&#x60;,&#x60;id: ${ USER.login.uuid }&#x60;,&#x60;mail: ${ USER.email }&#x60;,&#x60;country: ${ USER.nat }&#x60;,];$writeMarkdown(&#x60;## [${ i + 1 }] ${ $html.encode(USER.name.last + &#x27;, &#x27; + USER.name.first) }&#x60;);$writeMarkdown(&#x60;| Icon | Meta |\n&#x60;+ &#x60;| ---- | ---- |\n&#x60;// icon+ &#x60;| ![${ $html.encode(USER.name.last + &#x27;, &#x27; + USER.name.first) }](${ USER.picture.medium }) | &#x60;// meta+ &#x60;${ USER_META.map(m &#x3D;&gt; $html.encode(m)).join(&#x27;&lt;br /&gt;&#x27;) } |\n&#x60;);await $sleep(0.5);}});"</span><span class="tsd-signature-symbol"> =&nbsp;&#x60;const MAX_USER_COUNT &#x3D; 20;$clear();await $withProgress(async (progress, cancelToken) &#x3D;&gt; {progress.report({message: \&#x60;Loading list of random users from &#x27;randomuser.me&#x27; ...\&#x60;,});// s. https://github.com/mkloubert/vscode-helpers#get-const RESPONSE &#x3D; await $helpers.GET(&#x27;https://randomuser.me/api?nat&#x3D;de&amp;results&#x3D;&#x27; + MAX_USER_COUNT);if (200 !&#x3D;&#x3D; RESPONSE.code) {throw new Error(\&#x60;Unexpected response: [\${ RESPONSE.code }] &#x27;\${ RESPONSE.status }&#x27;\&#x60;);}const RESULTS_WITH_USERS &#x3D; JSON.parse((await RESPONSE.readBody()).toString(&#x27;utf8&#x27;));if (!RESULTS_WITH_USERS.info.results) {$vscode.window.showWarningMessage(&#x27;No users available!&#x27;);return;}const ALL_USERS &#x3D; RESULTS_WITH_USERS.results;for (let i &#x3D; 0; i &lt; ALL_USERS.length; i++) {if (cancelToken.isCancellationRequested) {return;  // user wants to cancel// from progress window}if ($cancel.isCancellationRequested) {return;  // user wants to cancel// from console window}const USER &#x3D; ALL_USERS[i];progress.report({message: \&#x60;Processing user &#x27;\${ USER.name.last }, \${ USER.name.first }&#x27; ...\&#x60;,increment: 1 / ALL_USERS.length * 100.0,});const USER_META &#x3D; [\&#x60;gender: \${ USER.gender }\&#x60;,\&#x60;id: \${ USER.login.uuid }\&#x60;,\&#x60;mail: \${ USER.email }\&#x60;,\&#x60;country: \${ USER.nat }\&#x60;,];$writeMarkdown(\&#x60;## [\${ i + 1 }] \${ $html.encode(USER.name.last + &#x27;, &#x27; + USER.name.first) }\&#x60;);$writeMarkdown(\&#x60;| Icon | Meta |\\n\&#x60;+ \&#x60;| ---- | ---- |\\n\&#x60;// icon+ \&#x60;| ![\${ $html.encode(USER.name.last + &#x27;, &#x27; + USER.name.first) }](\${ USER.picture.medium }) | \&#x60;// meta+ \&#x60;\${ USER_META.map(m &#x3D;&gt; $html.encode(m)).join(&#x27;&lt;br /&gt;&#x27;) } |\\n\&#x60;);await $sleep(0.5);}});&#x60;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in resources.ts:22</li>
+							<li>Defined in src/resources.ts:22</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -122,7 +122,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_resources_.html">"resources"</a>
+						<a href="_resources_.html">&quot;resources&quot;</a>
 					</li>
 				</ul>
 			</nav>
