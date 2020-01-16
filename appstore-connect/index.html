@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>appstore-connect</title>
+	<title>@egodigital/appstore-connect</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">appstore-connect</a>
+					<a href="index.html" class="title">@egodigital/appstore-connect</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -56,7 +56,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> appstore-connect</h1>
+			<h1>@egodigital/appstore-connect</h1>
 		</div>
 	</div>
 </header>
@@ -64,9 +64,9 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<p><a href="https://www.npmjs.com/package/appstore-connect"><img src="https://img.shields.io/npm/v/appstore-connect.svg" alt="npm"></a></p>
-				<a href="#appstore-connect" id="appstore-connect" style="color: inherit; text-decoration: none;">
-					<h1>appstore-connect</h1>
+				<p><a href="https://www.npmjs.com/package/@egodigital/appstore-connect"><img src="https://img.shields.io/npm/v/@egodigital/appstore-connect.svg" alt="npm"></a></p>
+				<a href="#egodigitalappstore-connect" id="egodigitalappstore-connect" style="color: inherit; text-decoration: none;">
+					<h1>@egodigital/appstore-connect</h1>
 				</a>
 				<p>A simplfied library for <a href="https://nodejs.org/docs/latest-v10.x/api/">Node.js 10+</a> for accessing <a href="https://developer.apple.com/documentation/appstoreconnectapi">Apple&#39;s App Store Connect API</a>, written in <a href="https://www.typescriptlang.org/">TypeScript</a>.</p>
 				<p>The module is quite new, so <a href="https://github.com/egodigital/node-appstore-connect/issues">issues</a> and <a href="https://github.com/egodigital/node-appstore-connect/pulls">pull requests</a> are very welcome :-)</p>
@@ -74,12 +74,12 @@
 					<h2>Install</h2>
 				</a>
 				<p>Execute the following command from your project folder, where your <code>package.json</code> file is stored:</p>
-				<pre><code class="language-bash">npm install --save appstore-connect</code></pre>
+				<pre><code class="language-bash">npm install --save @egodigital/appstore-connect</code></pre>
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h2>Usage</h2>
 				</a>
 				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
-<span class="hljs-keyword">import</span> { Client <span class="hljs-keyword">as</span> AppStoreConnectClient } <span class="hljs-keyword">from</span> <span class="hljs-string">'appstore-connect'</span>;
+<span class="hljs-keyword">import</span> { Client <span class="hljs-keyword">as</span> AppStoreConnectClient } <span class="hljs-keyword">from</span> <span class="hljs-string">'@egodigital/appstore-connect'</span>;
 
 <span class="hljs-keyword">const</span> PRIVATE_KEY = fs.readFileSync(
     <span class="hljs-string">'/path/to/your/p8/file'</span>  <span class="hljs-comment">// downloaded from https://appstoreconnect.apple.com/access/api</span>
@@ -92,7 +92,6 @@
 });
 
 <span class="hljs-keyword">const</span> SUMMARY = <span class="hljs-keyword">await</span> CLIENT.getAppDownloads({
-    date: moment(),
     frequency: DownloadSalesReportFrequency.Weekly,
     vendorId: <span class="hljs-string">'&lt;YOUR-VENDOR-ID&gt;'</span>,  <span class="hljs-comment">// s. https://appstoreconnect.apple.com/itc/payments_and_financial_reports</span>
 });
@@ -103,7 +102,7 @@
 				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
 					<h2>Documentation</h2>
 				</a>
-				<p>The API documentation can be found <a href="https://egodigital.github.io/express-controllers/">here</a>.</p>
+				<p>The API documentation can be found <a href="https://egodigital.github.io/appstore-connect/">here</a>.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -114,9 +113,6 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_index_.html">&quot;index&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_sandbox_.html">&quot;sandbox&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_utils_.html">&quot;utils&quot;</a>
