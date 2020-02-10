@@ -80,9 +80,11 @@
 				<a href="#with-express" id="with-express" style="color: inherit; text-decoration: none;">
 					<h3>With Express</h3>
 				</a>
-				<p>You are able to share the same port with and <a href="http://expressjs.com/">express</a> and a web socket instance.</p>
+				<p>You are able to share the same port with an <a href="http://expressjs.com/">express</a> and web socket instance.</p>
 				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">'express'</span>;
 <span class="hljs-keyword">import</span> { SimpleWebSocket, withExpress } <span class="hljs-keyword">from</span> <span class="hljs-string">'@egodigital/ws'</span>;
+
+<span class="hljs-comment">// ##### SERVER #####</span>
 
 <span class="hljs-comment">// Express instance</span>
 <span class="hljs-keyword">const</span> app = express();
@@ -94,15 +96,15 @@ app.get(<span class="hljs-string">'/'</span>, <span class="hljs-function">(<span
 });
 
 <span class="hljs-comment">// setup websocket server with Express app</span>
-<span class="hljs-keyword">const</span> SERVER = <span class="hljs-keyword">await</span> withExpress({
+<span class="hljs-keyword">const</span> { server, listen } = <span class="hljs-keyword">await</span> withExpress({
     app: app,
     key: <span class="hljs-string">'ego'</span>,  <span class="hljs-comment">// a string or buffer</span>
                  <span class="hljs-comment">// for authentication</span>
 });
 
 <span class="hljs-comment">// handle messages of type 'HelloEGO'</span>
-SERVER.onMessage(<span class="hljs-keyword">async</span> (ctx) =&gt; {
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'SERVER.onMessage'</span>, ctx.message);
+server.onMessage(<span class="hljs-keyword">async</span> (ctx) =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'server.onMessage'</span>, ctx.message);
 
     <span class="hljs-comment">// optional data, which should be</span>
     <span class="hljs-comment">// send with OK message</span>
@@ -110,43 +112,44 @@ SERVER.onMessage(<span class="hljs-keyword">async</span> (ctx) =&gt; {
 }, <span class="hljs-function">(<span class="hljs-params">msg</span>) =&gt;</span> <span class="hljs-string">'HelloEGO'</span> === msg.type);
 
 <span class="hljs-comment">// start listening on port 8080</span>
-<span class="hljs-keyword">await</span> SERVER.listen(<span class="hljs-number">8080</span>);
+<span class="hljs-keyword">await</span> listen(<span class="hljs-number">8080</span>);
 
-setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
-    <span class="hljs-comment">// connect to local server</span>
-    <span class="hljs-keyword">const</span> CLIENT = SimpleWebSocket.fromUrl(<span class="hljs-string">'ws://localhost:8080'</span>);
 
-    <span class="hljs-comment">// handle messages of any type from server</span>
-    CLIENT.onMessage(<span class="hljs-function">(<span class="hljs-params">ctx</span>) =&gt;</span> {
-        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'CLIENT.onMessage'</span>, ctx.message);
-    });
+<span class="hljs-comment">// ##### CLIENT #####</span>
 
-    <span class="hljs-keyword">await</span> CLIENT.connect(<span class="hljs-string">'ego'</span>);  <span class="hljs-comment">// same as submitted to 'withExpress()'</span>
-                                  <span class="hljs-comment">// s.a.</span>
+<span class="hljs-comment">// connect to local server</span>
+<span class="hljs-keyword">const</span> client = SimpleWebSocket.fromUrl(<span class="hljs-string">'ws://localhost:8080'</span>);
 
-    <span class="hljs-comment">// send message of type 'HelloEGO'</span>
-    <span class="hljs-comment">// and data 5979 to local server</span>
-    <span class="hljs-keyword">await</span> CLIENT.send(<span class="hljs-string">'HelloEGO'</span>, <span class="hljs-number">5979</span>);
-}, <span class="hljs-number">5000</span>);</code></pre>
+<span class="hljs-comment">// handle messages of any type from server</span>
+client.onMessage(<span class="hljs-function">(<span class="hljs-params">ctx</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'client.onMessage'</span>, ctx.message);
+});
+
+<span class="hljs-keyword">await</span> client.connect(<span class="hljs-string">'ego'</span>);  <span class="hljs-comment">// same key as submitted to 'withExpress()'</span>
+                              <span class="hljs-comment">// s.a.</span>
+
+<span class="hljs-comment">// send message of type 'HelloEGO'</span>
+<span class="hljs-comment">// and data 5979 to local server</span>
+<span class="hljs-keyword">await</span> client.send(<span class="hljs-string">'HelloEGO'</span>, <span class="hljs-number">5979</span>);</code></pre>
 				<a href="#events" id="events" style="color: inherit; text-decoration: none;">
 					<h2>Events</h2>
 				</a>
 				<pre><code class="language-typescript"><span class="hljs-comment">// SimpleWebSocket</span>
-CLIENT.on(<span class="hljs-string">'message'</span>, <span class="hljs-function">(<span class="hljs-params">msg</span>) =&gt;</span> {
+client.on(<span class="hljs-string">'message'</span>, <span class="hljs-function">(<span class="hljs-params">msg, client</span>) =&gt;</span> {
     <span class="hljs-comment">// handle message from remote server</span>
 });
-CLIENT.on(<span class="hljs-string">'close'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+client.on(<span class="hljs-string">'close'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     <span class="hljs-comment">// connection with remote server has been closed</span>
 });
 
 <span class="hljs-comment">// SimpleWebSocketServer</span>
-SERVER.on(<span class="hljs-string">'connection'</span>, <span class="hljs-function">(<span class="hljs-params">client, server</span>) =&gt;</span> {
+server.on(<span class="hljs-string">'connection'</span>, <span class="hljs-function">(<span class="hljs-params">client, server</span>) =&gt;</span> {
+    <span class="hljs-comment">// new connection with 'client'</span>
+});
+server.on(<span class="hljs-string">'message'</span>, <span class="hljs-function">(<span class="hljs-params">msg, client, server</span>) =&gt;</span> {
     <span class="hljs-comment">// handle message from remote client</span>
 });
-SERVER.on(<span class="hljs-string">'message'</span>, <span class="hljs-function">(<span class="hljs-params">msg, client, server</span>) =&gt;</span> {
-    <span class="hljs-comment">// handle message from remote client</span>
-});
-SERVER.on(<span class="hljs-string">'close'</span>, <span class="hljs-function">(<span class="hljs-params">client, server</span>) =&gt;</span> {
+server.on(<span class="hljs-string">'close'</span>, <span class="hljs-function">(<span class="hljs-params">client, server</span>) =&gt;</span> {
     <span class="hljs-comment">// connection with remote client has been closed</span>
 });</code></pre>
 				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">

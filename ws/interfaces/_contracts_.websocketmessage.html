@@ -62,7 +62,7 @@
 					<a href="_contracts_.websocketmessage.html">WebSocketMessage</a>
 				</li>
 			</ul>
-			<h1>Interface WebSocketMessage&lt;TData&gt;</h1>
+			<h1>Interface WebSocketMessage&lt;TData, TRef&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -82,6 +82,9 @@
 					<li>
 						<h4>TData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h4>
 					</li>
+					<li>
+						<h4>TRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h4>
+					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -100,6 +103,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.websocketmessage.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.websocketmessage.html#ref" class="tsd-kind-icon">ref</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.websocketmessage.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
@@ -124,12 +128,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="ref" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ref</h3>
+					<div class="tsd-signature tsd-kind-icon">ref<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#nilable" class="tsd-signature-type">Nilable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TRef</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/contracts.ts:80</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Type of the reference data.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/contracts.ts:80</li>
+							<li>Defined in src/contracts.ts:84</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -175,6 +194,9 @@
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.websocketmessage.html#data" class="tsd-kind-icon">data</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.websocketmessage.html#ref" class="tsd-kind-icon">ref</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.websocketmessage.html#type" class="tsd-kind-icon">type</a>
