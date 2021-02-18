@@ -74,48 +74,37 @@
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h2>Usage</h2>
 				</a>
-				<a href="#constants" id="constants" style="color: inherit; text-decoration: none;">
-					<h4>Constants</h4>
+				<a href="#auth" id="auth" style="color: inherit; text-decoration: none;">
+					<h3>Auth</h3>
 				</a>
-				<table>
-					<thead>
-						<tr>
-							<th>Name</th>
-							<th>Description</th>
-							<th>Example</th>
-						</tr>
-					</thead>
-					<tbody><tr>
-							<td><code>JWT_SECRET</code></td>
-							<td>The secret for signing and validating JWT.</td>
-							<td><code>mySecretJWTSecret</code></td>
-						</tr>
-						<tr>
-							<td><code>NATS_CLUSTER_ID</code></td>
-							<td>The name of the cluster, that contains this and the other microservices.</td>
-							<td><code>ego-microservice-cluster</code></td>
-						</tr>
-						<tr>
-							<td><code>NATS_GROUP</code></td>
-							<td>The name of the pod group / kubernetes deployment.</td>
-							<td><code>my-service-or-deployment</code></td>
-						</tr>
-						<tr>
-							<td><code>NATS_URL</code></td>
-							<td>The URL to the NATS server.</td>
-							<td><code>http://my-nats-service:4222</code></td>
-						</tr>
-						<tr>
-							<td><code>POD_NAME</code></td>
-							<td>The name of the pod. This should come as imported metadata from Kubernetes.</td>
-							<td><code>my-service-or-deployment-XCSGBxV</code></td>
-						</tr>
-				</tbody></table>
-				<a href="#express" id="express" style="color: inherit; text-decoration: none;">
-					<h3>Express</h3>
+				<a href="#passwords" id="passwords" style="color: inherit; text-decoration: none;">
+					<h4>Passwords</h4>
 				</a>
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">checkPassword</span><span style="color: #000000">, </span><span style="color: #001080">checkPasswordSync</span><span style="color: #000000">, </span><span style="color: #001080">hashPassword</span><span style="color: #000000">, </span><span style="color: #001080">hashPasswordSync</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egodigital/microservices&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">hash1</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">hashPassword</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;test&#039;</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">matches2</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">checkPassword</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;test&#039;</span><span style="color: #000000">, </span><span style="color: #001080">hash1</span><span style="color: #000000">);</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">hash2</span><span style="color: #000000"> = </span><span style="color: #795E26">hashPasswordSync</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;test&#039;</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">matches2</span><span style="color: #000000"> = </span><span style="color: #795E26">checkPasswordSync</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;test&#039;</span><span style="color: #000000">, </span><span style="color: #001080">hash2</span><span style="color: #000000">);</span>
+</code></pre>
 				<a href="#jwt" id="jwt" style="color: inherit; text-decoration: none;">
 					<h4>JWT</h4>
+				</a>
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">signJWT</span><span style="color: #000000">, </span><span style="color: #001080">verifyJWT</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egodigital/microservices&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">IUserToken</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">uuid</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">;</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">jwt</span><span style="color: #000000"> = </span><span style="color: #795E26">signJWT</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">uuid:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;cb246b52-b8cd-4916-bfad-6bfc43845597&#039;</span>
+<span style="color: #000000">});</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">decodedToken</span><span style="color: #000000"> = </span><span style="color: #795E26">verifyJWT</span><span style="color: #000000">&lt;</span><span style="color: #267F99">IUserToken</span><span style="color: #000000">&gt;(</span><span style="color: #001080">jwt</span><span style="color: #000000">);</span>
+</code></pre>
+				<a href="#express" id="express" style="color: inherit; text-decoration: none;">
+					<h5>Express</h5>
 				</a>
 				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">express</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;express&#039;</span><span style="color: #000000">;</span>
 <span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">withJWT</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egodigital/microservices&#039;</span><span style="color: #000000">;</span>
@@ -131,6 +120,48 @@
 <span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Service is listening ...&#039;</span><span style="color: #000000">);</span>
 <span style="color: #000000">});</span>
 </code></pre>
+				<a href="#constants" id="constants" style="color: inherit; text-decoration: none;">
+					<h3>Constants</h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+							<th>Example</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><code>BCRYPT_ROUNDS</code></td>
+							<td>The number of rounds for bcrypt hashing. Default: <code>10</code></td>
+							<td><code>12</code></td>
+						</tr>
+						<tr>
+							<td><code>JWT_SECRET</code></td>
+							<td>The secret for signing and validating JWT.</td>
+							<td><code>mySecretJWTSecret</code></td>
+						</tr>
+						<tr>
+							<td><code>NATS_CLUSTER_ID</code></td>
+							<td>The name of the cluster, that contains all microservices.</td>
+							<td><code>my-cluster</code></td>
+						</tr>
+						<tr>
+							<td><code>NATS_GROUP</code></td>
+							<td>The name of the pod group / Kubernetes deployment.</td>
+							<td><code>my-service-or-deployment</code></td>
+						</tr>
+						<tr>
+							<td><code>NATS_URL</code></td>
+							<td>The URL to the NATS server.</td>
+							<td><code>http://my-nats-service:4222</code></td>
+						</tr>
+						<tr>
+							<td><code>POD_NAME</code></td>
+							<td>The name of the pod. This should come as imported metadata from Kubernetes.</td>
+							<td><code>my-service-or-deployment-xcsgbxv</code></td>
+						</tr>
+				</tbody></table>
 				<a href="#nats" id="nats" style="color: inherit; text-decoration: none;">
 					<h3>NATS</h3>
 				</a>
@@ -187,10 +218,16 @@
 						<a href="modules.html">Exports</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/constants.html">constants</a>
+						<a href="modules/auth.html">auth</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/express.html">express</a>
+						<a href="modules/auth_jwt.html">auth/jwt</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/auth_password.html">auth/password</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/constants.html">constants</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/index.html">index</a>
@@ -223,6 +260,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">

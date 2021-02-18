@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>INatsEventMessageHandlerContext | @egodigital/microservices</title>
+	<title>IWithJWTOptions | @egodigital/microservices</title>
 	<meta name="description" content="Documentation for @egodigital/microservices">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -58,10 +58,10 @@
 					<a href="../modules/index.html">index</a>
 				</li>
 				<li>
-					<a href="index.inatseventmessagehandlercontext.html">INatsEventMessageHandlerContext</a>
+					<a href="index.iwithjwtoptions.html">IWithJWTOptions</a>
 				</li>
 			</ul>
-			<h1>Interface INatsEventMessageHandlerContext&lt;TEvent&gt;</h1>
+			<h1>Interface IWithJWTOptions</h1>
 		</div>
 	</div>
 </header>
@@ -71,23 +71,15 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Context for an &#39;onMessage&#39; event.</p>
+						<p>Options for &#39;withJWT()&#39; function.</p>
 					</div>
 				</div>
-			</section>
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>TEvent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span> = <span class="tsd-signature-type">any</span></h4>
-					</li>
-				</ul>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">INatsEventMessageHandlerContext</span>
+						<span class="target">IWithJWTOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -98,10 +90,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="index.inatseventmessagehandlercontext.html#ack" class="tsd-kind-icon">ack</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="index.inatseventmessagehandlercontext.html#message" class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="index.inatseventmessagehandlercontext.html#noack" class="tsd-kind-icon">no<wbr>Ack</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="index.inatseventmessagehandlercontext.html#rawmessage" class="tsd-kind-icon">raw<wbr>Message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="index.iwithjwtoptions.html#onunauthorized" class="tsd-kind-icon">on<wbr>Unauthorized</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="index.iwithjwtoptions.html#setuptoken" class="tsd-kind-icon">setup<wbr>Token</a></li>
 							</ul>
 						</section>
 					</div>
@@ -110,93 +100,52 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="ack" class="tsd-anchor"></a>
-					<h3>ack</h3>
-					<div class="tsd-signature tsd-kind-icon">ack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<a name="onunauthorized" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Unauthorized</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Unauthorized<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ParamsDictionary</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">ParsedQs</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in nats/listener.ts:29</li>
+							<li>Defined in auth/jwt.ts:33</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The function to call, if message should be ack.</p>
+							<p>The custom logic, if authorization failed.</p>
 						</div>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The request context.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The response context.</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="message" class="tsd-anchor"></a>
-					<h3>message</h3>
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TEvent</span></div>
+					<a name="setuptoken" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> setup<wbr>Token</h3>
+					<div class="tsd-signature tsd-kind-icon">setup<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ParamsDictionary</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">ParsedQs</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in nats/listener.ts:33</li>
+							<li>Defined in auth/jwt.ts:42</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The parsed data,</p>
+							<p>The custom logic, to setup the verified token.</p>
 						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="noack" class="tsd-anchor"></a>
-					<h3>no<wbr>Ack</h3>
-					<div class="tsd-signature tsd-kind-icon">no<wbr>Ack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in nats/listener.ts:37</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The function to call, if message should NOT be ack.</p>
-						</div>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="rawmessage" class="tsd-anchor"></a>
-					<h3>raw<wbr>Message</h3>
-					<div class="tsd-signature tsd-kind-icon">raw<wbr>Message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Message</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in nats/listener.ts:41</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The raw NATS message.</p>
-						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The decoded and verified token.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The request context.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The response context.</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 			</section>
@@ -247,30 +196,24 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="../classes/index.natspublisher.html" class="tsd-kind-icon">Nats<wbr>Publisher</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="index.inatseventmessagehandlercontext.html" class="tsd-kind-icon">INats<wbr>Event<wbr>Message<wbr>Handler<wbr>Context</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="index.inatseventmessagehandlercontext.html" class="tsd-kind-icon">INats<wbr>Event<wbr>Message<wbr>Handler<wbr>Context</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="index.iwithjwtoptions.html" class="tsd-kind-icon">IWithJWTOptions</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="index.inatseventmessagehandlercontext.html#ack" class="tsd-kind-icon">ack</a>
+								<a href="index.iwithjwtoptions.html#onunauthorized" class="tsd-kind-icon">on<wbr>Unauthorized</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="index.inatseventmessagehandlercontext.html#message" class="tsd-kind-icon">message</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="index.inatseventmessagehandlercontext.html#noack" class="tsd-kind-icon">no<wbr>Ack</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="index.inatseventmessagehandlercontext.html#rawmessage" class="tsd-kind-icon">raw<wbr>Message</a>
+								<a href="index.iwithjwtoptions.html#setuptoken" class="tsd-kind-icon">setup<wbr>Token</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="index.iwithjwtoptions.html" class="tsd-kind-icon">IWithJWTOptions</a>
-					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="../modules/index.html#onnatseventmessagehandler" class="tsd-kind-icon">On<wbr>Nats<wbr>Event<wbr>Message<wbr>Handler</a>
 					</li>

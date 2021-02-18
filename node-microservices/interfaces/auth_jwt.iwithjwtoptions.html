@@ -55,10 +55,10 @@
 					<a href="../modules.html">@egodigital/microservices</a>
 				</li>
 				<li>
-					<a href="../modules/express.html">express</a>
+					<a href="../modules/auth_jwt.html">auth/jwt</a>
 				</li>
 				<li>
-					<a href="express.iwithjwtoptions.html">IWithJWTOptions</a>
+					<a href="auth_jwt.iwithjwtoptions.html">IWithJWTOptions</a>
 				</li>
 			</ul>
 			<h1>Interface IWithJWTOptions</h1>
@@ -90,8 +90,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="express.iwithjwtoptions.html#onunauthorized" class="tsd-kind-icon">on<wbr>Unauthorized</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="express.iwithjwtoptions.html#setuptoken" class="tsd-kind-icon">setup<wbr>Token</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="auth_jwt.iwithjwtoptions.html#onunauthorized" class="tsd-kind-icon">on<wbr>Unauthorized</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="auth_jwt.iwithjwtoptions.html#setuptoken" class="tsd-kind-icon">setup<wbr>Token</a></li>
 							</ul>
 						</section>
 					</div>
@@ -105,7 +105,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Unauthorized<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ParamsDictionary</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">ParsedQs</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in express.ts:33</li>
+							<li>Defined in auth/jwt.ts:33</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -128,7 +128,7 @@
 					<div class="tsd-signature tsd-kind-icon">setup<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ParamsDictionary</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">ParsedQs</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in express.ts:42</li>
+							<li>Defined in auth/jwt.ts:42</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -157,10 +157,16 @@
 						<a href="../modules.html">Exports</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/constants.html">constants</a>
+						<a href="../modules/auth.html">auth</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/express.html">express</a>
+						<a href="../modules/auth_jwt.html">auth/jwt</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/auth_password.html">auth/password</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/constants.html">constants</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/index.html">index</a>
@@ -184,20 +190,26 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="express.iwithjwtoptions.html" class="tsd-kind-icon">IWithJWTOptions</a>
+						<a href="auth_jwt.iwithjwtoptions.html" class="tsd-kind-icon">IWithJWTOptions</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="express.iwithjwtoptions.html#onunauthorized" class="tsd-kind-icon">on<wbr>Unauthorized</a>
+								<a href="auth_jwt.iwithjwtoptions.html#onunauthorized" class="tsd-kind-icon">on<wbr>Unauthorized</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="express.iwithjwtoptions.html#setuptoken" class="tsd-kind-icon">setup<wbr>Token</a>
+								<a href="auth_jwt.iwithjwtoptions.html#setuptoken" class="tsd-kind-icon">setup<wbr>Token</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/express.html#withjwt" class="tsd-kind-icon">withJWT</a>
+						<a href="../modules/auth_jwt.html#signjwt" class="tsd-kind-icon">signJWT</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/auth_jwt.html#verifyjwt" class="tsd-kind-icon">verifyJWT</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/auth_jwt.html#withjwt" class="tsd-kind-icon">withJWT</a>
 					</li>
 				</ul>
 			</nav>
@@ -211,6 +223,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
