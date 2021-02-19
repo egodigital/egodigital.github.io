@@ -80,6 +80,7 @@
 				<a href="#passwords" id="passwords" style="color: inherit; text-decoration: none;">
 					<h4>Passwords</h4>
 				</a>
+				<p>Hash passwords with <a href="https://en.wikipedia.org/wiki/Bcrypt">bcrypt</a>:</p>
 				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">checkPassword</span><span style="color: #000000">, </span><span style="color: #001080">checkPasswordSync</span><span style="color: #000000">, </span><span style="color: #001080">hashPassword</span><span style="color: #000000">, </span><span style="color: #001080">hashPasswordSync</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egodigital/microservices&#039;</span><span style="color: #000000">;</span>
 
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">hash1</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">hashPassword</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;test&#039;</span><span style="color: #000000">);</span>
@@ -91,6 +92,7 @@
 				<a href="#jwt" id="jwt" style="color: inherit; text-decoration: none;">
 					<h4>JWT</h4>
 				</a>
+				<p>Sign and verify <a href="https://en.wikipedia.org/wiki/JSON_Web_Token">JSON Web Tokens</a>:</p>
 				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">signJWT</span><span style="color: #000000">, </span><span style="color: #001080">verifyJWT</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egodigital/microservices&#039;</span><span style="color: #000000">;</span>
 
 <span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">IUserToken</span><span style="color: #000000"> {</span>
@@ -106,6 +108,7 @@
 				<a href="#express" id="express" style="color: inherit; text-decoration: none;">
 					<h5>Express</h5>
 				</a>
+				<p>Use predefined <a href="https://expressjs.com/en/guide/using-middleware.html">Express middleware</a> to verify and decode JWTs:</p>
 				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">express</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;express&#039;</span><span style="color: #000000">;</span>
 <span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">withJWT</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egodigital/microservices&#039;</span><span style="color: #000000">;</span>
 
@@ -165,6 +168,7 @@
 				<a href="#nats" id="nats" style="color: inherit; text-decoration: none;">
 					<h3>NATS</h3>
 				</a>
+				<p>Connect to a <a href="https://en.wikipedia.org/wiki/NATS_Messaging">NATS</a> server:</p>
 				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">stan</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egodigital/microservices&#039;</span><span style="color: #000000">;</span>
 
 <span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">stan</span><span style="color: #000000">.</span><span style="color: #795E26">connect</span><span style="color: #000000">();</span>
@@ -173,6 +177,7 @@
 				<a href="#listener" id="listener" style="color: inherit; text-decoration: none;">
 					<h4>Listener</h4>
 				</a>
+				<p>Listen for events:</p>
 				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">stan</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egodigital/microservices&#039;</span><span style="color: #000000">;</span>
 
 <span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">IMyEvent</span><span style="color: #000000"> {</span>
@@ -180,7 +185,7 @@
 <span style="color: #000000">    </span><span style="color: #001080">bar</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">;</span>
 <span style="color: #000000">}</span>
 
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">myEventListener</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">NatsListener</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;my.event&#039;</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">myEventListener</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">NatsListener</span><span style="color: #000000">&lt;</span><span style="color: #267F99">IMyEvent</span><span style="color: #000000">&gt;(</span><span style="color: #A31515">&#039;my.event&#039;</span><span style="color: #000000">);</span>
 
 <span style="color: #001080">myEventListener</span><span style="color: #000000">.</span><span style="color: #795E26">onMessage</span><span style="color: #000000"> = (</span><span style="color: #001080">context</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">    </span><span style="color: #008000">// handle message in context.message of type IMyEvent</span>
@@ -191,6 +196,7 @@
 				<a href="#publisher" id="publisher" style="color: inherit; text-decoration: none;">
 					<h4>Publisher</h4>
 				</a>
+				<p>Publish events:</p>
 				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">stan</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egodigital/microservices&#039;</span><span style="color: #000000">;</span>
 
 <span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">IMyEvent</span><span style="color: #000000"> {</span>
@@ -198,7 +204,7 @@
 <span style="color: #000000">    </span><span style="color: #001080">bar</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">;</span>
 <span style="color: #000000">}</span>
 
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">myEventPublisher</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">NatsPublisher</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;my.event&#039;</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">myEventPublisher</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">NatsPublisher</span><span style="color: #000000">&lt;</span><span style="color: #267F99">IMyEvent</span><span style="color: #000000">&gt;(</span><span style="color: #A31515">&#039;my.event&#039;</span><span style="color: #000000">);</span>
 
 <span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">myEventPublisher</span><span style="color: #000000">.</span><span style="color: #795E26">publish</span><span style="color: #000000">({</span>
 <span style="color: #000000">    </span><span style="color: #001080">foo:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;TM+MK&quot;</span><span style="color: #000000">,</span>
