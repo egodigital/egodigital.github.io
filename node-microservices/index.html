@@ -178,7 +178,7 @@
 					<h4>Listener</h4>
 				</a>
 				<p>Listen for events:</p>
-				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">stan</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egodigital/microservices&#039;</span><span style="color: #000000">;</span>
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">NatsListener</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egodigital/microservices&#039;</span><span style="color: #000000">;</span>
 
 <span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">IMyEvent</span><span style="color: #000000"> {</span>
 <span style="color: #000000">    </span><span style="color: #001080">foo</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">;</span>
@@ -197,7 +197,7 @@
 					<h4>Publisher</h4>
 				</a>
 				<p>Publish events:</p>
-				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">stan</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egodigital/microservices&#039;</span><span style="color: #000000">;</span>
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">NatsPublisher</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egodigital/microservices&#039;</span><span style="color: #000000">;</span>
 
 <span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">IMyEvent</span><span style="color: #000000"> {</span>
 <span style="color: #000000">    </span><span style="color: #001080">foo</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">;</span>
